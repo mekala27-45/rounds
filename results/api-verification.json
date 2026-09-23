@@ -1,0 +1,10 @@
+{
+  "routes_verified": 21,
+  "unauthorized_refused": true,
+  "empty_purpose_refused": true,
+  "audit_observed_in_separate_process": true,
+  "patient_payload_withheld_when_audit_fails": true,
+  "contact_persisted_independently": true,
+  "live_forecast_verified": true,
+  "audit_backend": "local Cloudflare D1 SQLite, not Postgres"
+}

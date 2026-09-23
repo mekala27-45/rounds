@@ -1,0 +1,20 @@
+name: Verify rounds
+on: [push, pull_request]
+jobs:
+  evidence:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - run: uv sync --frozen
+      - run: npm run typecheck
+      - run: python scripts/assemble_evidence.py --check
+      - run: npm run build
+      - run: uv run pytest tests -q

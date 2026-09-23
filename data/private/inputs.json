@@ -1,0 +1,2957 @@
+{
+  "016223251a0623646773": {
+    "readmit30": null,
+    "los": {
+      "features": {
+        "age": 55.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 23.0,
+        "medication_count": 1.0
+      },
+      "prediction_time": "2026-04-07T07:59:15",
+      "index_id": "d5a5cb20623c83e68e55"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 53.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 3.0,
+        "condition_count": 22.0,
+        "medication_count": 1.0
+      },
+      "prediction_time": "2024-07-31T00:00:00",
+      "index_id": "016223251a0623646773-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 53.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 3.0,
+        "condition_count": 22.0,
+        "medication_count": 1.0
+      },
+      "prediction_time": "2024-07-31T00:00:00",
+      "index_id": "016223251a0623646773-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "03e1772d80d037b10948": {
+    "readmit30": {
+      "features": {
+        "age": 33.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 2.0,
+        "condition_count": 30.0,
+        "medication_count": 2.0
+      },
+      "prediction_time": "2025-11-20T10:35:33",
+      "index_id": "fbab6781cb82a2a71efc"
+    },
+    "los": {
+      "features": {
+        "age": 33.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 2.0,
+        "condition_count": 30.0,
+        "medication_count": 2.0
+      },
+      "prediction_time": "2025-11-20T10:35:33",
+      "index_id": "fbab6781cb82a2a71efc"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 32.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 0.0,
+        "condition_count": 29.0,
+        "medication_count": 2.0
+      },
+      "prediction_time": "2025-02-27T00:00:00",
+      "index_id": "03e1772d80d037b10948-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 32.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 0.0,
+        "condition_count": 29.0,
+        "medication_count": 2.0
+      },
+      "prediction_time": "2025-02-27T00:00:00",
+      "index_id": "03e1772d80d037b10948-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "0b53d42da93d0efef762": {
+    "readmit30": {
+      "features": {
+        "age": 63.0,
+        "prior_admissions_365": 1.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 12.0,
+        "condition_count": 54.0,
+        "medication_count": 5.0
+      },
+      "prediction_time": "2026-01-30T07:10:48",
+      "index_id": "3903c47e5e3c5f121c9c"
+    },
+    "los": {
+      "features": {
+        "age": 63.0,
+        "prior_admissions_365": 1.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 12.0,
+        "condition_count": 54.0,
+        "medication_count": 5.0
+      },
+      "prediction_time": "2026-01-30T07:10:48",
+      "index_id": "3903c47e5e3c5f121c9c"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 62.0,
+        "prior_admissions_365": 1.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 8.0,
+        "condition_count": 54.0,
+        "medication_count": 5.0
+      },
+      "prediction_time": "2025-05-07T00:00:00",
+      "index_id": "0b53d42da93d0efef762-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 62.0,
+        "prior_admissions_365": 1.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 8.0,
+        "condition_count": 54.0,
+        "medication_count": 5.0
+      },
+      "prediction_time": "2025-05-07T00:00:00",
+      "index_id": "0b53d42da93d0efef762-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "101dcb5e8dfc02c59902": {
+    "readmit30": {
+      "features": {
+        "age": 60.0,
+        "prior_admissions_365": 8.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 12.0,
+        "condition_count": 40.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2025-07-31T11:20:49",
+      "index_id": "0ecfe97da94d325f1c35"
+    },
+    "los": {
+      "features": {
+        "age": 60.0,
+        "prior_admissions_365": 8.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 17.0,
+        "condition_count": 42.0,
+        "medication_count": 6.0
+      },
+      "prediction_time": "2025-10-09T08:59:49",
+      "index_id": "85431a50be1f53fb73bd"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 59.0,
+        "prior_admissions_365": 10.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 12.0,
+        "condition_count": 38.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2024-07-07T00:00:00",
+      "index_id": "101dcb5e8dfc02c59902-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 59.0,
+        "prior_admissions_365": 10.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 12.0,
+        "condition_count": 38.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2024-07-07T00:00:00",
+      "index_id": "101dcb5e8dfc02c59902-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "11418c4bc7797e423fcd": {
+    "readmit30": {
+      "features": {
+        "age": 49.0,
+        "prior_admissions_365": 9.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 12.0,
+        "condition_count": 41.0,
+        "medication_count": 3.0
+      },
+      "prediction_time": "2026-09-05T06:18:39",
+      "index_id": "a28e694cad31976ae484"
+    },
+    "los": {
+      "features": {
+        "age": 49.0,
+        "prior_admissions_365": 9.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 12.0,
+        "condition_count": 41.0,
+        "medication_count": 3.0
+      },
+      "prediction_time": "2026-09-05T06:18:39",
+      "index_id": "a28e694cad31976ae484"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 47.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 2.0,
+        "condition_count": 35.0,
+        "medication_count": 3.0
+      },
+      "prediction_time": "2025-01-24T00:00:00",
+      "index_id": "11418c4bc7797e423fcd-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 47.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 2.0,
+        "condition_count": 35.0,
+        "medication_count": 3.0
+      },
+      "prediction_time": "2025-01-24T00:00:00",
+      "index_id": "11418c4bc7797e423fcd-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "148ec11d2dd9492114c1": {
+    "readmit30": {
+      "features": {
+        "age": 50.0,
+        "prior_admissions_365": 2.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 6.0,
+        "condition_count": 29.0,
+        "medication_count": 5.0
+      },
+      "prediction_time": "2026-02-03T05:52:53",
+      "index_id": "5757bf762dc84319e378"
+    },
+    "los": {
+      "features": {
+        "age": 50.0,
+        "prior_admissions_365": 2.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 6.0,
+        "condition_count": 29.0,
+        "medication_count": 5.0
+      },
+      "prediction_time": "2026-02-03T05:52:53",
+      "index_id": "5757bf762dc84319e378"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 49.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 0.0,
+        "condition_count": 25.0,
+        "medication_count": 1.0
+      },
+      "prediction_time": "2025-05-17T00:00:00",
+      "index_id": "148ec11d2dd9492114c1-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 49.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 0.0,
+        "condition_count": 25.0,
+        "medication_count": 1.0
+      },
+      "prediction_time": "2025-05-17T00:00:00",
+      "index_id": "148ec11d2dd9492114c1-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "16bd0615bedaa6e4e7af": {
+    "readmit30": {
+      "features": {
+        "age": 37.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 119.0,
+        "condition_count": 40.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2025-10-22T08:03:59",
+      "index_id": "cfddec2e78dabe967aec"
+    },
+    "los": {
+      "features": {
+        "age": 37.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 119.0,
+        "condition_count": 40.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2025-10-22T08:03:59",
+      "index_id": "cfddec2e78dabe967aec"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 36.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 117.0,
+        "condition_count": 40.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2024-08-09T00:00:00",
+      "index_id": "16bd0615bedaa6e4e7af-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 36.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 117.0,
+        "condition_count": 40.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2024-08-09T00:00:00",
+      "index_id": "16bd0615bedaa6e4e7af-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "178eaea0a3cd8cba9836": {
+    "readmit30": {
+      "features": {
+        "age": 74.0,
+        "prior_admissions_365": 2.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 8.0,
+        "condition_count": 46.0,
+        "medication_count": 6.0
+      },
+      "prediction_time": "2025-11-16T21:07:54",
+      "index_id": "0eb1e479a7d29322a1fd"
+    },
+    "los": {
+      "features": {
+        "age": 74.0,
+        "prior_admissions_365": 2.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 8.0,
+        "condition_count": 46.0,
+        "medication_count": 6.0
+      },
+      "prediction_time": "2025-11-16T21:07:54",
+      "index_id": "0eb1e479a7d29322a1fd"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 73.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 3.0,
+        "condition_count": 43.0,
+        "medication_count": 2.0
+      },
+      "prediction_time": "2025-04-17T00:00:00",
+      "index_id": "178eaea0a3cd8cba9836-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 73.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 3.0,
+        "condition_count": 43.0,
+        "medication_count": 2.0
+      },
+      "prediction_time": "2025-04-17T00:00:00",
+      "index_id": "178eaea0a3cd8cba9836-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "1838e9ba75bf251bb9aa": {
+    "readmit30": {
+      "features": {
+        "age": 68.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 8.0,
+        "condition_count": 47.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2026-02-04T00:36:10",
+      "index_id": "26f511a4a963a4c4be9a"
+    },
+    "los": {
+      "features": {
+        "age": 68.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 8.0,
+        "condition_count": 47.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2026-02-04T00:36:10",
+      "index_id": "26f511a4a963a4c4be9a"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 67.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 8.0,
+        "condition_count": 46.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2025-01-26T00:00:00",
+      "index_id": "1838e9ba75bf251bb9aa-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 67.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 8.0,
+        "condition_count": 46.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2025-01-26T00:00:00",
+      "index_id": "1838e9ba75bf251bb9aa-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "1bb8f87e4f416ed12727": {
+    "readmit30": {
+      "features": {
+        "age": 63.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 12.0,
+        "condition_count": 47.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2026-06-02T10:08:40",
+      "index_id": "87336a71e410a2e563ba"
+    },
+    "los": {
+      "features": {
+        "age": 63.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 12.0,
+        "condition_count": 47.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2026-06-02T10:08:40",
+      "index_id": "87336a71e410a2e563ba"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 62.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 5.0,
+        "condition_count": 47.0,
+        "medication_count": 3.0
+      },
+      "prediction_time": "2025-05-10T00:00:00",
+      "index_id": "1bb8f87e4f416ed12727-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 62.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 5.0,
+        "condition_count": 47.0,
+        "medication_count": 3.0
+      },
+      "prediction_time": "2025-05-10T00:00:00",
+      "index_id": "1bb8f87e4f416ed12727-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "1dbe29f3b5db08053a4f": {
+    "readmit30": {
+      "features": {
+        "age": 36.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 2.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 36.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2026-07-13T15:22:30",
+      "index_id": "3835a209bcba0c561076"
+    },
+    "los": {
+      "features": {
+        "age": 36.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 2.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 36.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2026-07-13T15:22:30",
+      "index_id": "3835a209bcba0c561076"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 35.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 0.0,
+        "condition_count": 36.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2025-05-16T00:00:00",
+      "index_id": "1dbe29f3b5db08053a4f-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 35.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 0.0,
+        "condition_count": 36.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2025-05-16T00:00:00",
+      "index_id": "1dbe29f3b5db08053a4f-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "210a6f658d256a4900c4": {
+    "readmit30": {
+      "features": {
+        "age": 76.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 2.0,
+        "prior_visits_365": 7.0,
+        "condition_count": 42.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2025-10-09T22:25:41",
+      "index_id": "76dd4744d489aebdc459"
+    },
+    "los": {
+      "features": {
+        "age": 76.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 2.0,
+        "prior_visits_365": 7.0,
+        "condition_count": 42.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2025-10-09T22:25:41",
+      "index_id": "76dd4744d489aebdc459"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 76.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 8.0,
+        "condition_count": 42.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2025-05-10T00:00:00",
+      "index_id": "210a6f658d256a4900c4-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 76.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 8.0,
+        "condition_count": 42.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2025-05-10T00:00:00",
+      "index_id": "210a6f658d256a4900c4-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "25e2159090cf4c694bb1": {
+    "readmit30": {
+      "features": {
+        "age": 34.0,
+        "prior_admissions_365": 1.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 29.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2025-09-13T21:52:12",
+      "index_id": "73db153b46f7eca85cf9"
+    },
+    "los": {
+      "features": {
+        "age": 34.0,
+        "prior_admissions_365": 1.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 29.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2025-09-13T21:52:12",
+      "index_id": "73db153b46f7eca85cf9"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 33.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 0.0,
+        "condition_count": 29.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2025-02-19T00:00:00",
+      "index_id": "25e2159090cf4c694bb1-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 33.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 0.0,
+        "condition_count": 29.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2025-02-19T00:00:00",
+      "index_id": "25e2159090cf4c694bb1-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "2620f3438b7fe86078b8": {
+    "readmit30": {
+      "features": {
+        "age": 56.0,
+        "prior_admissions_365": 2.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 5.0,
+        "condition_count": 34.0,
+        "medication_count": 5.0
+      },
+      "prediction_time": "2025-10-29T22:31:14",
+      "index_id": "e8ae6a31e40a5cfd1241"
+    },
+    "los": {
+      "features": {
+        "age": 56.0,
+        "prior_admissions_365": 2.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 5.0,
+        "condition_count": 34.0,
+        "medication_count": 5.0
+      },
+      "prediction_time": "2025-10-29T22:31:14",
+      "index_id": "e8ae6a31e40a5cfd1241"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 55.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 2.0,
+        "condition_count": 31.0,
+        "medication_count": 1.0
+      },
+      "prediction_time": "2025-04-20T00:00:00",
+      "index_id": "2620f3438b7fe86078b8-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 55.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 2.0,
+        "condition_count": 31.0,
+        "medication_count": 1.0
+      },
+      "prediction_time": "2025-04-20T00:00:00",
+      "index_id": "2620f3438b7fe86078b8-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "34ccd987925bab4d368c": {
+    "readmit30": {
+      "features": {
+        "age": 51.0,
+        "prior_admissions_365": 1.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 8.0,
+        "condition_count": 52.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2025-11-02T07:45:24",
+      "index_id": "996ef2f7772442397975"
+    },
+    "los": {
+      "features": {
+        "age": 51.0,
+        "prior_admissions_365": 1.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 8.0,
+        "condition_count": 52.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2025-11-02T07:45:24",
+      "index_id": "996ef2f7772442397975"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 49.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 5.0,
+        "condition_count": 52.0,
+        "medication_count": 1.0
+      },
+      "prediction_time": "2024-08-29T00:00:00",
+      "index_id": "34ccd987925bab4d368c-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 49.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 5.0,
+        "condition_count": 52.0,
+        "medication_count": 1.0
+      },
+      "prediction_time": "2024-08-29T00:00:00",
+      "index_id": "34ccd987925bab4d368c-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "37f57c1be02016665a7b": {
+    "readmit30": {
+      "features": {
+        "age": 78.0,
+        "prior_admissions_365": 8.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 90.0,
+        "condition_count": 62.0,
+        "medication_count": 7.0
+      },
+      "prediction_time": "2026-03-24T09:28:00",
+      "index_id": "1b384d0836eb210e7ae1"
+    },
+    "los": {
+      "features": {
+        "age": 78.0,
+        "prior_admissions_365": 8.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 90.0,
+        "condition_count": 62.0,
+        "medication_count": 7.0
+      },
+      "prediction_time": "2026-03-24T09:28:00",
+      "index_id": "1b384d0836eb210e7ae1"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 77.0,
+        "prior_admissions_365": 9.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 91.0,
+        "condition_count": 60.0,
+        "medication_count": 7.0
+      },
+      "prediction_time": "2025-02-02T00:00:00",
+      "index_id": "37f57c1be02016665a7b-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 77.0,
+        "prior_admissions_365": 9.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 91.0,
+        "condition_count": 60.0,
+        "medication_count": 7.0
+      },
+      "prediction_time": "2025-02-02T00:00:00",
+      "index_id": "37f57c1be02016665a7b-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "406cd450413263e1c386": {
+    "readmit30": {
+      "features": {
+        "age": 35.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 6.0,
+        "condition_count": 31.0,
+        "medication_count": 2.0
+      },
+      "prediction_time": "2026-01-20T10:15:57",
+      "index_id": "d2021e5a5fc2e79b0b34"
+    },
+    "los": {
+      "features": {
+        "age": 35.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 6.0,
+        "condition_count": 31.0,
+        "medication_count": 2.0
+      },
+      "prediction_time": "2026-01-20T10:15:57",
+      "index_id": "d2021e5a5fc2e79b0b34"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 35.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 5.0,
+        "condition_count": 30.0,
+        "medication_count": 3.0
+      },
+      "prediction_time": "2025-06-19T00:00:00",
+      "index_id": "406cd450413263e1c386-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 35.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 5.0,
+        "condition_count": 30.0,
+        "medication_count": 3.0
+      },
+      "prediction_time": "2025-06-19T00:00:00",
+      "index_id": "406cd450413263e1c386-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "41dd77d438fa8acd607b": {
+    "readmit30": {
+      "features": {
+        "age": 54.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 2.0,
+        "prior_visits_365": 8.0,
+        "condition_count": 46.0,
+        "medication_count": 1.0
+      },
+      "prediction_time": "2026-02-22T02:11:49",
+      "index_id": "1351a9cef00aaea4a097"
+    },
+    "los": {
+      "features": {
+        "age": 54.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 2.0,
+        "prior_visits_365": 8.0,
+        "condition_count": 46.0,
+        "medication_count": 1.0
+      },
+      "prediction_time": "2026-02-22T02:11:49",
+      "index_id": "1351a9cef00aaea4a097"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 53.0,
+        "prior_admissions_365": 2.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 5.0,
+        "condition_count": 43.0,
+        "medication_count": 1.0
+      },
+      "prediction_time": "2025-01-24T00:00:00",
+      "index_id": "41dd77d438fa8acd607b-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 53.0,
+        "prior_admissions_365": 2.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 5.0,
+        "condition_count": 43.0,
+        "medication_count": 1.0
+      },
+      "prediction_time": "2025-01-24T00:00:00",
+      "index_id": "41dd77d438fa8acd607b-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "45bfa0edaad6ed1a85dc": {
+    "readmit30": {
+      "features": {
+        "age": 19.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 16.0,
+        "medication_count": 1.0
+      },
+      "prediction_time": "2026-09-02T23:11:46",
+      "index_id": "312a6117936d150413b2"
+    },
+    "los": {
+      "features": {
+        "age": 19.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 16.0,
+        "medication_count": 1.0
+      },
+      "prediction_time": "2026-09-02T23:11:46",
+      "index_id": "312a6117936d150413b2"
+    },
+    "hosp12m": null,
+    "highcost": null,
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "49f1cdbb8f34c64b4dc5": {
+    "readmit30": {
+      "features": {
+        "age": 66.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 7.0,
+        "condition_count": 50.0,
+        "medication_count": 3.0
+      },
+      "prediction_time": "2020-04-23T01:06:07",
+      "index_id": "b41d4b3163b200ae7d8f"
+    },
+    "los": {
+      "features": {
+        "age": 72.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 8.0,
+        "condition_count": 53.0,
+        "medication_count": 7.0
+      },
+      "prediction_time": "2026-07-05T07:01:44",
+      "index_id": "ab1991add81b7a85bd77"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 71.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 3.0,
+        "condition_count": 53.0,
+        "medication_count": 7.0
+      },
+      "prediction_time": "2024-11-14T00:00:00",
+      "index_id": "49f1cdbb8f34c64b4dc5-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 71.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 3.0,
+        "condition_count": 53.0,
+        "medication_count": 7.0
+      },
+      "prediction_time": "2024-11-14T00:00:00",
+      "index_id": "49f1cdbb8f34c64b4dc5-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "4cf65366471ac1fc07cc": {
+    "readmit30": {
+      "features": {
+        "age": 38.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 1.0,
+        "condition_count": 29.0,
+        "medication_count": 1.0
+      },
+      "prediction_time": "2025-11-03T02:02:11",
+      "index_id": "97f16e325fffd90812c0"
+    },
+    "los": {
+      "features": {
+        "age": 38.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 1.0,
+        "condition_count": 29.0,
+        "medication_count": 1.0
+      },
+      "prediction_time": "2025-11-03T02:02:11",
+      "index_id": "97f16e325fffd90812c0"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 37.0,
+        "prior_admissions_365": 1.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 5.0,
+        "condition_count": 29.0,
+        "medication_count": 1.0
+      },
+      "prediction_time": "2024-12-16T00:00:00",
+      "index_id": "4cf65366471ac1fc07cc-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 37.0,
+        "prior_admissions_365": 1.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 5.0,
+        "condition_count": 29.0,
+        "medication_count": 1.0
+      },
+      "prediction_time": "2024-12-16T00:00:00",
+      "index_id": "4cf65366471ac1fc07cc-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "578fbaf7fff7a1bce6b8": {
+    "readmit30": {
+      "features": {
+        "age": 61.0,
+        "prior_admissions_365": 1.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 10.0,
+        "condition_count": 43.0,
+        "medication_count": 3.0
+      },
+      "prediction_time": "2026-11-04T22:11:53",
+      "index_id": "21dbcc7662c04bf66a2f"
+    },
+    "los": {
+      "features": {
+        "age": 61.0,
+        "prior_admissions_365": 1.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 10.0,
+        "condition_count": 43.0,
+        "medication_count": 3.0
+      },
+      "prediction_time": "2026-11-04T22:11:53",
+      "index_id": "21dbcc7662c04bf66a2f"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 59.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 7.0,
+        "condition_count": 43.0,
+        "medication_count": 3.0
+      },
+      "prediction_time": "2025-05-12T00:00:00",
+      "index_id": "578fbaf7fff7a1bce6b8-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 59.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 7.0,
+        "condition_count": 43.0,
+        "medication_count": 3.0
+      },
+      "prediction_time": "2025-05-12T00:00:00",
+      "index_id": "578fbaf7fff7a1bce6b8-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "632be18834bbd9711b91": {
+    "readmit30": {
+      "features": {
+        "age": 47.0,
+        "prior_admissions_365": 1.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 31.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2026-04-11T14:25:32",
+      "index_id": "9e65246a05047e4ada54"
+    },
+    "los": {
+      "features": {
+        "age": 47.0,
+        "prior_admissions_365": 1.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 31.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2026-04-11T14:25:32",
+      "index_id": "9e65246a05047e4ada54"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 45.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 6.0,
+        "condition_count": 30.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2024-10-31T00:00:00",
+      "index_id": "632be18834bbd9711b91-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 45.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 6.0,
+        "condition_count": 30.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2024-10-31T00:00:00",
+      "index_id": "632be18834bbd9711b91-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "6498c6ce1d22f5895548": {
+    "readmit30": {
+      "features": {
+        "age": 62.0,
+        "prior_admissions_365": 2.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 5.0,
+        "condition_count": 52.0,
+        "medication_count": 5.0
+      },
+      "prediction_time": "2025-11-22T03:52:07",
+      "index_id": "cb6fe956b1419080993e"
+    },
+    "los": {
+      "features": {
+        "age": 62.0,
+        "prior_admissions_365": 2.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 5.0,
+        "condition_count": 52.0,
+        "medication_count": 5.0
+      },
+      "prediction_time": "2025-11-22T03:52:07",
+      "index_id": "cb6fe956b1419080993e"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 61.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 2.0,
+        "condition_count": 49.0,
+        "medication_count": 1.0
+      },
+      "prediction_time": "2024-11-30T00:00:00",
+      "index_id": "6498c6ce1d22f5895548-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 61.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 2.0,
+        "condition_count": 49.0,
+        "medication_count": 1.0
+      },
+      "prediction_time": "2024-11-30T00:00:00",
+      "index_id": "6498c6ce1d22f5895548-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "67b40a350ee576f54ae4": {
+    "readmit30": {
+      "features": {
+        "age": 68.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 3.0,
+        "condition_count": 35.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2026-08-10T03:59:36",
+      "index_id": "2cb479b022f9c2112e83"
+    },
+    "los": {
+      "features": {
+        "age": 68.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 3.0,
+        "condition_count": 35.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2026-08-10T03:59:36",
+      "index_id": "2cb479b022f9c2112e83"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 67.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 33.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2025-05-06T00:00:00",
+      "index_id": "67b40a350ee576f54ae4-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 67.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 33.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2025-05-06T00:00:00",
+      "index_id": "67b40a350ee576f54ae4-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "6c258f59f70b828d70f7": {
+    "readmit30": {
+      "features": {
+        "age": 35.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 1.0,
+        "condition_count": 35.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2026-05-15T01:41:14",
+      "index_id": "6664825b9189305586d1"
+    },
+    "los": {
+      "features": {
+        "age": 35.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 1.0,
+        "condition_count": 35.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2026-05-15T01:41:14",
+      "index_id": "6664825b9189305586d1"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 34.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 3.0,
+        "condition_count": 33.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2025-06-10T00:00:00",
+      "index_id": "6c258f59f70b828d70f7-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 34.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 3.0,
+        "condition_count": 33.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2025-06-10T00:00:00",
+      "index_id": "6c258f59f70b828d70f7-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "6c566c453b557be1cad1": {
+    "readmit30": {
+      "features": {
+        "age": 62.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 19.0,
+        "condition_count": 58.0,
+        "medication_count": 5.0
+      },
+      "prediction_time": "2026-04-28T16:53:46",
+      "index_id": "ea0f1a96a1be5c0d4ebb"
+    },
+    "los": {
+      "features": {
+        "age": 62.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 19.0,
+        "condition_count": 58.0,
+        "medication_count": 5.0
+      },
+      "prediction_time": "2026-04-28T16:53:46",
+      "index_id": "ea0f1a96a1be5c0d4ebb"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 61.0,
+        "prior_admissions_365": 2.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 25.0,
+        "condition_count": 57.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2025-04-15T00:00:00",
+      "index_id": "6c566c453b557be1cad1-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 61.0,
+        "prior_admissions_365": 2.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 25.0,
+        "condition_count": 57.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2025-04-15T00:00:00",
+      "index_id": "6c566c453b557be1cad1-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "7022088b3785076354ff": {
+    "readmit30": {
+      "features": {
+        "age": 63.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 5.0,
+        "condition_count": 34.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2026-05-26T19:11:55",
+      "index_id": "3f704a351f1adf61f230"
+    },
+    "los": {
+      "features": {
+        "age": 63.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 5.0,
+        "condition_count": 34.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2026-05-26T19:11:55",
+      "index_id": "3f704a351f1adf61f230"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 62.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 8.0,
+        "condition_count": 34.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2024-10-23T00:00:00",
+      "index_id": "7022088b3785076354ff-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 62.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 8.0,
+        "condition_count": 34.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2024-10-23T00:00:00",
+      "index_id": "7022088b3785076354ff-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "77161c9297d0a9d21852": {
+    "readmit30": {
+      "features": {
+        "age": 31.0,
+        "prior_admissions_365": 1.0,
+        "prior_ed_365": 2.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 33.0,
+        "medication_count": 3.0
+      },
+      "prediction_time": "2026-01-24T14:50:03",
+      "index_id": "e2d90d37a0c3d65a9fea"
+    },
+    "los": {
+      "features": {
+        "age": 31.0,
+        "prior_admissions_365": 1.0,
+        "prior_ed_365": 2.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 33.0,
+        "medication_count": 3.0
+      },
+      "prediction_time": "2026-01-24T14:50:03",
+      "index_id": "e2d90d37a0c3d65a9fea"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 29.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 2.0,
+        "condition_count": 33.0,
+        "medication_count": 3.0
+      },
+      "prediction_time": "2024-08-22T00:00:00",
+      "index_id": "77161c9297d0a9d21852-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 29.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 2.0,
+        "condition_count": 33.0,
+        "medication_count": 3.0
+      },
+      "prediction_time": "2024-08-22T00:00:00",
+      "index_id": "77161c9297d0a9d21852-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "7913cee1a4e923e49597": {
+    "readmit30": {
+      "features": {
+        "age": 90.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 11.0,
+        "condition_count": 51.0,
+        "medication_count": 6.0
+      },
+      "prediction_time": "2026-07-30T04:28:58",
+      "index_id": "eae11740c7810022abe0"
+    },
+    "los": {
+      "features": {
+        "age": 90.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 11.0,
+        "condition_count": 51.0,
+        "medication_count": 6.0
+      },
+      "prediction_time": "2026-07-30T04:28:58",
+      "index_id": "eae11740c7810022abe0"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 90.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 5.0,
+        "condition_count": 51.0,
+        "medication_count": 6.0
+      },
+      "prediction_time": "2025-05-21T00:00:00",
+      "index_id": "7913cee1a4e923e49597-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 90.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 5.0,
+        "condition_count": 51.0,
+        "medication_count": 6.0
+      },
+      "prediction_time": "2025-05-21T00:00:00",
+      "index_id": "7913cee1a4e923e49597-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "794659d312dc968908e0": {
+    "readmit30": {
+      "features": {
+        "age": 57.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 5.0,
+        "condition_count": 42.0,
+        "medication_count": 5.0
+      },
+      "prediction_time": "2026-08-12T03:39:41",
+      "index_id": "77c8d6e7a9fc4b6ba37d"
+    },
+    "los": {
+      "features": {
+        "age": 57.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 5.0,
+        "condition_count": 42.0,
+        "medication_count": 5.0
+      },
+      "prediction_time": "2026-08-12T03:39:41",
+      "index_id": "77c8d6e7a9fc4b6ba37d"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 55.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 41.0,
+        "medication_count": 5.0
+      },
+      "prediction_time": "2025-04-10T00:00:00",
+      "index_id": "794659d312dc968908e0-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 55.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 41.0,
+        "medication_count": 5.0
+      },
+      "prediction_time": "2025-04-10T00:00:00",
+      "index_id": "794659d312dc968908e0-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "7d05c1b62e01ab224a9d": {
+    "readmit30": {
+      "features": {
+        "age": 35.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 14.0,
+        "condition_count": 34.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2025-10-11T10:37:22",
+      "index_id": "27e64551f2b050eb333e"
+    },
+    "los": {
+      "features": {
+        "age": 35.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 14.0,
+        "condition_count": 34.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2025-10-11T10:37:22",
+      "index_id": "27e64551f2b050eb333e"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 34.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 9.0,
+        "condition_count": 33.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2025-04-26T00:00:00",
+      "index_id": "7d05c1b62e01ab224a9d-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 34.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 9.0,
+        "condition_count": 33.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2025-04-26T00:00:00",
+      "index_id": "7d05c1b62e01ab224a9d-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "80a5bc58f33bd5a7b3b8": {
+    "readmit30": {
+      "features": {
+        "age": 50.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 6.0,
+        "condition_count": 33.0,
+        "medication_count": 3.0
+      },
+      "prediction_time": "2013-08-31T17:52:35",
+      "index_id": "24091bc654b89bee3555"
+    },
+    "los": {
+      "features": {
+        "age": 63.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 3.0,
+        "condition_count": 38.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2026-08-25T01:28:05",
+      "index_id": "6c0f9ba2c761b4fcb374"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 61.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 7.0,
+        "condition_count": 38.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2025-01-27T00:00:00",
+      "index_id": "80a5bc58f33bd5a7b3b8-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 61.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 7.0,
+        "condition_count": 38.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2025-01-27T00:00:00",
+      "index_id": "80a5bc58f33bd5a7b3b8-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "8413f42d8728335617df": {
+    "readmit30": {
+      "features": {
+        "age": 61.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 3.0,
+        "condition_count": 39.0,
+        "medication_count": 13.0
+      },
+      "prediction_time": "2026-04-27T08:31:40",
+      "index_id": "21655c435a2f5e65d56e"
+    },
+    "los": {
+      "features": {
+        "age": 61.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 3.0,
+        "condition_count": 39.0,
+        "medication_count": 13.0
+      },
+      "prediction_time": "2026-04-27T08:31:40",
+      "index_id": "21655c435a2f5e65d56e"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 60.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 39.0,
+        "medication_count": 13.0
+      },
+      "prediction_time": "2025-01-29T00:00:00",
+      "index_id": "8413f42d8728335617df-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 60.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 39.0,
+        "medication_count": 13.0
+      },
+      "prediction_time": "2025-01-29T00:00:00",
+      "index_id": "8413f42d8728335617df-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "8637d8dfa56ef63a3d97": {
+    "readmit30": null,
+    "los": null,
+    "hosp12m": null,
+    "highcost": null,
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "86cb58373f1c02d08f8c": {
+    "readmit30": {
+      "features": {
+        "age": 70.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 30.0,
+        "condition_count": 42.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2026-02-19T16:33:51",
+      "index_id": "86e55a2426f6d2aba2e5"
+    },
+    "los": {
+      "features": {
+        "age": 70.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 30.0,
+        "condition_count": 42.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2026-02-19T16:33:51",
+      "index_id": "86e55a2426f6d2aba2e5"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 69.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 5.0,
+        "condition_count": 40.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2025-02-17T00:00:00",
+      "index_id": "86cb58373f1c02d08f8c-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 69.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 5.0,
+        "condition_count": 40.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2025-02-17T00:00:00",
+      "index_id": "86cb58373f1c02d08f8c-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "897866d89a56778ff3f2": {
+    "readmit30": {
+      "features": {
+        "age": 18.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 7.0,
+        "condition_count": 16.0,
+        "medication_count": 1.0
+      },
+      "prediction_time": "2025-10-12T17:04:19",
+      "index_id": "1aca70d19c1af4f5bf6d"
+    },
+    "los": {
+      "features": {
+        "age": 18.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 7.0,
+        "condition_count": 16.0,
+        "medication_count": 1.0
+      },
+      "prediction_time": "2025-10-12T17:04:19",
+      "index_id": "1aca70d19c1af4f5bf6d"
+    },
+    "hosp12m": null,
+    "highcost": null,
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "8d31408a4b1b0cf6ee27": {
+    "readmit30": {
+      "features": {
+        "age": 53.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 3.0,
+        "condition_count": 39.0,
+        "medication_count": 1.0
+      },
+      "prediction_time": "2025-10-21T01:11:20",
+      "index_id": "3ced2b9da91d725947df"
+    },
+    "los": {
+      "features": {
+        "age": 53.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 3.0,
+        "condition_count": 39.0,
+        "medication_count": 1.0
+      },
+      "prediction_time": "2025-10-21T01:11:20",
+      "index_id": "3ced2b9da91d725947df"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 53.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 2.0,
+        "condition_count": 37.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2025-03-15T00:00:00",
+      "index_id": "8d31408a4b1b0cf6ee27-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 53.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 2.0,
+        "condition_count": 37.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2025-03-15T00:00:00",
+      "index_id": "8d31408a4b1b0cf6ee27-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "91961c449e2588a3b6e3": {
+    "readmit30": null,
+    "los": null,
+    "hosp12m": null,
+    "highcost": null,
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "934b3842412510aa4142": {
+    "readmit30": {
+      "features": {
+        "age": 35.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 33.0,
+        "medication_count": 2.0
+      },
+      "prediction_time": "2026-01-10T03:41:59",
+      "index_id": "1b5f1c183c568b0857ff"
+    },
+    "los": {
+      "features": {
+        "age": 35.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 33.0,
+        "medication_count": 2.0
+      },
+      "prediction_time": "2026-01-10T03:41:59",
+      "index_id": "1b5f1c183c568b0857ff"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 34.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 1.0,
+        "condition_count": 31.0,
+        "medication_count": 2.0
+      },
+      "prediction_time": "2024-11-18T00:00:00",
+      "index_id": "934b3842412510aa4142-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 34.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 1.0,
+        "condition_count": 31.0,
+        "medication_count": 2.0
+      },
+      "prediction_time": "2024-11-18T00:00:00",
+      "index_id": "934b3842412510aa4142-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "993e02c88d8d20e74927": {
+    "readmit30": {
+      "features": {
+        "age": 47.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 10.0,
+        "condition_count": 42.0,
+        "medication_count": 3.0
+      },
+      "prediction_time": "2025-12-15T23:22:58",
+      "index_id": "4be03ee78fb8663bf734"
+    },
+    "los": {
+      "features": {
+        "age": 47.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 10.0,
+        "condition_count": 42.0,
+        "medication_count": 3.0
+      },
+      "prediction_time": "2025-12-15T23:22:58",
+      "index_id": "4be03ee78fb8663bf734"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 46.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 13.0,
+        "condition_count": 42.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2025-05-05T00:00:00",
+      "index_id": "993e02c88d8d20e74927-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 46.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 13.0,
+        "condition_count": 42.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2025-05-05T00:00:00",
+      "index_id": "993e02c88d8d20e74927-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "99977c17abcabb587f86": {
+    "readmit30": {
+      "features": {
+        "age": 41.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 2.0,
+        "condition_count": 34.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2026-03-06T23:44:35",
+      "index_id": "8b35d51f10c94cbbf38d"
+    },
+    "los": {
+      "features": {
+        "age": 41.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 2.0,
+        "condition_count": 34.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2026-03-06T23:44:35",
+      "index_id": "8b35d51f10c94cbbf38d"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 40.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 0.0,
+        "condition_count": 33.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2025-02-17T00:00:00",
+      "index_id": "99977c17abcabb587f86-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 40.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 0.0,
+        "condition_count": 33.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2025-02-17T00:00:00",
+      "index_id": "99977c17abcabb587f86-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "abb58cc3982d4e7ed5cc": {
+    "readmit30": {
+      "features": {
+        "age": 61.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 5.0,
+        "condition_count": 39.0,
+        "medication_count": 3.0
+      },
+      "prediction_time": "2026-01-25T05:31:02",
+      "index_id": "ab4684bdef2e41f71425"
+    },
+    "los": {
+      "features": {
+        "age": 61.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 5.0,
+        "condition_count": 39.0,
+        "medication_count": 3.0
+      },
+      "prediction_time": "2026-01-25T05:31:02",
+      "index_id": "ab4684bdef2e41f71425"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 59.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 1.0,
+        "condition_count": 36.0,
+        "medication_count": 3.0
+      },
+      "prediction_time": "2024-08-24T00:00:00",
+      "index_id": "abb58cc3982d4e7ed5cc-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 59.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 1.0,
+        "condition_count": 36.0,
+        "medication_count": 3.0
+      },
+      "prediction_time": "2024-08-24T00:00:00",
+      "index_id": "abb58cc3982d4e7ed5cc-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "acc61fb0f4ea7398cd77": {
+    "readmit30": {
+      "features": {
+        "age": 61.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 50.0,
+        "medication_count": 3.0
+      },
+      "prediction_time": "2026-10-04T09:08:38",
+      "index_id": "8fb30937b31083224307"
+    },
+    "los": {
+      "features": {
+        "age": 61.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 50.0,
+        "medication_count": 3.0
+      },
+      "prediction_time": "2026-10-04T09:08:38",
+      "index_id": "8fb30937b31083224307"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 59.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 1.0,
+        "condition_count": 50.0,
+        "medication_count": 3.0
+      },
+      "prediction_time": "2025-03-03T00:00:00",
+      "index_id": "acc61fb0f4ea7398cd77-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 59.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 1.0,
+        "condition_count": 50.0,
+        "medication_count": 3.0
+      },
+      "prediction_time": "2025-03-03T00:00:00",
+      "index_id": "acc61fb0f4ea7398cd77-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "bc25c1cac9ab7e6857b1": {
+    "readmit30": {
+      "features": {
+        "age": 47.0,
+        "prior_admissions_365": 3.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 8.0,
+        "condition_count": 34.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2026-12-27T00:53:23",
+      "index_id": "b7c822a828e930e52a83"
+    },
+    "los": {
+      "features": {
+        "age": 47.0,
+        "prior_admissions_365": 4.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 9.0,
+        "condition_count": 34.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2027-02-02T21:10:23",
+      "index_id": "7c16d3a5b0428417fdd7"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 45.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 1.0,
+        "condition_count": 30.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2025-06-03T00:00:00",
+      "index_id": "bc25c1cac9ab7e6857b1-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 45.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 1.0,
+        "condition_count": 30.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2025-06-03T00:00:00",
+      "index_id": "bc25c1cac9ab7e6857b1-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "bce218ba667ae3d6f4e7": {
+    "readmit30": null,
+    "los": {
+      "features": {
+        "age": 43.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 26.0,
+        "medication_count": 3.0
+      },
+      "prediction_time": "2026-04-01T13:20:03",
+      "index_id": "e99db9f185b2e565d80c"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 41.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 1.0,
+        "condition_count": 25.0,
+        "medication_count": 3.0
+      },
+      "prediction_time": "2024-07-16T00:00:00",
+      "index_id": "bce218ba667ae3d6f4e7-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 41.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 1.0,
+        "condition_count": 25.0,
+        "medication_count": 3.0
+      },
+      "prediction_time": "2024-07-16T00:00:00",
+      "index_id": "bce218ba667ae3d6f4e7-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "c45357fcfeaba299093a": {
+    "readmit30": {
+      "features": {
+        "age": 66.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 46.0,
+        "medication_count": 8.0
+      },
+      "prediction_time": "2026-08-14T10:13:33",
+      "index_id": "9f0529ab512b768fdefc"
+    },
+    "los": {
+      "features": {
+        "age": 66.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 46.0,
+        "medication_count": 8.0
+      },
+      "prediction_time": "2026-08-14T10:13:33",
+      "index_id": "9f0529ab512b768fdefc"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 64.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 3.0,
+        "condition_count": 43.0,
+        "medication_count": 8.0
+      },
+      "prediction_time": "2025-05-09T00:00:00",
+      "index_id": "c45357fcfeaba299093a-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 64.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 3.0,
+        "condition_count": 43.0,
+        "medication_count": 8.0
+      },
+      "prediction_time": "2025-05-09T00:00:00",
+      "index_id": "c45357fcfeaba299093a-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "c77952b32a6f80c4a894": {
+    "readmit30": {
+      "features": {
+        "age": 35.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 2.0,
+        "condition_count": 28.0,
+        "medication_count": 1.0
+      },
+      "prediction_time": "2026-05-21T21:21:23",
+      "index_id": "92bbdab1ea357ca3514e"
+    },
+    "los": {
+      "features": {
+        "age": 35.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 2.0,
+        "condition_count": 28.0,
+        "medication_count": 1.0
+      },
+      "prediction_time": "2026-05-21T21:21:23",
+      "index_id": "92bbdab1ea357ca3514e"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 33.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 1.0,
+        "condition_count": 24.0,
+        "medication_count": 2.0
+      },
+      "prediction_time": "2024-12-04T00:00:00",
+      "index_id": "c77952b32a6f80c4a894-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 33.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 1.0,
+        "condition_count": 24.0,
+        "medication_count": 2.0
+      },
+      "prediction_time": "2024-12-04T00:00:00",
+      "index_id": "c77952b32a6f80c4a894-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "cf2b257a2b0c62e34eb4": {
+    "readmit30": {
+      "features": {
+        "age": 58.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 3.0,
+        "condition_count": 40.0,
+        "medication_count": 11.0
+      },
+      "prediction_time": "2026-09-17T04:49:13",
+      "index_id": "46990f0133256176f26c"
+    },
+    "los": {
+      "features": {
+        "age": 58.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 3.0,
+        "condition_count": 40.0,
+        "medication_count": 11.0
+      },
+      "prediction_time": "2026-09-17T04:49:13",
+      "index_id": "46990f0133256176f26c"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 56.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 7.0,
+        "condition_count": 40.0,
+        "medication_count": 11.0
+      },
+      "prediction_time": "2025-05-16T00:00:00",
+      "index_id": "cf2b257a2b0c62e34eb4-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 56.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 7.0,
+        "condition_count": 40.0,
+        "medication_count": 11.0
+      },
+      "prediction_time": "2025-05-16T00:00:00",
+      "index_id": "cf2b257a2b0c62e34eb4-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "d07aaa08822a91fd4b5b": {
+    "readmit30": {
+      "features": {
+        "age": 63.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 47.0,
+        "medication_count": 1.0
+      },
+      "prediction_time": "2026-02-08T04:23:52",
+      "index_id": "f8f03d19a4ac32f887e9"
+    },
+    "los": {
+      "features": {
+        "age": 63.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 47.0,
+        "medication_count": 1.0
+      },
+      "prediction_time": "2026-02-08T04:23:52",
+      "index_id": "f8f03d19a4ac32f887e9"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 61.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 44.0,
+        "medication_count": 1.0
+      },
+      "prediction_time": "2024-07-09T00:00:00",
+      "index_id": "d07aaa08822a91fd4b5b-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 61.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 44.0,
+        "medication_count": 1.0
+      },
+      "prediction_time": "2024-07-09T00:00:00",
+      "index_id": "d07aaa08822a91fd4b5b-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "d0cc3969bb13037658ab": {
+    "readmit30": {
+      "features": {
+        "age": 56.0,
+        "prior_admissions_365": 1.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 15.0,
+        "condition_count": 50.0,
+        "medication_count": 6.0
+      },
+      "prediction_time": "2026-01-09T01:51:19",
+      "index_id": "d7200d2b1bb3cd23cb91"
+    },
+    "los": {
+      "features": {
+        "age": 56.0,
+        "prior_admissions_365": 1.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 15.0,
+        "condition_count": 50.0,
+        "medication_count": 6.0
+      },
+      "prediction_time": "2026-01-09T01:51:19",
+      "index_id": "d7200d2b1bb3cd23cb91"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 56.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 3.0,
+        "prior_visits_365": 9.0,
+        "condition_count": 47.0,
+        "medication_count": 2.0
+      },
+      "prediction_time": "2025-05-31T00:00:00",
+      "index_id": "d0cc3969bb13037658ab-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 56.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 3.0,
+        "prior_visits_365": 9.0,
+        "condition_count": 47.0,
+        "medication_count": 2.0
+      },
+      "prediction_time": "2025-05-31T00:00:00",
+      "index_id": "d0cc3969bb13037658ab-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "df1e39e725746e43c684": {
+    "readmit30": {
+      "features": {
+        "age": 74.0,
+        "prior_admissions_365": 1.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 7.0,
+        "condition_count": 45.0,
+        "medication_count": 6.0
+      },
+      "prediction_time": "2026-02-24T05:42:24",
+      "index_id": "e290c0db3ed35d03af3a"
+    },
+    "los": {
+      "features": {
+        "age": 74.0,
+        "prior_admissions_365": 1.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 7.0,
+        "condition_count": 45.0,
+        "medication_count": 6.0
+      },
+      "prediction_time": "2026-02-24T05:42:24",
+      "index_id": "e290c0db3ed35d03af3a"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 73.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 1.0,
+        "condition_count": 42.0,
+        "medication_count": 2.0
+      },
+      "prediction_time": "2024-11-30T00:00:00",
+      "index_id": "df1e39e725746e43c684-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 73.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 1.0,
+        "condition_count": 42.0,
+        "medication_count": 2.0
+      },
+      "prediction_time": "2024-11-30T00:00:00",
+      "index_id": "df1e39e725746e43c684-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "e336b64ed275d3fa850b": {
+    "readmit30": {
+      "features": {
+        "age": 35.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 5.0,
+        "condition_count": 25.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2000-12-02T22:39:15",
+      "index_id": "2f8f3621f65cde02e144"
+    },
+    "los": {
+      "features": {
+        "age": 61.0,
+        "prior_admissions_365": 2.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 13.0,
+        "condition_count": 41.0,
+        "medication_count": 7.0
+      },
+      "prediction_time": "2026-10-29T04:13:28",
+      "index_id": "6a3b14e59f0a0d2abad9"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 59.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 9.0,
+        "condition_count": 38.0,
+        "medication_count": 3.0
+      },
+      "prediction_time": "2025-02-27T00:00:00",
+      "index_id": "e336b64ed275d3fa850b-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 59.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 9.0,
+        "condition_count": 38.0,
+        "medication_count": 3.0
+      },
+      "prediction_time": "2025-02-27T00:00:00",
+      "index_id": "e336b64ed275d3fa850b-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "e7172a29c53421e3b772": {
+    "readmit30": null,
+    "los": {
+      "features": {
+        "age": 51.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 5.0,
+        "condition_count": 33.0,
+        "medication_count": 5.0
+      },
+      "prediction_time": "2026-04-09T19:38:34",
+      "index_id": "23fbcbacc010f2c99965"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 49.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 29.0,
+        "medication_count": 1.0
+      },
+      "prediction_time": "2024-05-17T00:00:00",
+      "index_id": "e7172a29c53421e3b772-2024"
+    },
+    "highcost": {
+      "features": {
+        "age": 49.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 29.0,
+        "medication_count": 1.0
+      },
+      "prediction_time": "2024-05-17T00:00:00",
+      "index_id": "e7172a29c53421e3b772-2024"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "e87e7665d2cbd404ddf6": {
+    "readmit30": {
+      "features": {
+        "age": 65.0,
+        "prior_admissions_365": 1.0,
+        "prior_ed_365": 3.0,
+        "prior_visits_365": 45.0,
+        "condition_count": 52.0,
+        "medication_count": 9.0
+      },
+      "prediction_time": "2026-10-12T06:56:02",
+      "index_id": "9eed8fc08f00c315133a"
+    },
+    "los": {
+      "features": {
+        "age": 65.0,
+        "prior_admissions_365": 1.0,
+        "prior_ed_365": 3.0,
+        "prior_visits_365": 45.0,
+        "condition_count": 52.0,
+        "medication_count": 9.0
+      },
+      "prediction_time": "2026-10-12T06:56:02",
+      "index_id": "9eed8fc08f00c315133a"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 64.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 51.0,
+        "medication_count": 9.0
+      },
+      "prediction_time": "2025-06-11T00:00:00",
+      "index_id": "e87e7665d2cbd404ddf6-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 64.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 51.0,
+        "medication_count": 9.0
+      },
+      "prediction_time": "2025-06-11T00:00:00",
+      "index_id": "e87e7665d2cbd404ddf6-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "edd9a85caa3b1c1d4114": {
+    "readmit30": {
+      "features": {
+        "age": 33.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 13.0,
+        "condition_count": 38.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2026-11-17T02:50:34",
+      "index_id": "f2f032e3b966641ef430"
+    },
+    "los": {
+      "features": {
+        "age": 33.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 13.0,
+        "condition_count": 38.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2026-11-17T02:50:34",
+      "index_id": "f2f032e3b966641ef430"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 32.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 3.0,
+        "prior_visits_365": 24.0,
+        "condition_count": 38.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2025-04-11T00:00:00",
+      "index_id": "edd9a85caa3b1c1d4114-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 32.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 3.0,
+        "prior_visits_365": 24.0,
+        "condition_count": 38.0,
+        "medication_count": 4.0
+      },
+      "prediction_time": "2025-04-11T00:00:00",
+      "index_id": "edd9a85caa3b1c1d4114-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "f1c7d0f73a4b7e9299d2": {
+    "readmit30": {
+      "features": {
+        "age": 20.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 7.0,
+        "condition_count": 20.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2025-12-27T03:17:35",
+      "index_id": "110d8621b1334a302eae"
+    },
+    "los": {
+      "features": {
+        "age": 20.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 1.0,
+        "prior_visits_365": 7.0,
+        "condition_count": 20.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2025-12-27T03:17:35",
+      "index_id": "110d8621b1334a302eae"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 19.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 8.0,
+        "condition_count": 18.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2025-02-10T00:00:00",
+      "index_id": "f1c7d0f73a4b7e9299d2-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 19.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 8.0,
+        "condition_count": 18.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2025-02-10T00:00:00",
+      "index_id": "f1c7d0f73a4b7e9299d2-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "f29fe6f70520d5dec08d": {
+    "readmit30": {
+      "features": {
+        "age": 34.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 1.0,
+        "condition_count": 33.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2025-11-11T07:44:18",
+      "index_id": "5209ca281b583ff410cf"
+    },
+    "los": {
+      "features": {
+        "age": 34.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 1.0,
+        "condition_count": 33.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2025-11-11T07:44:18",
+      "index_id": "5209ca281b583ff410cf"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 33.0,
+        "prior_admissions_365": 1.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 33.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2025-03-21T00:00:00",
+      "index_id": "f29fe6f70520d5dec08d-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 33.0,
+        "prior_admissions_365": 1.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 4.0,
+        "condition_count": 33.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2025-03-21T00:00:00",
+      "index_id": "f29fe6f70520d5dec08d-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "f4becdd2c432d1cacbf1": {
+    "readmit30": {
+      "features": {
+        "age": 32.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 0.0,
+        "condition_count": 30.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2026-10-19T23:26:24",
+      "index_id": "2cd3a3754172819b1b17"
+    },
+    "los": {
+      "features": {
+        "age": 32.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 0.0,
+        "condition_count": 30.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2026-10-19T23:26:24",
+      "index_id": "2cd3a3754172819b1b17"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 31.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 1.0,
+        "condition_count": 30.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2025-06-16T00:00:00",
+      "index_id": "f4becdd2c432d1cacbf1-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 31.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 1.0,
+        "condition_count": 30.0,
+        "medication_count": 0.0
+      },
+      "prediction_time": "2025-06-16T00:00:00",
+      "index_id": "f4becdd2c432d1cacbf1-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  },
+  "f7588a2a7aa30cc26ede": {
+    "readmit30": {
+      "features": {
+        "age": 54.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 2.0,
+        "prior_visits_365": 3.0,
+        "condition_count": 38.0,
+        "medication_count": 2.0
+      },
+      "prediction_time": "2026-03-25T21:02:56",
+      "index_id": "a606161dd2c27311a8ad"
+    },
+    "los": {
+      "features": {
+        "age": 54.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 2.0,
+        "prior_visits_365": 3.0,
+        "condition_count": 38.0,
+        "medication_count": 2.0
+      },
+      "prediction_time": "2026-03-25T21:02:56",
+      "index_id": "a606161dd2c27311a8ad"
+    },
+    "hosp12m": {
+      "features": {
+        "age": 53.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 9.0,
+        "condition_count": 37.0,
+        "medication_count": 2.0
+      },
+      "prediction_time": "2024-12-15T00:00:00",
+      "index_id": "f7588a2a7aa30cc26ede-2025"
+    },
+    "highcost": {
+      "features": {
+        "age": 53.0,
+        "prior_admissions_365": 0.0,
+        "prior_ed_365": 0.0,
+        "prior_visits_365": 9.0,
+        "condition_count": 37.0,
+        "medication_count": 2.0
+      },
+      "prediction_time": "2024-12-15T00:00:00",
+      "index_id": "f7588a2a7aa30cc26ede-2025"
+    },
+    "deterioration": null,
+    "ed_arrivals": null
+  }
+}

@@ -1,0 +1,9 @@
+export type LinearModel={type?:string;features?:string[];feature_names?:string[];mean?:number[];scale?:number[];coef?:number[];coefficients?:number[];intercept:number;calibration_slope?:number;calibration_intercept?:number;conformal_radius?:number;[key:string]:unknown};
+export function scoreLinear(model:LinearModel,features:Record<string,number>){
+ const names=model.features??model.feature_names??[];const means=model.mean??(model.means as number[]|undefined)??(model.scaler_mean as number[]|undefined)??[];const scales=model.scale??(model.scales as number[]|undefined)??(model.scaler_scale as number[]|undefined)??[];const coefs=model.coef??model.coefficients??[];
+ if(!names.length||names.length!==coefs.length)throw Error('Model parameters are incomplete.');
+ const terms=names.map((name,i)=>{const value=features[name];if(!Number.isFinite(value))throw Error(`Required feature is unavailable: ${name}`);return {feature:name,value,contribution:(value-(means[i]??0))/(scales[i]||1)*coefs[i]}});
+ const raw=model.intercept+terms.reduce((a,t)=>a+t.contribution,0);const regression=model.type==='log1p_ridge'||model.type==='ridge_log1p'||model.type==='regression'||model.type==='ridge'||model.target==='los';
+ if(regression){const prediction=Math.max(0,Math.expm1(raw)),radius=Number(model.conformal_radius??model.conformal_radius_days??model.radius??0);return {prediction,unit:'days',interval:[Math.max(0,prediction-radius),prediction+radius],explanation:terms.sort((a,b)=>Math.abs(b.contribution)-Math.abs(a.contribution)).slice(0,4)}}
+ const slope=Number(model.calibration_slope??1),offset=Number(model.calibration_intercept??0);const prediction=1/(1+Math.exp(-Math.max(-700,Math.min(700,raw*slope+offset))));return {prediction,unit:'probability',interval:null,explanation:terms.map(t=>({...t,contribution:t.contribution*slope})).sort((a,b)=>Math.abs(b.contribution)-Math.abs(a.contribution)).slice(0,4)};
+}

@@ -1,0 +1,330 @@
+{
+  "label": "Synthea synthetic Massachusetts population",
+  "synthetic": true,
+  "containsRealPatientData": false,
+  "referenceDate": "2026-09-22",
+  "endDate": "2026-09-22",
+  "generatedAt": "2026-09-23T03:54:30.466Z",
+  "seed": 20260923,
+  "clinicianSeed": 20260923,
+  "fullHistory": true,
+  "yearsOfHistory": 0,
+  "overflow": false,
+  "source": {
+    "project": "https://github.com/synthetichealth/synthea",
+    "release": "https://github.com/synthetichealth/synthea/releases/tag/master-branch-latest",
+    "download": "https://github.com/synthetichealth/synthea/releases/download/master-branch-latest/synthea-with-dependencies.jar",
+    "sha256": "sha256:018ad7f04f7aacb995804d7d4781c76d5fc714f7f23257ba50daa9eefae224ac",
+    "version": "d9d07a6",
+    "buildCommit": "d9d07a6",
+    "buildTimestamp": "2026-08-18T16:13:33.069+0000"
+  },
+  "runtime": {
+    "release": "jdk-17.0.20.1+1",
+    "download": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_x64_windows_hotspot_17.0.20.1_1.zip",
+    "sha256": "bc21a93923103cdaac93ee337b0ae4365e739fde36df823dd456bc67c8a9d352"
+  },
+  "population": {
+    "requested": 2000,
+    "actual": 2000,
+    "csvDirectory": "population-2000/csv",
+    "files": {
+      "allergies.csv": {
+        "rows": 2023,
+        "bytes": 361940,
+        "dateColumn": "START",
+        "earliest": "1924-08-12",
+        "latest": "2026-08-25"
+      },
+      "careplans.csv": {
+        "rows": 16275,
+        "bytes": 3229738,
+        "dateColumn": "START",
+        "earliest": "1917-11-06",
+        "latest": "2026-09-21"
+      },
+      "claims.csv": {
+        "rows": 434687,
+        "bytes": 165268843,
+        "dateColumn": null,
+        "earliest": null,
+        "latest": null
+      },
+      "claims_transactions.csv": {
+        "rows": 4149120,
+        "bytes": 1879397713,
+        "dateColumn": null,
+        "earliest": null,
+        "latest": null
+      },
+      "conditions.csv": {
+        "rows": 170242,
+        "bytes": 24917845,
+        "dateColumn": "START",
+        "earliest": "1915-11-27",
+        "latest": "2026-09-21"
+      },
+      "devices.csv": {
+        "rows": 27735,
+        "bytes": 6324854,
+        "dateColumn": "START",
+        "earliest": "1917-11-06T23:44:23Z",
+        "latest": "2026-09-18T22:05:40Z"
+      },
+      "encounters.csv": {
+        "rows": 290264,
+        "bytes": 96439784,
+        "dateColumn": "START",
+        "earliest": "1915-11-27T11:13:42Z",
+        "latest": "2026-09-21T22:20:06Z"
+      },
+      "imaging_studies.csv": {
+        "rows": 118428,
+        "bytes": 42553873,
+        "dateColumn": "DATE",
+        "earliest": "1918-11-09T12:51:32Z",
+        "latest": "2026-09-18T02:55:29Z"
+      },
+      "immunizations.csv": {
+        "rows": 106181,
+        "bytes": 14575702,
+        "dateColumn": "DATE",
+        "earliest": "1945-01-04T10:33:54Z",
+        "latest": "2026-09-21T22:20:06Z"
+      },
+      "medications.csv": {
+        "rows": 144423,
+        "bytes": 37948136,
+        "dateColumn": "START",
+        "earliest": "1916-03-15T14:04:14Z",
+        "latest": "2026-09-21T00:28:32Z"
+      },
+      "observations.csv": {
+        "rows": 3177865,
+        "bytes": 542265276,
+        "dateColumn": "DATE",
+        "earliest": "1915-11-27T11:13:42Z",
+        "latest": "2026-09-22T15:58:41Z"
+      },
+      "organizations.csv": {
+        "rows": 922,
+        "bytes": 155968,
+        "dateColumn": null,
+        "earliest": null,
+        "latest": null
+      },
+      "patients.csv": {
+        "rows": 2000,
+        "bytes": 599249,
+        "dateColumn": "BIRTHDATE",
+        "earliest": "1915-11-27",
+        "latest": "2026-09-04",
+        "alive": 1825,
+        "deceased": 175
+      },
+      "payers.csv": {
+        "rows": 10,
+        "bytes": 1891,
+        "dateColumn": null,
+        "earliest": null,
+        "latest": null
+      },
+      "payer_transitions.csv": {
+        "rows": 72810,
+        "bytes": 12359450,
+        "dateColumn": null,
+        "earliest": null,
+        "latest": null
+      },
+      "procedures.csv": {
+        "rows": 858056,
+        "bytes": 183884435,
+        "dateColumn": "START",
+        "earliest": "1915-11-27T11:13:42Z",
+        "latest": "2026-09-21T22:20:06Z"
+      },
+      "providers.csv": {
+        "rows": 922,
+        "bytes": 184401,
+        "dateColumn": null,
+        "earliest": null,
+        "latest": null
+      },
+      "supplies.csv": {
+        "rows": 124292,
+        "bytes": 17250432,
+        "dateColumn": "DATE",
+        "earliest": "1918-11-09",
+        "latest": "2026-09-21"
+      }
+    }
+  },
+  "dualFormatSample": {
+    "requested": 300,
+    "actual": 300,
+    "csvDirectory": "sample-300/csv",
+    "fhirDirectory": "sample-300/fhir",
+    "patientIdsInMainPopulation": 300,
+    "patientFhirCount": 300,
+    "csvPatientsWithFhir": 300,
+    "fhirFiles": 302,
+    "fhirResources": {
+      "Patient": 300,
+      "Encounter": 42555,
+      "Condition": 26828,
+      "Observation": 318363,
+      "Procedure": 131272,
+      "DiagnosticReport": 75169,
+      "DocumentReference": 42555,
+      "Claim": 63331,
+      "ExplanationOfBenefit": 63331,
+      "Immunization": 16134,
+      "MedicationRequest": 20776,
+      "Device": 4323,
+      "SupplyDelivery": 18754,
+      "Medication": 4740,
+      "MedicationAdministration": 4740,
+      "ImagingStudy": 3313,
+      "AllergyIntolerance": 309,
+      "CareTeam": 2500,
+      "CarePlan": 2500,
+      "Provenance": 300,
+      "Organization": 501,
+      "Location": 502,
+      "Practitioner": 501,
+      "PractitionerRole": 501
+    },
+    "files": {
+      "allergies.csv": {
+        "rows": 309,
+        "bytes": 55773,
+        "dateColumn": "START",
+        "earliest": "1950-05-30",
+        "latest": "2026-02-17"
+      },
+      "careplans.csv": {
+        "rows": 2500,
+        "bytes": 496426,
+        "dateColumn": "START",
+        "earliest": "1933-04-25",
+        "latest": "2026-09-16"
+      },
+      "claims.csv": {
+        "rows": 63331,
+        "bytes": 24021423,
+        "dateColumn": null,
+        "earliest": null,
+        "latest": null
+      },
+      "claims_transactions.csv": {
+        "rows": 611569,
+        "bytes": 276306766,
+        "dateColumn": null,
+        "earliest": null,
+        "latest": null
+      },
+      "conditions.csv": {
+        "rows": 26828,
+        "bytes": 4275286,
+        "dateColumn": "START",
+        "earliest": "1931-07-21",
+        "latest": "2026-09-21"
+      },
+      "devices.csv": {
+        "rows": 4323,
+        "bytes": 983952,
+        "dateColumn": "START",
+        "earliest": "1939-02-18T20:42:02Z",
+        "latest": "2026-09-10T18:57:08Z"
+      },
+      "encounters.csv": {
+        "rows": 42555,
+        "bytes": 14096655,
+        "dateColumn": "START",
+        "earliest": "1931-07-21T21:16:11Z",
+        "latest": "2026-09-21T20:13:08Z"
+      },
+      "imaging_studies.csv": {
+        "rows": 3605,
+        "bytes": 1438640,
+        "dateColumn": "DATE",
+        "earliest": "1933-07-10T21:16:11Z",
+        "latest": "2026-09-10T18:57:08Z"
+      },
+      "immunizations.csv": {
+        "rows": 16134,
+        "bytes": 2222439,
+        "dateColumn": "DATE",
+        "earliest": "1945-01-05T13:24:41Z",
+        "latest": "2026-09-20T02:32:23Z"
+      },
+      "medications.csv": {
+        "rows": 20776,
+        "bytes": 5451415,
+        "dateColumn": "START",
+        "earliest": "1932-07-15T21:16:11Z",
+        "latest": "2026-09-20T02:32:23Z"
+      },
+      "observations.csv": {
+        "rows": 499265,
+        "bytes": 85249550,
+        "dateColumn": "DATE",
+        "earliest": "1931-07-21T21:16:11Z",
+        "latest": "2026-09-22T15:58:41Z"
+      },
+      "organizations.csv": {
+        "rows": 501,
+        "bytes": 84734,
+        "dateColumn": null,
+        "earliest": null,
+        "latest": null
+      },
+      "patients.csv": {
+        "rows": 300,
+        "bytes": 90110,
+        "dateColumn": "BIRTHDATE",
+        "earliest": "1931-07-21",
+        "latest": "2026-06-07",
+        "alive": 276,
+        "deceased": 24
+      },
+      "payers.csv": {
+        "rows": 10,
+        "bytes": 1813,
+        "dateColumn": null,
+        "earliest": null,
+        "latest": null
+      },
+      "payer_transitions.csv": {
+        "rows": 11415,
+        "bytes": 1930031,
+        "dateColumn": null,
+        "earliest": null,
+        "latest": null
+      },
+      "procedures.csv": {
+        "rows": 131272,
+        "bytes": 29782617,
+        "dateColumn": "START",
+        "earliest": "1931-07-21T21:16:11Z",
+        "latest": "2026-09-21T08:56:51Z"
+      },
+      "providers.csv": {
+        "rows": 501,
+        "bytes": 100129,
+        "dateColumn": null,
+        "earliest": null,
+        "latest": null
+      },
+      "supplies.csv": {
+        "rows": 18754,
+        "bytes": 2592109,
+        "dateColumn": "DATE",
+        "earliest": "1935-07-02",
+        "latest": "2026-09-11"
+      }
+    }
+  },
+  "flags": "-s 20260923 -cs 20260923 -r 20260922 -e 20260922 -o false --exporter.years_of_history=0 --exporter.csv.export=true Massachusetts",
+  "note": "Raw complete-history CSV and FHIR remain synthetic records generated by the official simulator. Reference and end dates are fixed; build and runtime are pinned by SHA-256. Main CSV export disables FHIR; 300-person run enables FHIR plus practitioner and hospital bundles."
+}

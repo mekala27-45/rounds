@@ -1,0 +1,707 @@
+{
+  "retrievedAt": "2026-09-23T03:54:03.083Z",
+  "cms": {
+    "release": "2026-08-13",
+    "unplannedRows": 67060,
+    "hcahpsRows": 325720,
+    "readmissions": [
+      {
+        "id": "Hybrid_HWR",
+        "name": "Hybrid Hospital-Wide All-Cause Readmission Measure (HWR)",
+        "period": {
+          "start": "07/01/2024",
+          "end": "06/30/2025"
+        },
+        "hospitalScoreDistribution": {
+          "n": 0,
+          "mean": null,
+          "p25": null,
+          "median": null,
+          "p75": null,
+          "min": null,
+          "max": null
+        },
+        "massachusettsScoreDistribution": {
+          "n": 0,
+          "mean": null,
+          "p25": null,
+          "median": null,
+          "p75": null,
+          "min": null,
+          "max": null
+        }
+      },
+      {
+        "id": "READM_30_AMI",
+        "name": "Acute Myocardial Infarction (AMI) 30-Day Readmission Rate",
+        "period": {
+          "start": "07/01/2023",
+          "end": "06/30/2025"
+        },
+        "hospitalScoreDistribution": {
+          "n": 1971,
+          "mean": 14.389396245560606,
+          "p25": 13.9,
+          "median": 14.4,
+          "p75": 14.9,
+          "min": 11.4,
+          "max": 17.8
+        },
+        "massachusettsScoreDistribution": {
+          "n": 35,
+          "mean": 14.76,
+          "p25": 14.3,
+          "median": 14.6,
+          "p75": 15.3,
+          "min": 13.5,
+          "max": 16.4
+        }
+      },
+      {
+        "id": "READM_30_CABG",
+        "name": "Rate of readmission for CABG",
+        "period": {
+          "start": "07/01/2023",
+          "end": "06/30/2025"
+        },
+        "hospitalScoreDistribution": {
+          "n": 938,
+          "mean": 11.064605543710003,
+          "p25": 10.1,
+          "median": 10.9,
+          "p75": 12,
+          "min": 6.8,
+          "max": 16.4
+        },
+        "massachusettsScoreDistribution": {
+          "n": 13,
+          "mean": 10.815384615384614,
+          "p25": 10,
+          "median": 10.8,
+          "p75": 11.4,
+          "min": 8.8,
+          "max": 12.9
+        }
+      },
+      {
+        "id": "READM_30_COPD",
+        "name": "Rate of readmission for chronic obstructive pulmonary disease (COPD) patients",
+        "period": {
+          "start": "07/01/2023",
+          "end": "06/30/2025"
+        },
+        "hospitalScoreDistribution": {
+          "n": 3086,
+          "mean": 19.898088139987042,
+          "p25": 19.3,
+          "median": 19.8,
+          "p75": 20.4,
+          "min": 16.8,
+          "max": 25.3
+        },
+        "massachusettsScoreDistribution": {
+          "n": 51,
+          "mean": 20.362745098039213,
+          "p25": 19.7,
+          "median": 20.1,
+          "p75": 21.1,
+          "min": 18.5,
+          "max": 23.3
+        }
+      },
+      {
+        "id": "READM_30_HF",
+        "name": "Heart failure (HF) 30-Day Readmission Rate",
+        "period": {
+          "start": "07/01/2023",
+          "end": "06/30/2025"
+        },
+        "hospitalScoreDistribution": {
+          "n": 3253,
+          "mean": 21.37617583768834,
+          "p25": 20.6,
+          "median": 21.3,
+          "p75": 22.1,
+          "min": 17.1,
+          "max": 29.3
+        },
+        "massachusettsScoreDistribution": {
+          "n": 53,
+          "mean": 22.033962264150937,
+          "p25": 21.3,
+          "median": 21.9,
+          "p75": 23,
+          "min": 19.7,
+          "max": 25.2
+        }
+      },
+      {
+        "id": "READM_30_HIP_KNEE",
+        "name": "Rate of readmission after hip/knee replacement",
+        "period": {
+          "start": "07/01/2023",
+          "end": "06/30/2025"
+        },
+        "hospitalScoreDistribution": {
+          "n": 1695,
+          "mean": 5.827433628318582,
+          "p25": 5.4,
+          "median": 5.8,
+          "p75": 6.2,
+          "min": 3,
+          "max": 9.2
+        },
+        "massachusettsScoreDistribution": {
+          "n": 44,
+          "mean": 5.709090909090908,
+          "p25": 5.3,
+          "median": 5.7,
+          "p75": 6.2,
+          "min": 3.7,
+          "max": 7.6
+        }
+      },
+      {
+        "id": "READM_30_PN",
+        "name": "Pneumonia (PN) 30-Day Readmission Rate",
+        "period": {
+          "start": "07/01/2023",
+          "end": "06/30/2025"
+        },
+        "hospitalScoreDistribution": {
+          "n": 3758,
+          "mean": 17.3401809473125,
+          "p25": 16.7,
+          "median": 17.2,
+          "p75": 17.9,
+          "min": 13.9,
+          "max": 25.5
+        },
+        "massachusettsScoreDistribution": {
+          "n": 54,
+          "mean": 17.807407407407407,
+          "p25": 17.1,
+          "median": 17.95,
+          "p75": 18.3,
+          "min": 15.4,
+          "max": 19.6
+        }
+      }
+    ],
+    "experience": [
+      {
+        "id": "H_HSP_RATING_9_10",
+        "name": "Patients who gave their hospital a rating of 9 or 10 on a scale from 0 (lowest) to 10 (highest)",
+        "period": {
+          "start": "10/01/2024",
+          "end": "09/30/2025"
+        },
+        "hospitalAnswerPercentDistribution": {
+          "n": 3949,
+          "mean": 71.74905039250443,
+          "p25": 66,
+          "median": 72,
+          "p75": 78,
+          "min": 35,
+          "max": 100
+        },
+        "massachusettsAnswerPercentDistribution": {
+          "n": 56,
+          "mean": 67.55357142857143,
+          "p25": 63,
+          "median": 68,
+          "p75": 71.25,
+          "min": 45,
+          "max": 87
+        }
+      },
+      {
+        "id": "H_RECMND_DY",
+        "name": "Patients who reported YES, they would definitely recommend the hospital",
+        "period": {
+          "start": "10/01/2024",
+          "end": "09/30/2025"
+        },
+        "hospitalAnswerPercentDistribution": {
+          "n": 3949,
+          "mean": 71.22081539630287,
+          "p25": 65,
+          "median": 71,
+          "p75": 78,
+          "min": 22,
+          "max": 100
+        },
+        "massachusettsAnswerPercentDistribution": {
+          "n": 56,
+          "mean": 69.48214285714286,
+          "p25": 65,
+          "median": 70.5,
+          "p75": 75.25,
+          "min": 42,
+          "max": 93
+        }
+      },
+      {
+        "id": "H_COMP_1_A_P",
+        "name": "Patients who reported that their nurses \"Always\" communicated well",
+        "period": {
+          "start": "10/01/2024",
+          "end": "09/30/2025"
+        },
+        "hospitalAnswerPercentDistribution": {
+          "n": 3949,
+          "mean": 79.84983540136743,
+          "p25": 76,
+          "median": 80,
+          "p75": 84,
+          "min": 52,
+          "max": 100
+        },
+        "massachusettsAnswerPercentDistribution": {
+          "n": 56,
+          "mean": 79.30357142857143,
+          "p25": 77,
+          "median": 79,
+          "p75": 82,
+          "min": 66,
+          "max": 93
+        }
+      },
+      {
+        "id": "H_COMP_2_A_P",
+        "name": "Patients who reported that their doctors \"Always\" communicated well",
+        "period": {
+          "start": "10/01/2024",
+          "end": "09/30/2025"
+        },
+        "hospitalAnswerPercentDistribution": {
+          "n": 3949,
+          "mean": 79.66801721954926,
+          "p25": 76,
+          "median": 79,
+          "p75": 83,
+          "min": 55,
+          "max": 100
+        },
+        "massachusettsAnswerPercentDistribution": {
+          "n": 56,
+          "mean": 78.44642857142857,
+          "p25": 76,
+          "median": 78,
+          "p75": 80,
+          "min": 71,
+          "max": 94
+        }
+      },
+      {
+        "id": "H_CLEAN_HSP_A_P",
+        "name": "Patients who reported that their room and bathroom were \"Always\" clean",
+        "period": {
+          "start": "10/01/2024",
+          "end": "09/30/2025"
+        },
+        "hospitalAnswerPercentDistribution": {
+          "n": 3949,
+          "mean": 73.52241073689542,
+          "p25": 68,
+          "median": 73,
+          "p75": 80,
+          "min": 43,
+          "max": 100
+        },
+        "massachusettsAnswerPercentDistribution": {
+          "n": 56,
+          "mean": 69.53571428571429,
+          "p25": 65,
+          "median": 69,
+          "p75": 73,
+          "min": 50,
+          "max": 91
+        }
+      },
+      {
+        "id": "H_QUIET_HSP_A_P",
+        "name": "Patients who reported that the area around their room was \"Always\" quiet at night",
+        "period": {
+          "start": "10/01/2024",
+          "end": "09/30/2025"
+        },
+        "hospitalAnswerPercentDistribution": {
+          "n": 3949,
+          "mean": 59.49835401367435,
+          "p25": 52,
+          "median": 59,
+          "p75": 66,
+          "min": 28,
+          "max": 94
+        },
+        "massachusettsAnswerPercentDistribution": {
+          "n": 56,
+          "mean": 47.625,
+          "p25": 42,
+          "median": 46,
+          "p75": 51,
+          "min": 34,
+          "max": 75
+        }
+      }
+    ],
+    "method": "Unweighted descriptive distributions across reporting hospitals with numeric values. Not CMS national risk-standardized rates, not patient-weighted, and not directly comparable to synthetic raw measures.",
+    "modified": "2026-07-22",
+    "nationalReadmissions": [
+      {
+        "id": "EDAC_30_AMI",
+        "name": "Hospital return days for heart attack patients",
+        "nationalRate": null,
+        "start": "07/01/2022",
+        "end": "06/30/2025"
+      },
+      {
+        "id": "EDAC_30_HF",
+        "name": "Hospital return days for heart failure patients",
+        "nationalRate": null,
+        "start": "07/01/2022",
+        "end": "06/30/2025"
+      },
+      {
+        "id": "EDAC_30_PN",
+        "name": "Hospital return days for pneumonia patients",
+        "nationalRate": null,
+        "start": "07/01/2022",
+        "end": "06/30/2025"
+      },
+      {
+        "id": "Hybrid_HWR",
+        "name": "Hybrid Hospital-Wide All-Cause Readmission Measure (HWR)",
+        "nationalRate": null,
+        "start": "07/01/2024",
+        "end": "06/30/2025"
+      },
+      {
+        "id": "OP_32",
+        "name": "Rate of unplanned hospital visits after colonoscopy (per 1,000 colonoscopies)",
+        "nationalRate": 13,
+        "start": "01/01/2022",
+        "end": "12/31/2024"
+      },
+      {
+        "id": "OP_35_ADM",
+        "name": "Rate of inpatient admissions for patients receiving outpatient chemotherapy",
+        "nationalRate": 10.7,
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      {
+        "id": "OP_35_ED",
+        "name": "Rate of emergency department (ED) visits for patients receiving outpatient chemotherapy",
+        "nationalRate": 5.4,
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      {
+        "id": "OP_36",
+        "name": "Ratio of unplanned hospital visits after hospital outpatient surgery",
+        "nationalRate": null,
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      {
+        "id": "READM_30_AMI",
+        "name": "Acute Myocardial Infarction (AMI) 30-Day Readmission Rate",
+        "nationalRate": 14.4,
+        "start": "07/01/2023",
+        "end": "06/30/2025"
+      },
+      {
+        "id": "READM_30_CABG",
+        "name": "Rate of readmission for CABG",
+        "nationalRate": 11,
+        "start": "07/01/2023",
+        "end": "06/30/2025"
+      },
+      {
+        "id": "READM_30_COPD",
+        "name": "Rate of readmission for chronic obstructive pulmonary disease (COPD) patients",
+        "nationalRate": 20,
+        "start": "07/01/2023",
+        "end": "06/30/2025"
+      },
+      {
+        "id": "READM_30_HF",
+        "name": "Heart failure (HF) 30-Day Readmission Rate",
+        "nationalRate": 21.3,
+        "start": "07/01/2023",
+        "end": "06/30/2025"
+      },
+      {
+        "id": "READM_30_HIP_KNEE",
+        "name": "Rate of readmission after hip/knee replacement",
+        "nationalRate": 5.8,
+        "start": "07/01/2023",
+        "end": "06/30/2025"
+      },
+      {
+        "id": "READM_30_PN",
+        "name": "Pneumonia (PN) 30-Day Readmission Rate",
+        "nationalRate": 17.3,
+        "start": "07/01/2023",
+        "end": "06/30/2025"
+      }
+    ],
+    "nationalExperience": [
+      {
+        "id": "H_COMP_1_A_P",
+        "name": "Patients who reported that their nurses \"Always\" communicated well",
+        "answerPercent": 80,
+        "start": "10/01/2024",
+        "end": "09/30/2025"
+      },
+      {
+        "id": "H_COMP_2_A_P",
+        "name": "Patients who reported that their doctors \"Always\" communicated well",
+        "answerPercent": 80,
+        "start": "10/01/2024",
+        "end": "09/30/2025"
+      },
+      {
+        "id": "H_CLEAN_HSP_A_P",
+        "name": "Patients who reported that their room and bathroom were \"Always\" clean",
+        "answerPercent": 74,
+        "start": "10/01/2024",
+        "end": "09/30/2025"
+      },
+      {
+        "id": "H_QUIET_HSP_A_P",
+        "name": "Patients who reported that the area around their room was \"Always\" quiet at night",
+        "answerPercent": 60,
+        "start": "10/01/2024",
+        "end": "09/30/2025"
+      },
+      {
+        "id": "H_HSP_RATING_9_10",
+        "name": "Patients who gave their hospital a rating of 9 or 10 on a scale from 0 (lowest) to 10 (highest)",
+        "answerPercent": 72,
+        "start": "10/01/2024",
+        "end": "09/30/2025"
+      },
+      {
+        "id": "H_RECMND_DY",
+        "name": "Patients who reported YES, they would definitely recommend the hospital",
+        "answerPercent": 71,
+        "start": "10/01/2024",
+        "end": "09/30/2025"
+      }
+    ]
+  },
+  "uci": {
+    "encounters": 101766,
+    "patients": 71518,
+    "columns": [
+      "encounter_id",
+      "patient_nbr",
+      "race",
+      "gender",
+      "age",
+      "weight",
+      "admission_type_id",
+      "discharge_disposition_id",
+      "admission_source_id",
+      "time_in_hospital",
+      "payer_code",
+      "medical_specialty",
+      "num_lab_procedures",
+      "num_procedures",
+      "num_medications",
+      "number_outpatient",
+      "number_emergency",
+      "number_inpatient",
+      "diag_1",
+      "diag_2",
+      "diag_3",
+      "number_diagnoses",
+      "max_glu_serum",
+      "A1Cresult",
+      "metformin",
+      "repaglinide",
+      "nateglinide",
+      "chlorpropamide",
+      "glimepiride",
+      "acetohexamide",
+      "glipizide",
+      "glyburide",
+      "tolbutamide",
+      "pioglitazone",
+      "rosiglitazone",
+      "acarbose",
+      "miglitol",
+      "troglitazone",
+      "tolazamide",
+      "examide",
+      "citoglipton",
+      "insulin",
+      "glyburide-metformin",
+      "glipizide-metformin",
+      "glimepiride-pioglitazone",
+      "metformin-rosiglitazone",
+      "metformin-pioglitazone",
+      "change",
+      "diabetesMed",
+      "readmitted"
+    ],
+    "readmissionCounts": {
+      "NO": 54864,
+      ">30": 35545,
+      "<30": 11357
+    },
+    "datesPresent": false,
+    "limitation": "No actual admission, discharge, or observation dates. Encounter identifiers are not proven timestamps. This dataset cannot establish true temporal external validation or prediction-time feature availability."
+  },
+  "svi": {
+    "vintage": 2022,
+    "rankingPopulation": "Other Massachusetts counties or tracts of the same geography type, not national percentiles",
+    "tracts": 1613,
+    "counties": [
+      {
+        "fips": "25001",
+        "county": "Barnstable County",
+        "population": 229436,
+        "overallPercentile": 0,
+        "socioeconomicPercentile": 0.1538,
+        "householdCharacteristicsPercentile": 0.3077,
+        "racialEthnicMinorityStatusPercentile": 0.0769,
+        "housingTransportationPercentile": 0.0769
+      },
+      {
+        "fips": "25003",
+        "county": "Berkshire County",
+        "population": 128763,
+        "overallPercentile": 0.5385,
+        "socioeconomicPercentile": 0.4615,
+        "householdCharacteristicsPercentile": 0.4615,
+        "racialEthnicMinorityStatusPercentile": 0.1538,
+        "housingTransportationPercentile": 0.5385
+      },
+      {
+        "fips": "25005",
+        "county": "Bristol County",
+        "population": 576699,
+        "overallPercentile": 0.7692,
+        "socioeconomicPercentile": 0.8462,
+        "householdCharacteristicsPercentile": 0.8462,
+        "racialEthnicMinorityStatusPercentile": 0.3846,
+        "housingTransportationPercentile": 0.6154
+      },
+      {
+        "fips": "25007",
+        "county": "Dukes County",
+        "population": 20543,
+        "overallPercentile": 0.2308,
+        "socioeconomicPercentile": 0.6923,
+        "householdCharacteristicsPercentile": 0.3846,
+        "racialEthnicMinorityStatusPercentile": 0.3077,
+        "housingTransportationPercentile": 0
+      },
+      {
+        "fips": "25009",
+        "county": "Essex County",
+        "population": 806103,
+        "overallPercentile": 0.8462,
+        "socioeconomicPercentile": 0.6154,
+        "householdCharacteristicsPercentile": 0.9231,
+        "racialEthnicMinorityStatusPercentile": 0.8462,
+        "housingTransportationPercentile": 0.7692
+      },
+      {
+        "fips": "25011",
+        "county": "Franklin County",
+        "population": 70980,
+        "overallPercentile": 0.6154,
+        "socioeconomicPercentile": 0.7692,
+        "householdCharacteristicsPercentile": 0.6923,
+        "racialEthnicMinorityStatusPercentile": 0,
+        "housingTransportationPercentile": 0.3077
+      },
+      {
+        "fips": "25013",
+        "county": "Hampden County",
+        "population": 464575,
+        "overallPercentile": 1,
+        "socioeconomicPercentile": 0.9231,
+        "householdCharacteristicsPercentile": 1,
+        "racialEthnicMinorityStatusPercentile": 0.9231,
+        "housingTransportationPercentile": 0.9231
+      },
+      {
+        "fips": "25015",
+        "county": "Hampshire County",
+        "population": 153931,
+        "overallPercentile": 0.3077,
+        "socioeconomicPercentile": 0.3077,
+        "householdCharacteristicsPercentile": 0.2308,
+        "racialEthnicMinorityStatusPercentile": 0.2308,
+        "housingTransportationPercentile": 0.3846
+      },
+      {
+        "fips": "25017",
+        "county": "Middlesex County",
+        "population": 1623109,
+        "overallPercentile": 0.4615,
+        "socioeconomicPercentile": 0.0769,
+        "householdCharacteristicsPercentile": 0.0769,
+        "racialEthnicMinorityStatusPercentile": 0.7692,
+        "housingTransportationPercentile": 0.8462
+      },
+      {
+        "fips": "25019",
+        "county": "Nantucket County",
+        "population": 14065,
+        "overallPercentile": 0.0769,
+        "socioeconomicPercentile": 0.3077,
+        "householdCharacteristicsPercentile": 0,
+        "racialEthnicMinorityStatusPercentile": 0.6923,
+        "housingTransportationPercentile": 0.1538
+      },
+      {
+        "fips": "25021",
+        "county": "Norfolk County",
+        "population": 722112,
+        "overallPercentile": 0.1538,
+        "socioeconomicPercentile": 0,
+        "householdCharacteristicsPercentile": 0.1538,
+        "racialEthnicMinorityStatusPercentile": 0.6154,
+        "housingTransportationPercentile": 0.4615
+      },
+      {
+        "fips": "25023",
+        "county": "Plymouth County",
+        "population": 529548,
+        "overallPercentile": 0.3846,
+        "socioeconomicPercentile": 0.2308,
+        "householdCharacteristicsPercentile": 0.6154,
+        "racialEthnicMinorityStatusPercentile": 0.4615,
+        "housingTransportationPercentile": 0.2308
+      },
+      {
+        "fips": "25025",
+        "county": "Suffolk County",
+        "population": 785443,
+        "overallPercentile": 0.9231,
+        "socioeconomicPercentile": 1,
+        "householdCharacteristicsPercentile": 0.5385,
+        "racialEthnicMinorityStatusPercentile": 1,
+        "housingTransportationPercentile": 1
+      },
+      {
+        "fips": "25027",
+        "county": "Worcester County",
+        "population": 858898,
+        "overallPercentile": 0.6923,
+        "socioeconomicPercentile": 0.5385,
+        "householdCharacteristicsPercentile": 0.7692,
+        "racialEthnicMinorityStatusPercentile": 0.5385,
+        "housingTransportationPercentile": 0.6154
+      }
+    ],
+    "spatialLimitation": "Area-level context is not individual social need. Join synthetic coordinates to matching-vintage tract geometry using point-in-polygon, not town names or arbitrary nearest tract. Counties can be joined via county FIPS. Postal ZIP codes and Census ZCTAs are not identical. Missing sentinel values such as -999 are not low vulnerability."
+  }
+}

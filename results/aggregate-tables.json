@@ -1,0 +1,1279 @@
+{
+  "statement": "This is a portfolio demonstration on synthetic data. It is not a medical device, has not been validated for clinical use, and must not be used to make decisions about real patients.",
+  "department_metrics": [
+    {
+      "department": "ed",
+      "label": "Emergency encounters",
+      "value": 13032,
+      "unit": "",
+      "note": "Lifetime source classification"
+    },
+    {
+      "department": "ed",
+      "label": "Median visit duration",
+      "value": 1.0,
+      "unit": "hours",
+      "note": "Encounter start to stop"
+    },
+    {
+      "department": "inpatient",
+      "label": "Inpatient admissions",
+      "value": 1969,
+      "unit": "",
+      "note": ""
+    },
+    {
+      "department": "inpatient",
+      "label": "30-day return rate",
+      "value": 9.11,
+      "unit": "%",
+      "note": "All-cause; complete follow-up"
+    },
+    {
+      "department": "inpatient",
+      "label": "Eligible discharges",
+      "value": 1922,
+      "unit": "",
+      "note": ""
+    },
+    {
+      "department": "beds",
+      "label": "Median stay",
+      "value": 3.01,
+      "unit": "days",
+      "note": ""
+    },
+    {
+      "department": "beds",
+      "label": "Bed capacity",
+      "value": null,
+      "unit": "",
+      "note": "Not in source"
+    },
+    {
+      "department": "icu",
+      "label": "NEWS2 eligibility",
+      "value": null,
+      "unit": "",
+      "note": "Unavailable"
+    },
+    {
+      "department": "icu",
+      "label": "ICU census",
+      "value": null,
+      "unit": "",
+      "note": "No reliable ICU unit field"
+    },
+    {
+      "department": "primary-care",
+      "label": "Living patients",
+      "value": 1825,
+      "unit": "",
+      "note": ""
+    },
+    {
+      "department": "primary-care",
+      "label": "Diabetes registry",
+      "value": 137,
+      "unit": "",
+      "note": ""
+    },
+    {
+      "department": "primary-care",
+      "label": "Hypertension registry",
+      "value": 425,
+      "unit": "",
+      "note": ""
+    },
+    {
+      "department": "pharmacy",
+      "label": "Medication records",
+      "value": 144423,
+      "unit": "",
+      "note": ""
+    },
+    {
+      "department": "pharmacy",
+      "label": "Recorded drug codes",
+      "value": 281,
+      "unit": "",
+      "note": ""
+    },
+    {
+      "department": "lab",
+      "label": "Numeric observations",
+      "value": 2061403,
+      "unit": "",
+      "note": ""
+    },
+    {
+      "department": "lab",
+      "label": "Numeric code types",
+      "value": 206,
+      "unit": "",
+      "note": ""
+    },
+    {
+      "department": "imaging",
+      "label": "Imaging instances",
+      "value": 118428,
+      "unit": "",
+      "note": ""
+    },
+    {
+      "department": "imaging",
+      "label": "Distinct imaging encounters",
+      "value": 20770,
+      "unit": "",
+      "note": ""
+    },
+    {
+      "department": "surgery",
+      "label": "Procedure records",
+      "value": 858056,
+      "unit": "",
+      "note": ""
+    },
+    {
+      "department": "finance",
+      "label": "Recorded encounter claims",
+      "value": 894479962.84,
+      "unit": "USD",
+      "note": "Synthetic billed-claim totals"
+    },
+    {
+      "department": "finance",
+      "label": "Mean claim per encounter",
+      "value": 3081.61,
+      "unit": "USD",
+      "note": ""
+    },
+    {
+      "department": "informatics",
+      "label": "Patients de-identified",
+      "value": 2000,
+      "unit": "",
+      "note": ""
+    },
+    {
+      "department": "informatics",
+      "label": "Observed checks passing",
+      "value": 13,
+      "unit": "",
+      "note": ""
+    },
+    {
+      "department": "informatics",
+      "label": "Minimum diagnostic k",
+      "value": 1,
+      "unit": "",
+      "note": ""
+    }
+  ],
+  "cohort_counts": [
+    {
+      "cohort_id": "diabetes",
+      "sex": "M",
+      "age_band": "50-59",
+      "count": 22,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "diabetes",
+      "sex": "F",
+      "age_band": "60-69",
+      "count": 25,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "diabetes",
+      "sex": "F",
+      "age_band": "50-59",
+      "count": 17,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "diabetes",
+      "sex": "F",
+      "age_band": "80-89",
+      "count": 9,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "diabetes",
+      "sex": "M",
+      "age_band": "70-79",
+      "count": 10,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "diabetes",
+      "sex": "M",
+      "age_band": "60-69",
+      "count": 19,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "diabetes",
+      "sex": "M",
+      "age_band": "80-89",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "diabetes",
+      "sex": "F",
+      "age_band": "70-79",
+      "count": 10,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "diabetes",
+      "sex": "M",
+      "age_band": "30-39",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "diabetes",
+      "sex": "F",
+      "age_band": "90+",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "diabetes",
+      "sex": "M",
+      "age_band": "90+",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "diabetes",
+      "sex": "M",
+      "age_band": "20-29",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "diabetes",
+      "sex": "M",
+      "age_band": "40-49",
+      "count": 8,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "diabetes",
+      "sex": "F",
+      "age_band": "40-49",
+      "count": 6,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "hypertension",
+      "sex": "F",
+      "age_band": "60-69",
+      "count": 52,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "hypertension",
+      "sex": "F",
+      "age_band": "50-59",
+      "count": 46,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "hypertension",
+      "sex": "M",
+      "age_band": "30-39",
+      "count": 11,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "hypertension",
+      "sex": "M",
+      "age_band": "80-89",
+      "count": 21,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "hypertension",
+      "sex": "M",
+      "age_band": "50-59",
+      "count": 80,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "hypertension",
+      "sex": "M",
+      "age_band": "70-79",
+      "count": 29,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "hypertension",
+      "sex": "M",
+      "age_band": "60-69",
+      "count": 67,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "hypertension",
+      "sex": "F",
+      "age_band": "30-39",
+      "count": 14,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "hypertension",
+      "sex": "F",
+      "age_band": "90+",
+      "count": 6,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "hypertension",
+      "sex": "F",
+      "age_band": "80-89",
+      "count": 9,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "hypertension",
+      "sex": "F",
+      "age_band": "20-29",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "hypertension",
+      "sex": "F",
+      "age_band": "70-79",
+      "count": 30,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "hypertension",
+      "sex": "M",
+      "age_band": "90+",
+      "count": 8,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "hypertension",
+      "sex": "M",
+      "age_band": "20-29",
+      "count": 5,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "hypertension",
+      "sex": "M",
+      "age_band": "40-49",
+      "count": 30,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "hypertension",
+      "sex": "F",
+      "age_band": "40-49",
+      "count": 13,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "ckd",
+      "sex": "M",
+      "age_band": "40-49",
+      "count": 9,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "ckd",
+      "sex": "F",
+      "age_band": "40-49",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "ckd",
+      "sex": "F",
+      "age_band": "50-59",
+      "count": 9,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "ckd",
+      "sex": "M",
+      "age_band": "50-59",
+      "count": 24,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "ckd",
+      "sex": "M",
+      "age_band": "70-79",
+      "count": 14,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "ckd",
+      "sex": "M",
+      "age_band": "80-89",
+      "count": 9,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "ckd",
+      "sex": "M",
+      "age_band": "60-69",
+      "count": 25,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "ckd",
+      "sex": "F",
+      "age_band": "60-69",
+      "count": 25,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "ckd",
+      "sex": "F",
+      "age_band": "80-89",
+      "count": 8,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "ckd",
+      "sex": "F",
+      "age_band": "70-79",
+      "count": 15,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "ckd",
+      "sex": "M",
+      "age_band": "90+",
+      "count": 8,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "ckd",
+      "sex": "F",
+      "age_band": "90+",
+      "count": 6,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "ckd",
+      "sex": "M",
+      "age_band": "20-29",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "ckd",
+      "sex": "F",
+      "age_band": "30-39",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "ckd",
+      "sex": "M",
+      "age_band": "30-39",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "copd",
+      "sex": "M",
+      "age_band": "50-59",
+      "count": 9,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "copd",
+      "sex": "F",
+      "age_band": "30-39",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "copd",
+      "sex": "F",
+      "age_band": "60-69",
+      "count": 10,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "copd",
+      "sex": "F",
+      "age_band": "70-79",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "copd",
+      "sex": "F",
+      "age_band": "50-59",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "copd",
+      "sex": "M",
+      "age_band": "60-69",
+      "count": 9,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "copd",
+      "sex": "F",
+      "age_band": "90+",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "copd",
+      "sex": "M",
+      "age_band": "30-39",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "copd",
+      "sex": "M",
+      "age_band": "20-29",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "copd",
+      "sex": "M",
+      "age_band": "70-79",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "copd",
+      "sex": "M",
+      "age_band": "80-89",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "copd",
+      "sex": "F",
+      "age_band": "80-89",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "copd",
+      "sex": "M",
+      "age_band": "40-49",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "copd",
+      "sex": "F",
+      "age_band": "40-49",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "asthma",
+      "sex": "F",
+      "age_band": "20-29",
+      "count": 6,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "asthma",
+      "sex": "F",
+      "age_band": "50-59",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "asthma",
+      "sex": "M",
+      "age_band": "50-59",
+      "count": 6,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "asthma",
+      "sex": "M",
+      "age_band": "60-69",
+      "count": 5,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "asthma",
+      "sex": "F",
+      "age_band": "60-69",
+      "count": 6,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "asthma",
+      "sex": "M",
+      "age_band": "30-39",
+      "count": 8,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "asthma",
+      "sex": "M",
+      "age_band": "20-29",
+      "count": 7,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "asthma",
+      "sex": "F",
+      "age_band": "10-19",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "asthma",
+      "sex": "M",
+      "age_band": "80-89",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "asthma",
+      "sex": "F",
+      "age_band": "70-79",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "asthma",
+      "sex": "F",
+      "age_band": "30-39",
+      "count": 5,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "asthma",
+      "sex": "M",
+      "age_band": "90+",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "asthma",
+      "sex": "M",
+      "age_band": "70-79",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "asthma",
+      "sex": "M",
+      "age_band": "40-49",
+      "count": 5,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "asthma",
+      "sex": "F",
+      "age_band": "0-17",
+      "count": 10,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "asthma",
+      "sex": "M",
+      "age_band": "0-17",
+      "count": 13,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "asthma",
+      "sex": "F",
+      "age_band": "40-49",
+      "count": 9,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "heart-failure",
+      "sex": "M",
+      "age_band": "60-69",
+      "count": 8,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "heart-failure",
+      "sex": "F",
+      "age_band": "50-59",
+      "count": 6,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "heart-failure",
+      "sex": "F",
+      "age_band": "80-89",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "heart-failure",
+      "sex": "M",
+      "age_band": "80-89",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "heart-failure",
+      "sex": "F",
+      "age_band": "70-79",
+      "count": 5,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "heart-failure",
+      "sex": "M",
+      "age_band": "50-59",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "heart-failure",
+      "sex": "F",
+      "age_band": "30-39",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "heart-failure",
+      "sex": "M",
+      "age_band": "70-79",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "heart-failure",
+      "sex": "F",
+      "age_band": "60-69",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "heart-failure",
+      "sex": "M",
+      "age_band": "90+",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "heart-failure",
+      "sex": "F",
+      "age_band": "40-49",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "ischemic-heart",
+      "sex": "M",
+      "age_band": "60-69",
+      "count": 42,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "ischemic-heart",
+      "sex": "M",
+      "age_band": "80-89",
+      "count": 23,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "ischemic-heart",
+      "sex": "M",
+      "age_band": "70-79",
+      "count": 37,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "ischemic-heart",
+      "sex": "F",
+      "age_band": "50-59",
+      "count": 14,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "ischemic-heart",
+      "sex": "M",
+      "age_band": "50-59",
+      "count": 27,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "ischemic-heart",
+      "sex": "F",
+      "age_band": "90+",
+      "count": 10,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "ischemic-heart",
+      "sex": "F",
+      "age_band": "60-69",
+      "count": 27,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "ischemic-heart",
+      "sex": "F",
+      "age_band": "80-89",
+      "count": 14,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "ischemic-heart",
+      "sex": "F",
+      "age_band": "70-79",
+      "count": 26,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "ischemic-heart",
+      "sex": "M",
+      "age_band": "90+",
+      "count": 15,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "ischemic-heart",
+      "sex": "F",
+      "age_band": "40-49",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "ischemic-heart",
+      "sex": "M",
+      "age_band": "40-49",
+      "count": 5,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "stroke",
+      "sex": "M",
+      "age_band": "50-59",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "stroke",
+      "sex": "F",
+      "age_band": "80-89",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "stroke",
+      "sex": "F",
+      "age_band": "30-39",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "stroke",
+      "sex": "F",
+      "age_band": "50-59",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "stroke",
+      "sex": "F",
+      "age_band": "90+",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "stroke",
+      "sex": "M",
+      "age_band": "60-69",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "stroke",
+      "sex": "M",
+      "age_band": "80-89",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "stroke",
+      "sex": "F",
+      "age_band": "60-69",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "stroke",
+      "sex": "M",
+      "age_band": "70-79",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "stroke",
+      "sex": "M",
+      "age_band": "90+",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "obesity",
+      "sex": "M",
+      "age_band": "60-69",
+      "count": 96,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "obesity",
+      "sex": "F",
+      "age_band": "60-69",
+      "count": 95,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "obesity",
+      "sex": "F",
+      "age_band": "50-59",
+      "count": 121,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "obesity",
+      "sex": "M",
+      "age_band": "80-89",
+      "count": 26,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "obesity",
+      "sex": "M",
+      "age_band": "50-59",
+      "count": 127,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "obesity",
+      "sex": "F",
+      "age_band": "70-79",
+      "count": 55,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "obesity",
+      "sex": "M",
+      "age_band": "30-39",
+      "count": 47,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "obesity",
+      "sex": "M",
+      "age_band": "70-79",
+      "count": 42,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "obesity",
+      "sex": "F",
+      "age_band": "30-39",
+      "count": 43,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "obesity",
+      "sex": "M",
+      "age_band": "20-29",
+      "count": 24,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "obesity",
+      "sex": "F",
+      "age_band": "90+",
+      "count": 12,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "obesity",
+      "sex": "F",
+      "age_band": "80-89",
+      "count": 17,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "obesity",
+      "sex": "F",
+      "age_band": "20-29",
+      "count": 16,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "obesity",
+      "sex": "M",
+      "age_band": "90+",
+      "count": 9,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "obesity",
+      "sex": "M",
+      "age_band": "40-49",
+      "count": 87,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "obesity",
+      "sex": "F",
+      "age_band": "40-49",
+      "count": 84,
+      "suppressed": false
+    },
+    {
+      "cohort_id": "depression",
+      "sex": "F",
+      "age_band": "80-89",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "depression",
+      "sex": "M",
+      "age_band": "50-59",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "depression",
+      "sex": "M",
+      "age_band": "90+",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "depression",
+      "sex": "M",
+      "age_band": "60-69",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "depression",
+      "sex": "M",
+      "age_band": "20-29",
+      "count": null,
+      "suppressed": true
+    },
+    {
+      "cohort_id": "depression",
+      "sex": "F",
+      "age_band": "40-49",
+      "count": null,
+      "suppressed": true
+    }
+  ],
+  "measures": [
+    {
+      "id": "return30",
+      "name": "30-day all-cause inpatient return",
+      "numerator": 175,
+      "denominator": 1922,
+      "value": 9.11,
+      "unit": "%",
+      "definition": "Simplified all-cause return; no planned-admission algorithm or transfer adjudication. Complete follow-up only. Lifetime index admissions.",
+      "exclusions": "Discharge plus 30 days exceeds shifted observation end; death during follow-up. Not CMS-certified.",
+      "department": "inpatient"
+    },
+    {
+      "id": "annual-wellness",
+      "name": "Wellness visit in past year",
+      "numerator": 1478,
+      "denominator": 1825,
+      "value": 80.99,
+      "unit": "%",
+      "definition": "Living patients with a recorded wellness encounter in the preceding 365 days.",
+      "exclusions": "Deceased patients and missing or out-of-window observations excluded where stated.",
+      "department": "primary-care"
+    },
+    {
+      "id": "diabetes-a1c",
+      "name": "Diabetes: recent HbA1c recorded",
+      "numerator": 112,
+      "denominator": 113,
+      "value": 99.12,
+      "unit": "%",
+      "definition": "Simplified documentation measure: living lifetime diabetes cohort with LOINC 4548-4 recorded during the prior 365 days. No clinical adequacy threshold.",
+      "exclusions": "Deceased patients and missing or out-of-window observations excluded where stated.",
+      "department": "primary-care"
+    },
+    {
+      "id": "hypertension-bp",
+      "name": "Hypertension: recent systolic BP recorded",
+      "numerator": 349,
+      "denominator": 352,
+      "value": 99.15,
+      "unit": "%",
+      "definition": "Simplified documentation measure: living lifetime hypertension cohort with LOINC 8480-6 recorded during the prior 365 days. No clinical adequacy threshold.",
+      "exclusions": "Deceased patients and missing or out-of-window observations excluded where stated.",
+      "department": "primary-care"
+    },
+    {
+      "id": "ckd-creatinine",
+      "name": "CKD: recent creatinine recorded",
+      "numerator": 87,
+      "denominator": 109,
+      "value": 79.82,
+      "unit": "%",
+      "definition": "Simplified documentation measure: living lifetime ckd cohort with LOINC 38483-4 recorded during the prior 365 days. No clinical adequacy threshold.",
+      "exclusions": "Deceased patients and missing or out-of-window observations excluded where stated.",
+      "department": "primary-care"
+    },
+    {
+      "id": "obesity-bmi",
+      "name": "Obesity: recent BMI recorded",
+      "numerator": 697,
+      "denominator": 794,
+      "value": 87.78,
+      "unit": "%",
+      "definition": "Simplified documentation measure: living lifetime obesity cohort with LOINC 39156-5 recorded during the prior 365 days. No clinical adequacy threshold.",
+      "exclusions": "Deceased patients and missing or out-of-window observations excluded where stated.",
+      "department": "primary-care"
+    },
+    {
+      "id": "adult-bp",
+      "name": "Adults: recent blood pressure recorded",
+      "numerator": 1099,
+      "denominator": 1424,
+      "value": 77.18,
+      "unit": "%",
+      "definition": "Living adults with systolic blood pressure in the prior 365 days.",
+      "exclusions": "Deceased patients and missing or out-of-window observations excluded where stated.",
+      "department": "primary-care"
+    },
+    {
+      "id": "adult-bmi",
+      "name": "Adults: recent BMI recorded",
+      "numerator": 1097,
+      "denominator": 1424,
+      "value": 77.04,
+      "unit": "%",
+      "definition": "Living adults with BMI documented in the prior 365 days.",
+      "exclusions": "Deceased patients and missing or out-of-window observations excluded where stated.",
+      "department": "primary-care"
+    },
+    {
+      "id": "flu-record",
+      "name": "Influenza immunization recorded",
+      "numerator": 1452,
+      "denominator": 1825,
+      "value": 79.56,
+      "unit": "%",
+      "definition": "Living patients with a source description containing influenza in the prior 365 days. Documentation-only; no age or seasonal eligibility certification.",
+      "exclusions": "Deceased patients and missing or out-of-window observations excluded where stated.",
+      "department": "primary-care"
+    },
+    {
+      "id": "followup-coverage",
+      "name": "Readmission follow-up completeness",
+      "numerator": 1922,
+      "denominator": 1969,
+      "value": 97.61,
+      "unit": "%",
+      "definition": "Admissions with an observable 30-day outcome window. Data coverage, not clinical performance.",
+      "exclusions": "No exclusions from admission denominator.",
+      "department": "informatics"
+    }
+  ],
+  "monthly_activity": [
+    {
+      "label": "2025-09",
+      "encounters": 662,
+      "admissions": 2,
+      "readmission_rate": null
+    },
+    {
+      "label": "2025-10",
+      "encounters": 734,
+      "admissions": 12,
+      "readmission_rate": null
+    },
+    {
+      "label": "2025-11",
+      "encounters": 692,
+      "admissions": 10,
+      "readmission_rate": null
+    },
+    {
+      "label": "2025-12",
+      "encounters": 728,
+      "admissions": 3,
+      "readmission_rate": null
+    },
+    {
+      "label": "2026-01",
+      "encounters": 683,
+      "admissions": 12,
+      "readmission_rate": null
+    },
+    {
+      "label": "2026-02",
+      "encounters": 640,
+      "admissions": 9,
+      "readmission_rate": null
+    },
+    {
+      "label": "2026-03",
+      "encounters": 690,
+      "admissions": 4,
+      "readmission_rate": null
+    },
+    {
+      "label": "2026-04",
+      "encounters": 654,
+      "admissions": 7,
+      "readmission_rate": null
+    },
+    {
+      "label": "2026-05",
+      "encounters": 605,
+      "admissions": 4,
+      "readmission_rate": null
+    },
+    {
+      "label": "2026-06",
+      "encounters": 526,
+      "admissions": 2,
+      "readmission_rate": null
+    },
+    {
+      "label": "2026-07",
+      "encounters": 523,
+      "admissions": 4,
+      "readmission_rate": null
+    },
+    {
+      "label": "2026-08",
+      "encounters": 475,
+      "admissions": 4,
+      "readmission_rate": null
+    }
+  ],
+  "suppression": "Cohort cells with fewer than 5 people are null. No person IDs or individual records. This is a synthetic demonstration, not a disclosure-control certification."
+}

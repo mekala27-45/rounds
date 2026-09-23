@@ -1,0 +1,147 @@
+{
+  "status": "separate_benchmark",
+  "source": "https://archive.ics.uci.edu/dataset/296/diabetes+130-us+hospitals+for+years+1999-2008",
+  "license": "CC BY 4.0",
+  "method": "Patient-disjoint deterministic hash split 70/15/15, logistic baseline with held-out Platt calibration. Features are age-band midpoint and recorded prior-year outpatient, ED, and inpatient visit counts.",
+  "features": [
+    "age_mid",
+    "number_outpatient",
+    "number_emergency",
+    "number_inpatient"
+  ],
+  "split": {
+    "train_encounters": 70607,
+    "calibration_encounters": 15060,
+    "test_encounters": 15244,
+    "train_patients": 49561,
+    "test_patients": 10716,
+    "patient_overlap": 0
+  },
+  "metrics": {
+    "n": 15244,
+    "positives": 1712,
+    "positive_rate": 0.11230648123852008,
+    "auroc": 0.6155786016738448,
+    "auprc": 0.19046496230352847,
+    "brier": 0.0970597196472626,
+    "ece": 0.005701423979245377
+  },
+  "calibration": [
+    {
+      "predicted": 0.08652262700279084,
+      "observed": 0.08616553378648541,
+      "n": 10004,
+      "lower": 0.0,
+      "upper": 0.1
+    },
+    {
+      "predicted": 0.12853436899604673,
+      "observed": 0.14068021201413428,
+      "n": 4528,
+      "lower": 0.1,
+      "upper": 0.2
+    },
+    {
+      "predicted": 0.23471247933873457,
+      "observed": 0.2645739910313901,
+      "n": 446,
+      "lower": 0.2,
+      "upper": 0.30000000000000004
+    },
+    {
+      "predicted": 0.33884210938487985,
+      "observed": 0.30120481927710846,
+      "n": 166,
+      "lower": 0.30000000000000004,
+      "upper": 0.4
+    },
+    {
+      "predicted": 0.4460412779551086,
+      "observed": 0.35294117647058826,
+      "n": 51,
+      "lower": 0.4,
+      "upper": 0.5
+    },
+    {
+      "predicted": 0.5383143894568586,
+      "observed": 0.5454545454545454,
+      "n": 22,
+      "lower": 0.5,
+      "upper": 0.6000000000000001
+    },
+    {
+      "predicted": 0.6391005833709446,
+      "observed": 0.5714285714285714,
+      "n": 14,
+      "lower": 0.6000000000000001,
+      "upper": 0.7000000000000001
+    },
+    {
+      "predicted": 0.749972506571723,
+      "observed": 0.5454545454545454,
+      "n": 11,
+      "lower": 0.7000000000000001,
+      "upper": 0.8
+    },
+    {
+      "predicted": 0.8377253489201498,
+      "observed": 0.5,
+      "n": 2,
+      "lower": 0.8,
+      "upper": 0.9
+    }
+  ],
+  "decision_curve": [
+    {
+      "threshold": 0.02,
+      "model": 0.09419028697808171,
+      "all": 0.09419028697808171,
+      "none": 0.0
+    },
+    {
+      "threshold": 0.05,
+      "model": 0.06558576972475796,
+      "all": 0.06558576972475796,
+      "none": 0.0
+    },
+    {
+      "threshold": 0.1,
+      "model": 0.023761625703373278,
+      "all": 0.013673868042800089,
+      "none": 0.0
+    },
+    {
+      "threshold": 0.15,
+      "model": 0.00934986957259944,
+      "all": -0.044345316189976364,
+      "none": 0.0
+    },
+    {
+      "threshold": 0.2,
+      "model": 0.005789162949357123,
+      "all": -0.10961689845184991,
+      "none": 0.0
+    },
+    {
+      "threshold": 0.3,
+      "model": 0.001424448026389774,
+      "all": -0.2681335982306856,
+      "none": 0.0
+    },
+    {
+      "threshold": 0.4,
+      "model": 0.0005466631680223913,
+      "all": -0.4794891979357999,
+      "none": 0.0
+    },
+    {
+      "threshold": 0.5,
+      "model": 0.0003279979008134347,
+      "all": -0.7753870375229599,
+      "none": 0.0
+    }
+  ],
+  "transported_model": false,
+  "temporal_validation": false,
+  "limitation": "Retrained independent benchmark, not external validation of the locked Synthea model. UCI lacks real dates and timestamped feature availability. Outcome and feature semantics differ. No UCI patient-level records are exported."
+}

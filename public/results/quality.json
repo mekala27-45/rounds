@@ -1,0 +1,137 @@
+{
+  "checks": [
+    {
+      "name": "visit_occurrence person link",
+      "category": "referential integrity",
+      "checked": 290264,
+      "failed": 0,
+      "status": "pass"
+    },
+    {
+      "name": "condition_occurrence person link",
+      "category": "referential integrity",
+      "checked": 170242,
+      "failed": 0,
+      "status": "pass"
+    },
+    {
+      "name": "drug_exposure person link",
+      "category": "referential integrity",
+      "checked": 144423,
+      "failed": 0,
+      "status": "pass"
+    },
+    {
+      "name": "procedure_occurrence person link",
+      "category": "referential integrity",
+      "checked": 858056,
+      "failed": 0,
+      "status": "pass"
+    },
+    {
+      "name": "measurement person link",
+      "category": "referential integrity",
+      "checked": 2061403,
+      "failed": 0,
+      "status": "pass"
+    },
+    {
+      "name": "imaging person link",
+      "category": "referential integrity",
+      "checked": 118428,
+      "failed": 0,
+      "status": "pass"
+    },
+    {
+      "name": "immunization person link",
+      "category": "referential integrity",
+      "checked": 106181,
+      "failed": 0,
+      "status": "pass"
+    },
+    {
+      "name": "observation_period person link",
+      "category": "referential integrity",
+      "checked": 2000,
+      "failed": 0,
+      "status": "pass"
+    },
+    {
+      "name": "Encounter date order",
+      "category": "temporal validity",
+      "checked": 290264,
+      "failed": 0,
+      "status": "pass"
+    },
+    {
+      "name": "Unique patient hashes",
+      "category": "uniqueness",
+      "checked": 2000,
+      "failed": 0,
+      "status": "pass"
+    },
+    {
+      "name": "Readmission censoring",
+      "category": "outcome validity",
+      "checked": 1969,
+      "failed": 0,
+      "status": "pass"
+    },
+    {
+      "name": "Numeric measurement parse",
+      "category": "completeness",
+      "checked": 2061403,
+      "failed": 0,
+      "status": "pass"
+    },
+    {
+      "name": "Known encounter classes",
+      "category": "conformance",
+      "checked": 290264,
+      "failed": 0,
+      "status": "pass"
+    }
+  ],
+  "summary": "13 of 13 observed-data checks pass. No defects were injected; detection sensitivity was not measured.",
+  "terminology": [
+    {
+      "table": "condition_occurrence",
+      "mapped": 170242,
+      "total": 170242,
+      "coverage": 100.0,
+      "meaning": "Source code present; not standard OMOP concept validation."
+    },
+    {
+      "table": "drug_exposure",
+      "mapped": 144423,
+      "total": 144423,
+      "coverage": 100.0,
+      "meaning": "Source code present; not standard OMOP concept validation."
+    },
+    {
+      "table": "procedure_occurrence",
+      "mapped": 858056,
+      "total": 858056,
+      "coverage": 100.0,
+      "meaning": "Source code present; not standard OMOP concept validation."
+    },
+    {
+      "table": "measurement",
+      "mapped": 2061403,
+      "total": 2061403,
+      "coverage": 100.0,
+      "meaning": "Source code present; not standard OMOP concept validation."
+    }
+  ],
+  "k_anonymity": {
+    "quasi_identifiers": [
+      "age_band",
+      "sex",
+      "race"
+    ],
+    "minimum_k": 1,
+    "groups_below_5": 40,
+    "patients_in_groups_below_5": 70,
+    "claim": "Diagnostic only. These synthetic records are not certified anonymous and row-level artifacts are private."
+  }
+}

@@ -1,0 +1,1792 @@
+{
+  "statement": "This is a portfolio demonstration on synthetic data. It is not a medical device, has not been validated for clinical use, and must not be used to make decisions about real patients.",
+  "provenance": {
+    "source": "Official Synthea synthetic Massachusetts population",
+    "population": "2,000-patient sample",
+    "patients": 2000,
+    "seed": 20260923,
+    "as_of": "2026-09-22",
+    "version": "d9d07a6",
+    "encounters": 290264,
+    "date_basis": "Patient-level dates shifted by up to 180 days; intervals and observation ends preserved."
+  },
+  "overview": {
+    "metrics": [
+      {
+        "label": "Synthetic patients",
+        "value": 2000,
+        "unit": "",
+        "note": ""
+      },
+      {
+        "label": "Inpatient admissions",
+        "value": 1969,
+        "unit": "",
+        "note": ""
+      },
+      {
+        "label": "30-day all-cause return",
+        "value": 9.11,
+        "unit": "%",
+        "note": "Complete follow-up; simplified"
+      },
+      {
+        "label": "Median inpatient stay",
+        "value": 3.01,
+        "unit": "days",
+        "note": ""
+      }
+    ],
+    "trend": [
+      {
+        "label": "2025-09",
+        "encounters": 662,
+        "admissions": 2,
+        "readmission_rate": null
+      },
+      {
+        "label": "2025-10",
+        "encounters": 734,
+        "admissions": 12,
+        "readmission_rate": null
+      },
+      {
+        "label": "2025-11",
+        "encounters": 692,
+        "admissions": 10,
+        "readmission_rate": null
+      },
+      {
+        "label": "2025-12",
+        "encounters": 728,
+        "admissions": 3,
+        "readmission_rate": null
+      },
+      {
+        "label": "2026-01",
+        "encounters": 683,
+        "admissions": 12,
+        "readmission_rate": null
+      },
+      {
+        "label": "2026-02",
+        "encounters": 640,
+        "admissions": 9,
+        "readmission_rate": null
+      },
+      {
+        "label": "2026-03",
+        "encounters": 690,
+        "admissions": 4,
+        "readmission_rate": null
+      },
+      {
+        "label": "2026-04",
+        "encounters": 654,
+        "admissions": 7,
+        "readmission_rate": null
+      },
+      {
+        "label": "2026-05",
+        "encounters": 605,
+        "admissions": 4,
+        "readmission_rate": null
+      },
+      {
+        "label": "2026-06",
+        "encounters": 526,
+        "admissions": 2,
+        "readmission_rate": null
+      },
+      {
+        "label": "2026-07",
+        "encounters": 523,
+        "admissions": 4,
+        "readmission_rate": null
+      },
+      {
+        "label": "2026-08",
+        "encounters": 475,
+        "admissions": 4,
+        "readmission_rate": null
+      }
+    ],
+    "insights": [
+      {
+        "title": "Readmission windows are censored",
+        "text": "47 inpatient encounters lack an eligible complete 30-day outcome window.",
+        "route": "/departments/inpatient"
+      },
+      {
+        "title": "Lifetime source records",
+        "text": "290,264 encounters were processed from the generated sample.",
+        "route": "/departments/informatics"
+      },
+      {
+        "title": "Clinical limits remain visible",
+        "text": "ICU census and NEWS2 remain unavailable because required fields are not present.",
+        "route": "/departments/icu"
+      }
+    ]
+  },
+  "departments": {
+    "ed": {
+      "metrics": [
+        {
+          "label": "Emergency encounters",
+          "value": 13032,
+          "unit": "",
+          "note": "Lifetime source classification"
+        },
+        {
+          "label": "Median visit duration",
+          "value": 1.0,
+          "unit": "hours",
+          "note": "Encounter start to stop"
+        }
+      ],
+      "chart": [
+        {
+          "label": "0",
+          "value": 718
+        },
+        {
+          "label": "1",
+          "value": 504
+        },
+        {
+          "label": "2",
+          "value": 531
+        },
+        {
+          "label": "3",
+          "value": 431
+        },
+        {
+          "label": "4",
+          "value": 430
+        },
+        {
+          "label": "5",
+          "value": 593
+        },
+        {
+          "label": "6",
+          "value": 529
+        },
+        {
+          "label": "7",
+          "value": 545
+        },
+        {
+          "label": "8",
+          "value": 593
+        },
+        {
+          "label": "9",
+          "value": 429
+        },
+        {
+          "label": "10",
+          "value": 509
+        },
+        {
+          "label": "11",
+          "value": 646
+        },
+        {
+          "label": "12",
+          "value": 541
+        },
+        {
+          "label": "13",
+          "value": 600
+        },
+        {
+          "label": "14",
+          "value": 455
+        },
+        {
+          "label": "15",
+          "value": 687
+        },
+        {
+          "label": "16",
+          "value": 559
+        },
+        {
+          "label": "17",
+          "value": 415
+        },
+        {
+          "label": "18",
+          "value": 516
+        },
+        {
+          "label": "19",
+          "value": 654
+        },
+        {
+          "label": "20",
+          "value": 530
+        },
+        {
+          "label": "21",
+          "value": 495
+        },
+        {
+          "label": "22",
+          "value": 473
+        },
+        {
+          "label": "23",
+          "value": 649
+        }
+      ],
+      "chart_title": "Arrival hour",
+      "callout": "13,032 emergency encounters are recorded across complete generated histories.",
+      "method": "Source encounter class; duration from recorded start and stop.",
+      "limitation": "No arrival, triage, boarding or admission-decision milestones; duration is not a validated operational throughput measure.",
+      "pushback": "A clinical leader should not infer staffing needs from these generated arrival times.",
+      "rows": [
+        {
+          "label": "0",
+          "value": 718
+        },
+        {
+          "label": "1",
+          "value": 504
+        },
+        {
+          "label": "2",
+          "value": 531
+        },
+        {
+          "label": "3",
+          "value": 431
+        },
+        {
+          "label": "4",
+          "value": 430
+        },
+        {
+          "label": "5",
+          "value": 593
+        },
+        {
+          "label": "6",
+          "value": 529
+        },
+        {
+          "label": "7",
+          "value": 545
+        },
+        {
+          "label": "8",
+          "value": 593
+        },
+        {
+          "label": "9",
+          "value": 429
+        },
+        {
+          "label": "10",
+          "value": 509
+        },
+        {
+          "label": "11",
+          "value": 646
+        },
+        {
+          "label": "12",
+          "value": 541
+        },
+        {
+          "label": "13",
+          "value": 600
+        },
+        {
+          "label": "14",
+          "value": 455
+        },
+        {
+          "label": "15",
+          "value": 687
+        },
+        {
+          "label": "16",
+          "value": 559
+        },
+        {
+          "label": "17",
+          "value": 415
+        },
+        {
+          "label": "18",
+          "value": 516
+        },
+        {
+          "label": "19",
+          "value": 654
+        },
+        {
+          "label": "20",
+          "value": 530
+        },
+        {
+          "label": "21",
+          "value": 495
+        },
+        {
+          "label": "22",
+          "value": 473
+        },
+        {
+          "label": "23",
+          "value": 649
+        }
+      ]
+    },
+    "inpatient": {
+      "metrics": [
+        {
+          "label": "Inpatient admissions",
+          "value": 1969,
+          "unit": "",
+          "note": ""
+        },
+        {
+          "label": "30-day return rate",
+          "value": 9.11,
+          "unit": "%",
+          "note": "All-cause; complete follow-up"
+        },
+        {
+          "label": "Eligible discharges",
+          "value": 1922,
+          "unit": "",
+          "note": ""
+        }
+      ],
+      "chart": [
+        {
+          "label": "2016",
+          "value": 61
+        },
+        {
+          "label": "2017",
+          "value": 55
+        },
+        {
+          "label": "2018",
+          "value": 60
+        },
+        {
+          "label": "2019",
+          "value": 59
+        },
+        {
+          "label": "2020",
+          "value": 88
+        },
+        {
+          "label": "2021",
+          "value": 102
+        },
+        {
+          "label": "2022",
+          "value": 86
+        },
+        {
+          "label": "2023",
+          "value": 92
+        },
+        {
+          "label": "2024",
+          "value": 84
+        },
+        {
+          "label": "2025",
+          "value": 82
+        },
+        {
+          "label": "2026",
+          "value": 63
+        },
+        {
+          "label": "2027",
+          "value": 1
+        }
+      ],
+      "chart_title": "Admissions by shifted calendar year",
+      "callout": "175 of 1,922 eligible discharges have a recorded 30-day return.",
+      "method": "Inpatient source encounters; strict after-discharge next admission, with per-patient censoring.",
+      "limitation": "Planned admissions, transfers and hospital-specific eligibility are not resolved. This is not a CMS readmission rate.",
+      "pushback": "Care management should inspect labeling and synthetic-population validity before interpreting model ranks.",
+      "rows": [
+        {
+          "label": "2016",
+          "value": 61
+        },
+        {
+          "label": "2017",
+          "value": 55
+        },
+        {
+          "label": "2018",
+          "value": 60
+        },
+        {
+          "label": "2019",
+          "value": 59
+        },
+        {
+          "label": "2020",
+          "value": 88
+        },
+        {
+          "label": "2021",
+          "value": 102
+        },
+        {
+          "label": "2022",
+          "value": 86
+        },
+        {
+          "label": "2023",
+          "value": 92
+        },
+        {
+          "label": "2024",
+          "value": 84
+        },
+        {
+          "label": "2025",
+          "value": 82
+        },
+        {
+          "label": "2026",
+          "value": 63
+        },
+        {
+          "label": "2027",
+          "value": 1
+        }
+      ]
+    },
+    "beds": {
+      "metrics": [
+        {
+          "label": "Median stay",
+          "value": 3.01,
+          "unit": "days",
+          "note": ""
+        },
+        {
+          "label": "Bed capacity",
+          "value": null,
+          "unit": "",
+          "note": "Not in source"
+        }
+      ],
+      "chart": [
+        {
+          "label": "1-2 days",
+          "value": 916
+        },
+        {
+          "label": "3-6 days",
+          "value": 615
+        },
+        {
+          "label": "7+ days",
+          "value": 438
+        }
+      ],
+      "chart_title": "Recorded length of stay",
+      "callout": "Length of stay is observable; installed beds and unit occupancy are not.",
+      "method": "Elapsed time from inpatient encounter start to stop.",
+      "limitation": "No staffed-bed denominator, unit assignment, ICU transfer, or capacity claim.",
+      "pushback": "A bed manager would need local capacity and transfer feeds before using an occupancy forecast.",
+      "rows": [
+        {
+          "label": "1-2 days",
+          "value": 916
+        },
+        {
+          "label": "3-6 days",
+          "value": 615
+        },
+        {
+          "label": "7+ days",
+          "value": 438
+        }
+      ]
+    },
+    "icu": {
+      "metrics": [
+        {
+          "label": "NEWS2 eligibility",
+          "value": null,
+          "unit": "",
+          "note": "Unavailable"
+        },
+        {
+          "label": "ICU census",
+          "value": null,
+          "unit": "",
+          "note": "No reliable ICU unit field"
+        }
+      ],
+      "chart": [],
+      "chart_title": "Deterioration coverage",
+      "callout": "NEWS2 remains unavailable because oxygen support, consciousness and consistent simultaneous vital sets are missing.",
+      "method": "Availability audit of required early-warning inputs.",
+      "limitation": "No score is fabricated from incomplete observations.",
+      "pushback": "A rapid-response team must see complete timed inputs and validated local thresholds.",
+      "rows": []
+    },
+    "primary-care": {
+      "metrics": [
+        {
+          "label": "Living patients",
+          "value": 1825,
+          "unit": "",
+          "note": ""
+        },
+        {
+          "label": "Diabetes registry",
+          "value": 137,
+          "unit": "",
+          "note": ""
+        },
+        {
+          "label": "Hypertension registry",
+          "value": 425,
+          "unit": "",
+          "note": ""
+        }
+      ],
+      "chart": [
+        {
+          "label": "Type 2 diabetes",
+          "value": 137
+        },
+        {
+          "label": "Hypertension",
+          "value": 425
+        },
+        {
+          "label": "Chronic kidney disease",
+          "value": 159
+        },
+        {
+          "label": "COPD",
+          "value": 52
+        },
+        {
+          "label": "Asthma",
+          "value": 90
+        },
+        {
+          "label": "Heart failure",
+          "value": 34
+        },
+        {
+          "label": "Ischemic heart disease",
+          "value": 241
+        },
+        {
+          "label": "Stroke",
+          "value": 12
+        },
+        {
+          "label": "Obesity",
+          "value": 901
+        },
+        {
+          "label": "Depression",
+          "value": 9
+        }
+      ],
+      "chart_title": "Lifetime recorded cohorts",
+      "callout": "Registry membership records coded history and does not establish current disease severity.",
+      "method": "Observed source-code sets define reusable cohorts; recent documentation uses per-patient observation end.",
+      "limitation": "Definitions are not validated phenotypes. No external SVI or survival effect is asserted.",
+      "pushback": "A primary care clinician should challenge stale codes and missing outside-system care.",
+      "rows": [
+        {
+          "label": "Type 2 diabetes",
+          "value": 137
+        },
+        {
+          "label": "Hypertension",
+          "value": 425
+        },
+        {
+          "label": "Chronic kidney disease",
+          "value": 159
+        },
+        {
+          "label": "COPD",
+          "value": 52
+        },
+        {
+          "label": "Asthma",
+          "value": 90
+        },
+        {
+          "label": "Heart failure",
+          "value": 34
+        },
+        {
+          "label": "Ischemic heart disease",
+          "value": 241
+        },
+        {
+          "label": "Stroke",
+          "value": 12
+        },
+        {
+          "label": "Obesity",
+          "value": 901
+        },
+        {
+          "label": "Depression",
+          "value": 9
+        }
+      ]
+    },
+    "pharmacy": {
+      "metrics": [
+        {
+          "label": "Medication records",
+          "value": 144423,
+          "unit": "",
+          "note": ""
+        },
+        {
+          "label": "Recorded drug codes",
+          "value": 281,
+          "unit": "",
+          "note": ""
+        }
+      ],
+      "chart": [
+        {
+          "label": "1 ML Epoetin Alfa 4000 UNT/ML Injection [Epogen]",
+          "value": 20454
+        },
+        {
+          "label": "sodium fluoride 0.0272 MG/MG Oral Gel",
+          "value": 16017
+        },
+        {
+          "label": "lisinopril 10 MG Oral Tablet",
+          "value": 11382
+        },
+        {
+          "label": "Hydrochlorothiazide 25 MG Oral Tablet",
+          "value": 9481
+        },
+        {
+          "label": "insulin isophane  human 70 UNT/ML / insulin  regular  human 30 UNT/ML Injectable Suspension [Humulin]",
+          "value": 8773
+        },
+        {
+          "label": "amLODIPine 2.5 MG Oral Tablet",
+          "value": 8409
+        },
+        {
+          "label": "Acetaminophen 325 MG Oral Tablet",
+          "value": 4480
+        },
+        {
+          "label": "24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet",
+          "value": 3227
+        }
+      ],
+      "chart_title": "Most recorded medications",
+      "callout": "Prescription records support utilization summaries, not refill adherence.",
+      "method": "Count of Synthea medication exposure records by RxNorm source description.",
+      "limitation": "No dispensing coverage, days supply validation, morphine-equivalent conversion, or PDC claim.",
+      "pushback": "A pharmacist would reconcile duplicate orders and outside prescriptions before measuring adherence.",
+      "rows": [
+        {
+          "label": "1 ML Epoetin Alfa 4000 UNT/ML Injection [Epogen]",
+          "value": 20454
+        },
+        {
+          "label": "sodium fluoride 0.0272 MG/MG Oral Gel",
+          "value": 16017
+        },
+        {
+          "label": "lisinopril 10 MG Oral Tablet",
+          "value": 11382
+        },
+        {
+          "label": "Hydrochlorothiazide 25 MG Oral Tablet",
+          "value": 9481
+        },
+        {
+          "label": "insulin isophane  human 70 UNT/ML / insulin  regular  human 30 UNT/ML Injectable Suspension [Humulin]",
+          "value": 8773
+        },
+        {
+          "label": "amLODIPine 2.5 MG Oral Tablet",
+          "value": 8409
+        },
+        {
+          "label": "Acetaminophen 325 MG Oral Tablet",
+          "value": 4480
+        },
+        {
+          "label": "24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet",
+          "value": 3227
+        }
+      ]
+    },
+    "lab": {
+      "metrics": [
+        {
+          "label": "Numeric observations",
+          "value": 2061403,
+          "unit": "",
+          "note": ""
+        },
+        {
+          "label": "Numeric code types",
+          "value": 206,
+          "unit": "",
+          "note": ""
+        }
+      ],
+      "chart": [
+        {
+          "label": "Carbon dioxide  total [Moles/volume] in Blood",
+          "value": 25601
+        },
+        {
+          "label": "Creatinine [Mass/volume] in Blood",
+          "value": 25601
+        },
+        {
+          "label": "Chloride [Moles/volume] in Blood",
+          "value": 25601
+        },
+        {
+          "label": "Sodium [Moles/volume] in Blood",
+          "value": 25601
+        },
+        {
+          "label": "Calcium [Mass/volume] in Blood",
+          "value": 25601
+        },
+        {
+          "label": "Potassium [Moles/volume] in Blood",
+          "value": 25601
+        },
+        {
+          "label": "Glucose [Mass/volume] in Blood",
+          "value": 25601
+        },
+        {
+          "label": "Urea nitrogen [Mass/volume] in Blood",
+          "value": 24986
+        }
+      ],
+      "chart_title": "Laboratory observation volume",
+      "callout": "Numeric values and units are retained; clinical abnormality thresholds are not invented.",
+      "method": "Allowlisted numeric observations; source descriptions and units retained.",
+      "limitation": "Reference ranges and specimen timestamps were not validated. No eGFR or critical-result claim.",
+      "pushback": "A laboratory director would require age-specific reference ranges and assay metadata.",
+      "rows": [
+        {
+          "label": "Carbon dioxide  total [Moles/volume] in Blood",
+          "value": 25601
+        },
+        {
+          "label": "Creatinine [Mass/volume] in Blood",
+          "value": 25601
+        },
+        {
+          "label": "Chloride [Moles/volume] in Blood",
+          "value": 25601
+        },
+        {
+          "label": "Sodium [Moles/volume] in Blood",
+          "value": 25601
+        },
+        {
+          "label": "Calcium [Mass/volume] in Blood",
+          "value": 25601
+        },
+        {
+          "label": "Potassium [Moles/volume] in Blood",
+          "value": 25601
+        },
+        {
+          "label": "Glucose [Mass/volume] in Blood",
+          "value": 25601
+        },
+        {
+          "label": "Urea nitrogen [Mass/volume] in Blood",
+          "value": 24986
+        }
+      ]
+    },
+    "imaging": {
+      "metrics": [
+        {
+          "label": "Imaging instances",
+          "value": 118428,
+          "unit": "",
+          "note": ""
+        },
+        {
+          "label": "Distinct imaging encounters",
+          "value": 20770,
+          "unit": "",
+          "note": ""
+        }
+      ],
+      "chart": [
+        {
+          "label": "Computed Tomography",
+          "value": 94591
+        },
+        {
+          "label": "Digital Radiography",
+          "value": 18297
+        },
+        {
+          "label": "Ophthalmic Photography",
+          "value": 3644
+        },
+        {
+          "label": "Ophthalmic Tomography",
+          "value": 1098
+        },
+        {
+          "label": "Computed Radiography",
+          "value": 430
+        },
+        {
+          "label": "Ultrasound",
+          "value": 368
+        }
+      ],
+      "chart_title": "Recorded imaging modalities",
+      "callout": "Each source row is an imaging instance, so counts are not equivalent to complete studies.",
+      "method": "Count source imaging rows by modality.",
+      "limitation": "Series and instance identifiers are dropped during de-identification; repeat-study validity is unmeasured.",
+      "pushback": "A radiologist would ask whether multiple instances belong to the same study.",
+      "rows": [
+        {
+          "label": "Computed Tomography",
+          "value": 94591
+        },
+        {
+          "label": "Digital Radiography",
+          "value": 18297
+        },
+        {
+          "label": "Ophthalmic Photography",
+          "value": 3644
+        },
+        {
+          "label": "Ophthalmic Tomography",
+          "value": 1098
+        },
+        {
+          "label": "Computed Radiography",
+          "value": 430
+        },
+        {
+          "label": "Ultrasound",
+          "value": 368
+        }
+      ]
+    },
+    "surgery": {
+      "metrics": [
+        {
+          "label": "Procedure records",
+          "value": 858056,
+          "unit": "",
+          "note": ""
+        }
+      ],
+      "chart": [
+        {
+          "label": "Depression screening (procedure)",
+          "value": 73615
+        },
+        {
+          "label": "Medication reconciliation (procedure)",
+          "value": 43898
+        },
+        {
+          "label": "Assessment of health and social care needs (procedure)",
+          "value": 39697
+        },
+        {
+          "label": "Dental consultation and report (procedure)",
+          "value": 33251
+        },
+        {
+          "label": "Patient referral for dental care (procedure)",
+          "value": 32964
+        },
+        {
+          "label": "Oral health education (procedure)",
+          "value": 32608
+        },
+        {
+          "label": "Removal of supragingival plaque and calculus from all teeth using dental instrument (procedure)",
+          "value": 32373
+        },
+        {
+          "label": "Removal of subgingival plaque and calculus from all teeth using dental instrument (procedure)",
+          "value": 32373
+        }
+      ],
+      "chart_title": "Most recorded procedures",
+      "callout": "Procedure records include routine care and are not all operations.",
+      "method": "Source-coded procedure occurrences.",
+      "limitation": "No validated operative episode, specialty, complication or planned-return algorithm.",
+      "pushback": "A surgeon would require procedure grouping and episode attribution before comparing outcomes.",
+      "rows": [
+        {
+          "label": "Depression screening (procedure)",
+          "value": 73615
+        },
+        {
+          "label": "Medication reconciliation (procedure)",
+          "value": 43898
+        },
+        {
+          "label": "Assessment of health and social care needs (procedure)",
+          "value": 39697
+        },
+        {
+          "label": "Dental consultation and report (procedure)",
+          "value": 33251
+        },
+        {
+          "label": "Patient referral for dental care (procedure)",
+          "value": 32964
+        },
+        {
+          "label": "Oral health education (procedure)",
+          "value": 32608
+        },
+        {
+          "label": "Removal of supragingival plaque and calculus from all teeth using dental instrument (procedure)",
+          "value": 32373
+        },
+        {
+          "label": "Removal of subgingival plaque and calculus from all teeth using dental instrument (procedure)",
+          "value": 32373
+        }
+      ]
+    },
+    "finance": {
+      "metrics": [
+        {
+          "label": "Recorded encounter claims",
+          "value": 894479962.84,
+          "unit": "USD",
+          "note": "Synthetic billed-claim totals"
+        },
+        {
+          "label": "Mean claim per encounter",
+          "value": 3081.61,
+          "unit": "USD",
+          "note": ""
+        }
+      ],
+      "chart": [
+        {
+          "label": "Medicaid",
+          "value": 63930
+        },
+        {
+          "label": "NO_INSURANCE",
+          "value": 61616
+        },
+        {
+          "label": "Humana",
+          "value": 43960
+        },
+        {
+          "label": "Medicare",
+          "value": 39495
+        },
+        {
+          "label": "Blue Cross Blue Shield",
+          "value": 17869
+        },
+        {
+          "label": "UnitedHealthcare",
+          "value": 16517
+        },
+        {
+          "label": "Cigna Health",
+          "value": 15353
+        },
+        {
+          "label": "Aetna",
+          "value": 14456
+        },
+        {
+          "label": "Anthem",
+          "value": 8807
+        },
+        {
+          "label": "Dual Eligible",
+          "value": 8261
+        }
+      ],
+      "chart_title": "Payer mix by encounter",
+      "callout": "Generated claim amounts describe simulated utilization, not clinical need or real payments.",
+      "method": "Encounter claim sums and encounter-weighted payer counts.",
+      "limitation": "No financial reconciliation, paid-amount verification, or causal cost-versus-need finding.",
+      "pushback": "Finance should reject a cost model as a proxy for patient need without direct fairness evaluation.",
+      "rows": [
+        {
+          "label": "Medicaid",
+          "value": 63930
+        },
+        {
+          "label": "NO_INSURANCE",
+          "value": 61616
+        },
+        {
+          "label": "Humana",
+          "value": 43960
+        },
+        {
+          "label": "Medicare",
+          "value": 39495
+        },
+        {
+          "label": "Blue Cross Blue Shield",
+          "value": 17869
+        },
+        {
+          "label": "UnitedHealthcare",
+          "value": 16517
+        },
+        {
+          "label": "Cigna Health",
+          "value": 15353
+        },
+        {
+          "label": "Aetna",
+          "value": 14456
+        },
+        {
+          "label": "Anthem",
+          "value": 8807
+        },
+        {
+          "label": "Dual Eligible",
+          "value": 8261
+        }
+      ]
+    },
+    "informatics": {
+      "metrics": [
+        {
+          "label": "Patients de-identified",
+          "value": 2000,
+          "unit": "",
+          "note": ""
+        },
+        {
+          "label": "Observed checks passing",
+          "value": 13,
+          "unit": "",
+          "note": ""
+        },
+        {
+          "label": "Minimum diagnostic k",
+          "value": 1,
+          "unit": "",
+          "note": ""
+        }
+      ],
+      "chart": [
+        {
+          "label": "condition_occurrence",
+          "value": 100.0
+        },
+        {
+          "label": "drug_exposure",
+          "value": 100.0
+        },
+        {
+          "label": "procedure_occurrence",
+          "value": 100.0
+        },
+        {
+          "label": "measurement",
+          "value": 100.0
+        }
+      ],
+      "chart_title": "Source code presence",
+      "callout": "HMAC identifiers, consistent patient date shifts, allowlisted columns and private patient payloads are applied before analytics.",
+      "method": "Reduced OMOP-shaped tables; source codes retained without licensed standard-concept mapping.",
+      "limitation": "Not a complete OMOP CDM implementation, Safe Harbor certification, or evaluated defect-injection system.",
+      "pushback": "A governance reviewer should distinguish source-code completeness from terminology mapping accuracy.",
+      "rows": [
+        {
+          "name": "visit_occurrence person link",
+          "category": "referential integrity",
+          "checked": 290264,
+          "failed": 0,
+          "status": "pass"
+        },
+        {
+          "name": "condition_occurrence person link",
+          "category": "referential integrity",
+          "checked": 170242,
+          "failed": 0,
+          "status": "pass"
+        },
+        {
+          "name": "drug_exposure person link",
+          "category": "referential integrity",
+          "checked": 144423,
+          "failed": 0,
+          "status": "pass"
+        },
+        {
+          "name": "procedure_occurrence person link",
+          "category": "referential integrity",
+          "checked": 858056,
+          "failed": 0,
+          "status": "pass"
+        },
+        {
+          "name": "measurement person link",
+          "category": "referential integrity",
+          "checked": 2061403,
+          "failed": 0,
+          "status": "pass"
+        },
+        {
+          "name": "imaging person link",
+          "category": "referential integrity",
+          "checked": 118428,
+          "failed": 0,
+          "status": "pass"
+        },
+        {
+          "name": "immunization person link",
+          "category": "referential integrity",
+          "checked": 106181,
+          "failed": 0,
+          "status": "pass"
+        },
+        {
+          "name": "observation_period person link",
+          "category": "referential integrity",
+          "checked": 2000,
+          "failed": 0,
+          "status": "pass"
+        },
+        {
+          "name": "Encounter date order",
+          "category": "temporal validity",
+          "checked": 290264,
+          "failed": 0,
+          "status": "pass"
+        },
+        {
+          "name": "Unique patient hashes",
+          "category": "uniqueness",
+          "checked": 2000,
+          "failed": 0,
+          "status": "pass"
+        },
+        {
+          "name": "Readmission censoring",
+          "category": "outcome validity",
+          "checked": 1969,
+          "failed": 0,
+          "status": "pass"
+        },
+        {
+          "name": "Numeric measurement parse",
+          "category": "completeness",
+          "checked": 2061403,
+          "failed": 0,
+          "status": "pass"
+        },
+        {
+          "name": "Known encounter classes",
+          "category": "conformance",
+          "checked": 290264,
+          "failed": 0,
+          "status": "pass"
+        }
+      ]
+    }
+  },
+  "cohorts": [
+    {
+      "id": "diabetes",
+      "name": "Type 2 diabetes",
+      "count": 137,
+      "definition": "Lifetime recorded diagnosis from the observed Synthea SNOMED descriptions. No validated phenotype or active-disease claim.",
+      "sql": "SELECT DISTINCT person_id FROM condition_occurrence WHERE source_code IN ('44054006')",
+      "codes": [
+        {
+          "code": "44054006",
+          "description": "Diabetes mellitus type 2 (disorder)"
+        }
+      ],
+      "attrition": [
+        {
+          "label": "Generated patients",
+          "count": 2000
+        },
+        {
+          "label": "Recorded matching diagnosis",
+          "count": 137
+        }
+      ]
+    },
+    {
+      "id": "hypertension",
+      "name": "Hypertension",
+      "count": 425,
+      "definition": "Lifetime recorded diagnosis from the observed Synthea SNOMED descriptions. No validated phenotype or active-disease claim.",
+      "sql": "SELECT DISTINCT person_id FROM condition_occurrence WHERE source_code IN ('59621000')",
+      "codes": [
+        {
+          "code": "59621000",
+          "description": "Essential hypertension (disorder)"
+        }
+      ],
+      "attrition": [
+        {
+          "label": "Generated patients",
+          "count": 2000
+        },
+        {
+          "label": "Recorded matching diagnosis",
+          "count": 425
+        }
+      ]
+    },
+    {
+      "id": "ckd",
+      "name": "Chronic kidney disease",
+      "count": 159,
+      "definition": "Lifetime recorded diagnosis from the observed Synthea SNOMED descriptions. No validated phenotype or active-disease claim.",
+      "sql": "SELECT DISTINCT person_id FROM condition_occurrence WHERE source_code IN ('431855005','431856006','433144002','431857002')",
+      "codes": [
+        {
+          "code": "431855005",
+          "description": "Chronic kidney disease stage 1 (disorder)"
+        },
+        {
+          "code": "431856006",
+          "description": "Chronic kidney disease stage 2 (disorder)"
+        },
+        {
+          "code": "433144002",
+          "description": "Chronic kidney disease stage 3 (disorder)"
+        },
+        {
+          "code": "431857002",
+          "description": "Chronic kidney disease stage 4 (disorder)"
+        }
+      ],
+      "attrition": [
+        {
+          "label": "Generated patients",
+          "count": 2000
+        },
+        {
+          "label": "Recorded matching diagnosis",
+          "count": 159
+        }
+      ]
+    },
+    {
+      "id": "copd",
+      "name": "COPD",
+      "count": 52,
+      "definition": "Lifetime recorded diagnosis from the observed Synthea SNOMED descriptions. No validated phenotype or active-disease claim.",
+      "sql": "SELECT DISTINCT person_id FROM condition_occurrence WHERE source_code IN ('87433001','185086009')",
+      "codes": [
+        {
+          "code": "87433001",
+          "description": "Pulmonary emphysema (disorder)"
+        },
+        {
+          "code": "185086009",
+          "description": "Chronic obstructive bronchitis (disorder)"
+        }
+      ],
+      "attrition": [
+        {
+          "label": "Generated patients",
+          "count": 2000
+        },
+        {
+          "label": "Recorded matching diagnosis",
+          "count": 52
+        }
+      ]
+    },
+    {
+      "id": "asthma",
+      "name": "Asthma",
+      "count": 90,
+      "definition": "Lifetime recorded diagnosis from the observed Synthea SNOMED descriptions. No validated phenotype or active-disease claim.",
+      "sql": "SELECT DISTINCT person_id FROM condition_occurrence WHERE source_code IN ('233678006','195967001')",
+      "codes": [
+        {
+          "code": "233678006",
+          "description": "Childhood asthma (disorder)"
+        },
+        {
+          "code": "195967001",
+          "description": "Asthma (disorder)"
+        }
+      ],
+      "attrition": [
+        {
+          "label": "Generated patients",
+          "count": 2000
+        },
+        {
+          "label": "Recorded matching diagnosis",
+          "count": 90
+        }
+      ]
+    },
+    {
+      "id": "heart-failure",
+      "name": "Heart failure",
+      "count": 34,
+      "definition": "Lifetime recorded diagnosis from the observed Synthea SNOMED descriptions. No validated phenotype or active-disease claim.",
+      "sql": "SELECT DISTINCT person_id FROM condition_occurrence WHERE source_code IN ('88805009','84114007')",
+      "codes": [
+        {
+          "code": "88805009",
+          "description": "Chronic congestive heart failure (disorder)"
+        },
+        {
+          "code": "84114007",
+          "description": "Heart failure (disorder)"
+        }
+      ],
+      "attrition": [
+        {
+          "label": "Generated patients",
+          "count": 2000
+        },
+        {
+          "label": "Recorded matching diagnosis",
+          "count": 34
+        }
+      ]
+    },
+    {
+      "id": "ischemic-heart",
+      "name": "Ischemic heart disease",
+      "count": 241,
+      "definition": "Lifetime recorded diagnosis from the observed Synthea SNOMED descriptions. No validated phenotype or active-disease claim.",
+      "sql": "SELECT DISTINCT person_id FROM condition_occurrence WHERE source_code IN ('414545008')",
+      "codes": [
+        {
+          "code": "414545008",
+          "description": "Ischemic heart disease (disorder)"
+        }
+      ],
+      "attrition": [
+        {
+          "label": "Generated patients",
+          "count": 2000
+        },
+        {
+          "label": "Recorded matching diagnosis",
+          "count": 241
+        }
+      ]
+    },
+    {
+      "id": "stroke",
+      "name": "Stroke",
+      "count": 12,
+      "definition": "Lifetime recorded diagnosis from the observed Synthea SNOMED descriptions. No validated phenotype or active-disease claim.",
+      "sql": "SELECT DISTINCT person_id FROM condition_occurrence WHERE source_code IN ('230690007')",
+      "codes": [
+        {
+          "code": "230690007",
+          "description": "Cerebrovascular accident (disorder)"
+        }
+      ],
+      "attrition": [
+        {
+          "label": "Generated patients",
+          "count": 2000
+        },
+        {
+          "label": "Recorded matching diagnosis",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "id": "obesity",
+      "name": "Obesity",
+      "count": 901,
+      "definition": "Lifetime recorded diagnosis from the observed Synthea SNOMED descriptions. No validated phenotype or active-disease claim.",
+      "sql": "SELECT DISTINCT person_id FROM condition_occurrence WHERE source_code IN ('162864005')",
+      "codes": [
+        {
+          "code": "162864005",
+          "description": "Body mass index 30+ - obesity (finding)"
+        }
+      ],
+      "attrition": [
+        {
+          "label": "Generated patients",
+          "count": 2000
+        },
+        {
+          "label": "Recorded matching diagnosis",
+          "count": 901
+        }
+      ]
+    },
+    {
+      "id": "depression",
+      "name": "Depression",
+      "count": 9,
+      "definition": "Lifetime recorded diagnosis from the observed Synthea SNOMED descriptions. No validated phenotype or active-disease claim.",
+      "sql": "SELECT DISTINCT person_id FROM condition_occurrence WHERE source_code IN ('36923009','370143000')",
+      "codes": [
+        {
+          "code": "36923009",
+          "description": "Major depression  single episode (disorder)"
+        },
+        {
+          "code": "370143000",
+          "description": "Major depressive disorder (disorder)"
+        }
+      ],
+      "attrition": [
+        {
+          "label": "Generated patients",
+          "count": 2000
+        },
+        {
+          "label": "Recorded matching diagnosis",
+          "count": 9
+        }
+      ]
+    }
+  ],
+  "measures": [
+    {
+      "id": "return30",
+      "name": "30-day all-cause inpatient return",
+      "numerator": 175,
+      "denominator": 1922,
+      "value": 9.11,
+      "unit": "%",
+      "definition": "Simplified all-cause return; no planned-admission algorithm or transfer adjudication. Complete follow-up only. Lifetime index admissions.",
+      "exclusions": "Discharge plus 30 days exceeds shifted observation end; death during follow-up. Not CMS-certified.",
+      "department": "inpatient"
+    },
+    {
+      "id": "annual-wellness",
+      "name": "Wellness visit in past year",
+      "numerator": 1478,
+      "denominator": 1825,
+      "value": 80.99,
+      "unit": "%",
+      "definition": "Living patients with a recorded wellness encounter in the preceding 365 days.",
+      "exclusions": "Deceased patients and missing or out-of-window observations excluded where stated.",
+      "department": "primary-care"
+    },
+    {
+      "id": "diabetes-a1c",
+      "name": "Diabetes: recent HbA1c recorded",
+      "numerator": 112,
+      "denominator": 113,
+      "value": 99.12,
+      "unit": "%",
+      "definition": "Simplified documentation measure: living lifetime diabetes cohort with LOINC 4548-4 recorded during the prior 365 days. No clinical adequacy threshold.",
+      "exclusions": "Deceased patients and missing or out-of-window observations excluded where stated.",
+      "department": "primary-care"
+    },
+    {
+      "id": "hypertension-bp",
+      "name": "Hypertension: recent systolic BP recorded",
+      "numerator": 349,
+      "denominator": 352,
+      "value": 99.15,
+      "unit": "%",
+      "definition": "Simplified documentation measure: living lifetime hypertension cohort with LOINC 8480-6 recorded during the prior 365 days. No clinical adequacy threshold.",
+      "exclusions": "Deceased patients and missing or out-of-window observations excluded where stated.",
+      "department": "primary-care"
+    },
+    {
+      "id": "ckd-creatinine",
+      "name": "CKD: recent creatinine recorded",
+      "numerator": 87,
+      "denominator": 109,
+      "value": 79.82,
+      "unit": "%",
+      "definition": "Simplified documentation measure: living lifetime ckd cohort with LOINC 38483-4 recorded during the prior 365 days. No clinical adequacy threshold.",
+      "exclusions": "Deceased patients and missing or out-of-window observations excluded where stated.",
+      "department": "primary-care"
+    },
+    {
+      "id": "obesity-bmi",
+      "name": "Obesity: recent BMI recorded",
+      "numerator": 697,
+      "denominator": 794,
+      "value": 87.78,
+      "unit": "%",
+      "definition": "Simplified documentation measure: living lifetime obesity cohort with LOINC 39156-5 recorded during the prior 365 days. No clinical adequacy threshold.",
+      "exclusions": "Deceased patients and missing or out-of-window observations excluded where stated.",
+      "department": "primary-care"
+    },
+    {
+      "id": "adult-bp",
+      "name": "Adults: recent blood pressure recorded",
+      "numerator": 1099,
+      "denominator": 1424,
+      "value": 77.18,
+      "unit": "%",
+      "definition": "Living adults with systolic blood pressure in the prior 365 days.",
+      "exclusions": "Deceased patients and missing or out-of-window observations excluded where stated.",
+      "department": "primary-care"
+    },
+    {
+      "id": "adult-bmi",
+      "name": "Adults: recent BMI recorded",
+      "numerator": 1097,
+      "denominator": 1424,
+      "value": 77.04,
+      "unit": "%",
+      "definition": "Living adults with BMI documented in the prior 365 days.",
+      "exclusions": "Deceased patients and missing or out-of-window observations excluded where stated.",
+      "department": "primary-care"
+    },
+    {
+      "id": "flu-record",
+      "name": "Influenza immunization recorded",
+      "numerator": 1452,
+      "denominator": 1825,
+      "value": 79.56,
+      "unit": "%",
+      "definition": "Living patients with a source description containing influenza in the prior 365 days. Documentation-only; no age or seasonal eligibility certification.",
+      "exclusions": "Deceased patients and missing or out-of-window observations excluded where stated.",
+      "department": "primary-care"
+    },
+    {
+      "id": "followup-coverage",
+      "name": "Readmission follow-up completeness",
+      "numerator": 1922,
+      "denominator": 1969,
+      "value": 97.61,
+      "unit": "%",
+      "definition": "Admissions with an observable 30-day outcome window. Data coverage, not clinical performance.",
+      "exclusions": "No exclusions from admission denominator.",
+      "department": "informatics"
+    }
+  ],
+  "quality": {
+    "checks": [
+      {
+        "name": "visit_occurrence person link",
+        "category": "referential integrity",
+        "checked": 290264,
+        "failed": 0,
+        "status": "pass"
+      },
+      {
+        "name": "condition_occurrence person link",
+        "category": "referential integrity",
+        "checked": 170242,
+        "failed": 0,
+        "status": "pass"
+      },
+      {
+        "name": "drug_exposure person link",
+        "category": "referential integrity",
+        "checked": 144423,
+        "failed": 0,
+        "status": "pass"
+      },
+      {
+        "name": "procedure_occurrence person link",
+        "category": "referential integrity",
+        "checked": 858056,
+        "failed": 0,
+        "status": "pass"
+      },
+      {
+        "name": "measurement person link",
+        "category": "referential integrity",
+        "checked": 2061403,
+        "failed": 0,
+        "status": "pass"
+      },
+      {
+        "name": "imaging person link",
+        "category": "referential integrity",
+        "checked": 118428,
+        "failed": 0,
+        "status": "pass"
+      },
+      {
+        "name": "immunization person link",
+        "category": "referential integrity",
+        "checked": 106181,
+        "failed": 0,
+        "status": "pass"
+      },
+      {
+        "name": "observation_period person link",
+        "category": "referential integrity",
+        "checked": 2000,
+        "failed": 0,
+        "status": "pass"
+      },
+      {
+        "name": "Encounter date order",
+        "category": "temporal validity",
+        "checked": 290264,
+        "failed": 0,
+        "status": "pass"
+      },
+      {
+        "name": "Unique patient hashes",
+        "category": "uniqueness",
+        "checked": 2000,
+        "failed": 0,
+        "status": "pass"
+      },
+      {
+        "name": "Readmission censoring",
+        "category": "outcome validity",
+        "checked": 1969,
+        "failed": 0,
+        "status": "pass"
+      },
+      {
+        "name": "Numeric measurement parse",
+        "category": "completeness",
+        "checked": 2061403,
+        "failed": 0,
+        "status": "pass"
+      },
+      {
+        "name": "Known encounter classes",
+        "category": "conformance",
+        "checked": 290264,
+        "failed": 0,
+        "status": "pass"
+      }
+    ],
+    "summary": "13 of 13 observed-data checks pass. No defects were injected; detection sensitivity was not measured.",
+    "terminology": [
+      {
+        "table": "condition_occurrence",
+        "mapped": 170242,
+        "total": 170242,
+        "coverage": 100.0,
+        "meaning": "Source code present; not standard OMOP concept validation."
+      },
+      {
+        "table": "drug_exposure",
+        "mapped": 144423,
+        "total": 144423,
+        "coverage": 100.0,
+        "meaning": "Source code present; not standard OMOP concept validation."
+      },
+      {
+        "table": "procedure_occurrence",
+        "mapped": 858056,
+        "total": 858056,
+        "coverage": 100.0,
+        "meaning": "Source code present; not standard OMOP concept validation."
+      },
+      {
+        "table": "measurement",
+        "mapped": 2061403,
+        "total": 2061403,
+        "coverage": 100.0,
+        "meaning": "Source code present; not standard OMOP concept validation."
+      }
+    ],
+    "k_anonymity": {
+      "quasi_identifiers": [
+        "age_band",
+        "sex",
+        "race"
+      ],
+      "minimum_k": 1,
+      "groups_below_5": 40,
+      "patients_in_groups_below_5": 70,
+      "claim": "Diagnostic only. These synthetic records are not certified anonymous and row-level artifacts are private."
+    }
+  },
+  "schema": [
+    {
+      "table": "department_metrics",
+      "columns": [
+        "department",
+        "label",
+        "value",
+        "unit",
+        "note"
+      ]
+    },
+    {
+      "table": "cohort_counts",
+      "columns": [
+        "cohort_id",
+        "sex",
+        "age_band",
+        "count",
+        "suppressed"
+      ]
+    },
+    {
+      "table": "measures",
+      "columns": [
+        "id",
+        "name",
+        "numerator",
+        "denominator",
+        "value",
+        "unit",
+        "definition",
+        "exclusions",
+        "department"
+      ]
+    },
+    {
+      "table": "monthly_activity",
+      "columns": [
+        "label",
+        "encounters",
+        "admissions",
+        "readmission_rate"
+      ]
+    }
+  ]
+}

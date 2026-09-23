@@ -1,0 +1,287 @@
+[
+  {
+    "type": "calibrated_logistic",
+    "feature_names": [
+      "age",
+      "prior_admissions_365",
+      "prior_ed_365",
+      "prior_visits_365",
+      "condition_count",
+      "medication_count"
+    ],
+    "medians": [
+      50.0,
+      0.0,
+      0.0,
+      7.0,
+      38.0,
+      2.0
+    ],
+    "means": [
+      49.47912885662432,
+      0.9509981851179673,
+      0.4863883847549909,
+      15.18693284936479,
+      39.06896551724138,
+      3.3266787658802177
+    ],
+    "scales": [
+      15.30687365507042,
+      2.2557355615788968,
+      0.6917296148399129,
+      25.171778118392602,
+      10.923872799217097,
+      3.4206583413811122
+    ],
+    "coefficients": [
+      0.6272623495178669,
+      0.6965657215495036,
+      -0.45114072588167425,
+      -0.6655695622959368,
+      -0.24806538852534243,
+      0.4565328213868065
+    ],
+    "intercept": -3.2312921109843886,
+    "calibration_slope": 0.4426122168603489,
+    "calibration_intercept": -1.0089373093978191,
+    "id": "readmit30",
+    "prediction_time": "At inpatient admission, before any event at or after admission",
+    "status": "shadow",
+    "target": "target_readmit30",
+    "threshold": 0.2,
+    "statement": "This is a portfolio demonstration on synthetic data. It is not a medical device, has not been validated for clinical use, and must not be used to make decisions about real patients.",
+    "input_domain": {
+      "minimum_age": 18,
+      "maximum_age": 90,
+      "nonnegative_features": [
+        "age",
+        "prior_admissions_365",
+        "prior_ed_365",
+        "prior_visits_365",
+        "condition_count",
+        "medication_count"
+      ],
+      "scope": "Synthetic adults only, no clinical validation"
+    }
+  },
+  {
+    "type": "log1p_ridge",
+    "feature_names": [
+      "age",
+      "prior_admissions_365",
+      "prior_ed_365",
+      "prior_visits_365",
+      "condition_count",
+      "medication_count"
+    ],
+    "medians": [
+      51.0,
+      0.0,
+      0.0,
+      7.0,
+      38.0,
+      2.5
+    ],
+    "means": [
+      49.84494773519164,
+      0.9634146341463414,
+      0.47735191637630664,
+      15.430313588850174,
+      39.31184668989547,
+      3.4355400696864113
+    ],
+    "scales": [
+      15.33818538552111,
+      2.274013055943429,
+      0.6848352060387414,
+      25.40942486612197,
+      11.101148780880367,
+      3.493925785023426
+    ],
+    "coefficients": [
+      -0.022754620303813113,
+      0.05662433537364583,
+      0.03505009818841265,
+      0.0488112900576332,
+      0.20261935443316784,
+      -0.13100526055115425
+    ],
+    "intercept": 1.5043078389999367,
+    "calibration_slope": 1.0,
+    "calibration_intercept": 0.0,
+    "id": "los",
+    "conformal_radius_days": 6.205433875894503,
+    "nominal_coverage": 0.9,
+    "statement": "This is a portfolio demonstration on synthetic data. It is not a medical device, has not been validated for clinical use, and must not be used to make decisions about real patients.",
+    "status": "shadow"
+  },
+  {
+    "id": "ed_arrivals",
+    "type": "weekday_mean4",
+    "last_date": "2026-09-21",
+    "last_28_counts": [
+      1.0,
+      0.0,
+      2.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "next_day_forecast": 0.75,
+    "statement": "This is a portfolio demonstration on synthetic data. It is not a medical device, has not been validated for clinical use, and must not be used to make decisions about real patients."
+  },
+  {
+    "type": "calibrated_logistic",
+    "feature_names": [
+      "age",
+      "prior_admissions_365",
+      "prior_ed_365",
+      "prior_visits_365",
+      "condition_count",
+      "medication_count"
+    ],
+    "medians": [
+      41.0,
+      0.0,
+      0.0,
+      2.0,
+      31.0,
+      1.0
+    ],
+    "means": [
+      42.0024024024024,
+      0.04044044044044044,
+      0.17677677677677678,
+      4.722522522522523,
+      31.33753753753754,
+      2.123123123123123
+    ],
+    "scales": [
+      15.313199806786196,
+      0.27430174562670956,
+      0.5341034428918523,
+      11.925506318147983,
+      9.930599133057573,
+      2.384941047417213
+    ],
+    "coefficients": [
+      -0.004788300620072987,
+      0.18559973791664572,
+      0.11757009478782098,
+      0.13731792225519426,
+      0.5122454932034619,
+      -0.21566294338887132
+    ],
+    "intercept": -3.5599618995121727,
+    "calibration_slope": 0.730695823093002,
+    "calibration_intercept": -0.8961638079038678,
+    "id": "hosp12m",
+    "prediction_time": "At the annual January 1 registry index date",
+    "status": "shadow",
+    "target": "target_hosp12m",
+    "threshold": 0.2,
+    "statement": "This is a portfolio demonstration on synthetic data. It is not a medical device, has not been validated for clinical use, and must not be used to make decisions about real patients.",
+    "input_domain": {
+      "minimum_age": 18,
+      "maximum_age": 90,
+      "nonnegative_features": [
+        "age",
+        "prior_admissions_365",
+        "prior_ed_365",
+        "prior_visits_365",
+        "condition_count",
+        "medication_count"
+      ],
+      "scope": "Synthetic adults only, no clinical validation"
+    }
+  },
+  {
+    "type": "calibrated_logistic",
+    "feature_names": [
+      "age",
+      "prior_admissions_365",
+      "prior_ed_365",
+      "prior_visits_365",
+      "condition_count",
+      "medication_count"
+    ],
+    "medians": [
+      41.0,
+      0.0,
+      0.0,
+      2.0,
+      31.0,
+      1.0
+    ],
+    "means": [
+      42.0024024024024,
+      0.04044044044044044,
+      0.17677677677677678,
+      4.722522522522523,
+      31.33753753753754,
+      2.123123123123123
+    ],
+    "scales": [
+      15.313199806786196,
+      0.27430174562670956,
+      0.5341034428918523,
+      11.925506318147983,
+      9.930599133057573,
+      2.384941047417213
+    ],
+    "coefficients": [
+      -0.7676723101910949,
+      -0.16438889315997815,
+      -0.020273708980612207,
+      1.2610437931727276,
+      0.4545258907457676,
+      0.009074513017894784
+    ],
+    "intercept": -2.375544401161209,
+    "calibration_slope": 0.951976884426013,
+    "calibration_intercept": -0.2979164304252402,
+    "id": "highcost",
+    "prediction_time": "At the annual January 1 registry index date",
+    "status": "shadow",
+    "target": "target_highcost",
+    "threshold": 0.2,
+    "statement": "This is a portfolio demonstration on synthetic data. It is not a medical device, has not been validated for clinical use, and must not be used to make decisions about real patients.",
+    "input_domain": {
+      "minimum_age": 18,
+      "maximum_age": 90,
+      "nonnegative_features": [
+        "age",
+        "prior_admissions_365",
+        "prior_ed_365",
+        "prior_visits_365",
+        "condition_count",
+        "medication_count"
+      ],
+      "scope": "Synthetic adults only, no clinical validation"
+    },
+    "cost_target_threshold": 30639.708000000006,
+    "cost_definition": "Sum of future 365-day encounter TOTAL_CLAIM_COST, synthetic billed claims, not paid costs."
+  }
+]

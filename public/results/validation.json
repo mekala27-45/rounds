@@ -1,0 +1,177 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-09-23T04:18:20.784973+00:00",
+  "statement": "This is a portfolio demonstration on synthetic data. It is not a medical device, has not been validated for clinical use, and must not be used to make decisions about real patients.",
+  "synthetic": true,
+  "defect_challenge": {
+    "status": "passed",
+    "kind": "deliberately_injected_challenge_not_source_quality_rate",
+    "source": "Synthea population-2000 CSV copied slices",
+    "baseline_rows": {
+      "conditions": 80,
+      "encounters": 80,
+      "medications": 80,
+      "observations": 80,
+      "notes": 1
+    },
+    "classes": [
+      {
+        "class": "local_condition_code",
+        "rule": "condition_standard_system",
+        "injected_rows": 1,
+        "detected_rows": 1,
+        "passed": true
+      },
+      {
+        "class": "missing_measurement_unit",
+        "rule": "measurement_numeric_unit_required",
+        "injected_rows": 1,
+        "detected_rows": 1,
+        "passed": true
+      },
+      {
+        "class": "implausible_heart_rate",
+        "rule": "measurement_heart_rate_range_20_250",
+        "injected_rows": 1,
+        "detected_rows": 1,
+        "passed": true
+      },
+      {
+        "class": "duplicate_encounter",
+        "rule": "encounter_unique_id",
+        "injected_rows": 1,
+        "detected_rows": 1,
+        "passed": true
+      },
+      {
+        "class": "orphan_medication",
+        "rule": "medication_person_foreign_key",
+        "injected_rows": 1,
+        "detected_rows": 1,
+        "passed": true
+      },
+      {
+        "class": "missing_encounter_end",
+        "rule": "encounter_end_required",
+        "injected_rows": 1,
+        "detected_rows": 1,
+        "passed": true
+      },
+      {
+        "class": "planted_identifiers",
+        "rule": "free_text_identifier_pattern",
+        "injected_rows": 1,
+        "detected_rows": 1,
+        "passed": true
+      }
+    ],
+    "class_count": 7,
+    "detected_class_count": 7,
+    "combined_quarantined_rows": 7,
+    "clean_baseline_findings": 0,
+    "post_quarantine_findings": 0,
+    "empty_input_refused": true,
+    "method": "Seven independent one-row challenges plus a combined challenge. Duplicate IDs are quarantined on the subsequent occurrence. Identifier class contains a planted name sentinel, phone and MRN. Source exports are not modified.",
+    "limitations": [
+      "The selected clean baseline is not an estimate of original source quality.",
+      "Seven classes include three identifier forms within one text class.",
+      "Exact planted-name matching does not establish general name removal or HIPAA compliance.",
+      "Heart-rate bounds are challenge thresholds, not clinical alerting thresholds."
+    ]
+  },
+  "fhir_reconciliation": {
+    "status": "passed",
+    "population": "Synthea sample-300 paired exporter run, seed 20260923",
+    "seed": 20260923,
+    "source_csv_patients": 300,
+    "patient_bundles_evaluated": 300,
+    "patients_evaluated": 300,
+    "resource_scope": [
+      "Patient",
+      "Encounter",
+      "Condition"
+    ],
+    "comparisons": [
+      {
+        "resource": "Patient",
+        "fhir_rows": 300,
+        "csv_rows": 300,
+        "fhir_only": 0,
+        "csv_only": 0,
+        "exact_multiset_match": true
+      },
+      {
+        "resource": "Encounter",
+        "fhir_rows": 42555,
+        "csv_rows": 42555,
+        "fhir_only": 0,
+        "csv_only": 0,
+        "exact_multiset_match": true
+      },
+      {
+        "resource": "Condition",
+        "fhir_rows": 26828,
+        "csv_rows": 26828,
+        "fhir_only": 0,
+        "csv_only": 0,
+        "exact_multiset_match": true
+      }
+    ],
+    "coverage": "all_csv_patients",
+    "method": "All patient-bearing bundles in the paired run. Multiset reconciliation: Patient ID; Encounter ID and patient; Condition patient, encounter, SNOMED code, onset date and abatement date. Timestamps are normalized to calendar date for Condition because CSV dates have day precision.",
+    "limitations": [
+      "This checks source-export identities and record counts; it does not validate complete FHIR schemas or certify an OMOP transformation.",
+      "Observation, medications, procedures, claims and other resource types are not included.",
+      "No raw identifiers or source filenames are published in this report."
+    ]
+  },
+  "dictionary_nlp": {
+    "status": "evaluated",
+    "path": "dictionary_and_rules",
+    "source": "Synthea CSV structured descriptions, not actual clinical notes",
+    "lexicon_entries": {
+      "condition": 100,
+      "medication": 100,
+      "procedure": 100
+    },
+    "positive_cases": 120,
+    "negation_cases": 20,
+    "negation_false_positive_cases": 0,
+    "negation_false_positive_rate": 0.0,
+    "by_entity": [
+      {
+        "entity": "condition",
+        "true_positive": 40,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      {
+        "entity": "medication",
+        "true_positive": 40,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      {
+        "entity": "procedure",
+        "true_positive": 40,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    ],
+    "method": "Exact dictionary mentions and longest overlapping spans, with sentence-local negation triggers. Labels are the source table type and structured code, never an LLM assessment. Positive sentences and twenty planted negative sentences are generated from structured descriptions.",
+    "limitations": [
+      "This is a lexical extraction sanity check on exact source descriptions, not independent clinical NLP validation.",
+      "The evaluation vocabulary is present in the dictionary; no held-out vocabulary generalization is claimed.",
+      "Templated sentence scores cannot estimate accuracy on real notes, abbreviations, spelling variation, uncertainty or complex negation."
+    ]
+  }
+}

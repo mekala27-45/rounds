@@ -1,0 +1,13 @@
+[project]
+name = "rounds-analytics"
+version = "0.1.0"
+description = "Reproducible synthetic health-system analytics and evidence gates"
+requires-python = ">=3.12"
+dependencies = ["duckdb>=1.4,<2", "pandas>=2.2,<3", "numpy>=2,<3", "scipy>=1.14,<2", "scikit-learn>=1.6,<2", "lightgbm>=4.5,<5", "requests>=2.32,<3", "pytest>=8,<10", "openpyxl>=3.1,<4"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+cache_dir = ".pytest_cache"
+
+[tool.uv]
+package = false

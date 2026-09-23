@@ -1,0 +1,4 @@
+import {sqliteTable,text,integer,index} from 'drizzle-orm/sqlite-core';
+export const accessTokens=sqliteTable('access_tokens',{tokenHash:text('token_hash').primaryKey(),subject:text('subject').notNull(),expires:integer('expires').notNull()});
+export const auditEvents=sqliteTable('audit_events',{id:text('id').primaryKey(),subject:text('subject').notNull(),createdAt:text('created_at').notNull(),personId:text('person_id').notNull(),route:text('route').notNull(),purpose:text('purpose').notNull(),action:text('action').notNull()},t=>[index('idx_audit_subject_created').on(t.subject,t.createdAt)]);
+export const careContacts=sqliteTable('care_contacts',{personId:text('person_id').primaryKey(),contacted:integer('contacted').notNull().default(0),updatedAt:text('updated_at').notNull(),subject:text('subject').notNull()});

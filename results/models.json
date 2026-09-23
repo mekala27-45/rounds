@@ -1,0 +1,3263 @@
+[
+  {
+    "id": "readmit30",
+    "name": "30-day readmission risk",
+    "department": "Inpatient and care management",
+    "prediction_time": "At inpatient admission, before any event at or after admission",
+    "status": "shadow",
+    "method": "Standardized, L2 logistic regression with separate temporal Platt calibration; LightGBM evaluated as comparator.",
+    "limitation": "Synthetic retrospective results only. A 360-day partition buffer protects temporal order despite per-person date shifts. Patients can recur across partitions; patient-cluster bootstrap intervals account for repeated test patients. Sparse subgroup results are descriptive. All-cause readmission includes planned returns and transfers that have not been adjudicated.",
+    "metrics": {
+      "n": 167,
+      "positives": 16,
+      "positive_rate": 0.09580838323353294,
+      "auroc": 0.5939569536423841,
+      "auprc": 0.1145686466184585,
+      "brier": 0.09360791866666772,
+      "ece": 0.051371825029572604,
+      "auroc_ci95": {
+        "lower": 0.46218778567800917,
+        "upper": 0.7215629984051039,
+        "method": "200 patient-cluster bootstrap replicates",
+        "valid_replicates": 200
+      }
+    },
+    "baselines": [
+      {
+        "name": "Training-prevalence constant",
+        "n": 167,
+        "positives": 16,
+        "positive_rate": 0.09580838323353294,
+        "auroc": 0.5,
+        "auprc": 0.09580838323353294,
+        "brier": 0.0876716203726815,
+        "ece": 0.03228751209015726
+      },
+      {
+        "name": "Uncalibrated logistic regression",
+        "n": 167,
+        "positives": 16,
+        "positive_rate": 0.09580838323353294,
+        "auroc": 0.5939569536423841,
+        "auprc": 0.1145686466184585,
+        "brier": 0.12357398644452389,
+        "ece": 0.1022814930802166
+      },
+      {
+        "name": "Temporally calibrated LightGBM comparator",
+        "n": 167,
+        "positives": 16,
+        "positive_rate": 0.09580838323353294,
+        "auroc": 0.6078228476821191,
+        "auprc": 0.18967230252624764,
+        "brier": 0.08858690855082015,
+        "ece": 0.05828502053416772
+      }
+    ],
+    "calibration": [
+      {
+        "predicted": 0.0687081010467841,
+        "observed": 0.04878048780487805,
+        "n": 82,
+        "lower": 0.0,
+        "upper": 0.1
+      },
+      {
+        "predicted": 0.13877102622803703,
+        "observed": 0.16923076923076924,
+        "n": 65,
+        "lower": 0.1,
+        "upper": 0.2
+      },
+      {
+        "predicted": 0.238868764067381,
+        "observed": 0.07692307692307693,
+        "n": 13,
+        "lower": 0.2,
+        "upper": 0.30000000000000004
+      },
+      {
+        "predicted": 0.40855046657839755,
+        "observed": 0.0,
+        "n": 7,
+        "lower": 0.4,
+        "upper": 0.5
+      }
+    ],
+    "decision_curve": [
+      {
+        "threshold": 0.02,
+        "model": 0.07735549309544178,
+        "all": 0.07735549309544178,
+        "none": 0.0
+      },
+      {
+        "threshold": 0.05,
+        "model": 0.05294673810274189,
+        "all": 0.048219350772139936,
+        "none": 0.0
+      },
+      {
+        "threshold": 0.1,
+        "model": 0.02328675981370592,
+        "all": -0.0046573519627411825,
+        "none": 0.0
+      },
+      {
+        "threshold": 0.15,
+        "model": -0.02042972877773864,
+        "all": -0.06375484325466713,
+        "none": 0.0
+      },
+      {
+        "threshold": 0.2,
+        "model": -0.022455089820359278,
+        "all": -0.13023952095808383,
+        "none": 0.0
+      },
+      {
+        "threshold": 0.3,
+        "model": -0.017964071856287425,
+        "all": -0.29170230966638155,
+        "none": 0.0
+      },
+      {
+        "threshold": 0.4,
+        "model": -0.027944111776447105,
+        "all": -0.5069860279441119,
+        "none": 0.0
+      },
+      {
+        "threshold": 0.5,
+        "model": 0.0,
+        "all": -0.8083832335329342,
+        "none": 0.0
+      }
+    ],
+    "subgroups": [
+      {
+        "dimension": "sex",
+        "group": "F",
+        "n": 64,
+        "positives": 5,
+        "positive_rate": 0.078125,
+        "auroc": 0.7016949152542373,
+        "auprc": 0.17430652101952998,
+        "brier": 0.06973360828460234,
+        "ece": 0.0415922593039111,
+        "predicted_rate": 0.0947882957449011,
+        "calibration_p": 0.646215168117589,
+        "support": "adequate",
+        "sensitivity_at_20pct": 0.0,
+        "calibration_q_bh": 0.6928610052030925
+      },
+      {
+        "dimension": "sex",
+        "group": "M",
+        "n": 103,
+        "positives": 11,
+        "positive_rate": 0.10679611650485436,
+        "auroc": 0.5187747035573123,
+        "auprc": 0.1109485581668036,
+        "brier": 0.1084424416225142,
+        "ece": 0.06191667122271553,
+        "predicted_rate": 0.14129007050397835,
+        "calibration_p": 0.2968362336527901,
+        "support": "adequate",
+        "sensitivity_at_20pct": 0.09090909090909091,
+        "calibration_q_bh": 0.49548131758557706
+      },
+      {
+        "dimension": "age",
+        "group": "10-19",
+        "n": 2,
+        "positives": 0,
+        "positive_rate": 0.0,
+        "auroc": null,
+        "auprc": null,
+        "brier": 0.001964848494418624,
+        "ece": 0.0443122760991662,
+        "predicted_rate": 0.0443122760991662,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": null,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "age",
+        "group": "20-29",
+        "n": 5,
+        "positives": 0,
+        "positive_rate": 0.0,
+        "auroc": null,
+        "auprc": null,
+        "brier": 0.00264087183282603,
+        "ece": 0.05092335597128798,
+        "predicted_rate": 0.05092335597128798,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": null,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "age",
+        "group": "30-39",
+        "n": 22,
+        "positives": 0,
+        "positive_rate": 0.0,
+        "auroc": null,
+        "auprc": null,
+        "brier": 0.00391965266250053,
+        "ece": 0.06104885585658259,
+        "predicted_rate": 0.06104885585658259,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": null,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "age",
+        "group": "40-49",
+        "n": 26,
+        "positives": 5,
+        "positive_rate": 0.19230769230769232,
+        "auroc": 0.5333333333333334,
+        "auprc": 0.28469696969696967,
+        "brier": 0.15950870866285824,
+        "ece": 0.08631395831231375,
+        "predicted_rate": 0.10599373399537856,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": 0.2,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "age",
+        "group": "50-59",
+        "n": 23,
+        "positives": 2,
+        "positive_rate": 0.08695652173913043,
+        "auroc": 0.7619047619047619,
+        "auprc": 0.22619047619047616,
+        "brier": 0.07605169164815156,
+        "ece": 0.08052745581972647,
+        "predicted_rate": 0.08966313483271825,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": 0.0,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "age",
+        "group": "60-69",
+        "n": 52,
+        "positives": 3,
+        "positive_rate": 0.057692307692307696,
+        "auroc": 0.346938775510204,
+        "auprc": 0.056954156954156954,
+        "brier": 0.08771994049751669,
+        "ece": 0.11422039605819473,
+        "predicted_rate": 0.1719127037505024,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": 0.0,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "age",
+        "group": "70-79",
+        "n": 32,
+        "positives": 6,
+        "positive_rate": 0.1875,
+        "auroc": 0.532051282051282,
+        "auprc": 0.22212475633528267,
+        "brier": 0.1544330290686442,
+        "ece": 0.05084330910083021,
+        "predicted_rate": 0.13665669089916982,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": 0.0,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "age",
+        "group": "80-89",
+        "n": 4,
+        "positives": 0,
+        "positive_rate": 0.0,
+        "auroc": null,
+        "auprc": null,
+        "brier": 0.02538620164837514,
+        "ece": 0.15885228550046931,
+        "predicted_rate": 0.15885228550046931,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": null,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "age",
+        "group": "90+",
+        "n": 1,
+        "positives": 0,
+        "positive_rate": 0.0,
+        "auroc": null,
+        "auprc": null,
+        "brier": 0.02790202680275007,
+        "ece": 0.1670389978500532,
+        "predicted_rate": 0.1670389978500532,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": null,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "race",
+        "group": "asian",
+        "n": 23,
+        "positives": 5,
+        "positive_rate": 0.21739130434782608,
+        "auroc": 0.5444444444444445,
+        "auprc": 0.28296703296703296,
+        "brier": 0.1770047841009765,
+        "ece": 0.09486544670475296,
+        "predicted_rate": 0.12252585764307314,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": 0.2,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "race",
+        "group": "black",
+        "n": 16,
+        "positives": 0,
+        "positive_rate": 0.0,
+        "auroc": null,
+        "auprc": null,
+        "brier": 0.03996949087120459,
+        "ece": 0.18115876916339863,
+        "predicted_rate": 0.18115876916339857,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": null,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "race",
+        "group": "hawaiian",
+        "n": 2,
+        "positives": 0,
+        "positive_rate": 0.0,
+        "auroc": null,
+        "auprc": null,
+        "brier": 0.010348065178222645,
+        "ece": 0.1015903743814815,
+        "predicted_rate": 0.1015903743814815,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": null,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "race",
+        "group": "native",
+        "n": 1,
+        "positives": 0,
+        "positive_rate": 0.0,
+        "auroc": null,
+        "auprc": null,
+        "brier": 0.00602862382765104,
+        "ece": 0.07764421309827951,
+        "predicted_rate": 0.07764421309827951,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": null,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "race",
+        "group": "white",
+        "n": 125,
+        "positives": 11,
+        "positive_rate": 0.088,
+        "auroc": 0.6307814992025518,
+        "auprc": 0.11888729808515905,
+        "brier": 0.08716140619910147,
+        "ece": 0.04152130552056733,
+        "predicted_rate": 0.1169749455625371,
+        "calibration_p": 0.29728879055134627,
+        "support": "adequate",
+        "sensitivity_at_20pct": 0.0,
+        "calibration_q_bh": 0.49548131758557706
+      },
+      {
+        "dimension": "ethnicity",
+        "group": "hispanic",
+        "n": 32,
+        "positives": 7,
+        "positive_rate": 0.21875,
+        "auroc": 0.4342857142857143,
+        "auprc": 0.20583326483961695,
+        "brier": 0.20852731463776036,
+        "ece": 0.2088664828495003,
+        "predicted_rate": 0.18862434627854863,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": 0.14285714285714285,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "ethnicity",
+        "group": "nonhispanic",
+        "n": 135,
+        "positives": 9,
+        "positive_rate": 0.06666666666666667,
+        "auroc": 0.591710758377425,
+        "auprc": 0.08444772934481051,
+        "brier": 0.06636776554759392,
+        "ece": 0.04135814154570285,
+        "predicted_rate": 0.10802480821236952,
+        "calibration_p": 0.11577295850744126,
+        "support": "adequate",
+        "sensitivity_at_20pct": 0.0,
+        "calibration_q_bh": 0.49548131758557706
+      },
+      {
+        "dimension": "payer",
+        "group": "Aetna",
+        "n": 7,
+        "positives": 0,
+        "positive_rate": 0.0,
+        "auroc": null,
+        "auprc": null,
+        "brier": 0.004792320581700209,
+        "ece": 0.06726452009330798,
+        "predicted_rate": 0.06726452009330798,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": null,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "payer",
+        "group": "Anthem",
+        "n": 4,
+        "positives": 0,
+        "positive_rate": 0.0,
+        "auroc": null,
+        "auprc": null,
+        "brier": 0.004580701973184697,
+        "ece": 0.06537206983700444,
+        "predicted_rate": 0.06537206983700444,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": null,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "payer",
+        "group": "Blue Cross Blue Shield",
+        "n": 13,
+        "positives": 2,
+        "positive_rate": 0.15384615384615385,
+        "auroc": 0.5,
+        "auprc": 0.25757575757575757,
+        "brier": 0.13405240614550396,
+        "ece": 0.07383103397933598,
+        "predicted_rate": 0.08001511986681789,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": 0.0,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "payer",
+        "group": "Cigna Health",
+        "n": 3,
+        "positives": 0,
+        "positive_rate": 0.0,
+        "auroc": null,
+        "auprc": null,
+        "brier": 0.005201197170277634,
+        "ece": 0.06965596053916717,
+        "predicted_rate": 0.06965596053916717,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": null,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "payer",
+        "group": "Dual Eligible",
+        "n": 19,
+        "positives": 1,
+        "positive_rate": 0.05263157894736842,
+        "auroc": 0.5555555555555556,
+        "auprc": 0.1111111111111111,
+        "brier": 0.06565349055478167,
+        "ece": 0.09387657917145069,
+        "predicted_rate": 0.14267609606829731,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": 0.0,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "payer",
+        "group": "Humana",
+        "n": 12,
+        "positives": 1,
+        "positive_rate": 0.08333333333333333,
+        "auroc": 0.8181818181818181,
+        "auprc": 0.3333333333333333,
+        "brier": 0.0733442539884717,
+        "ece": 0.07354953488918997,
+        "predicted_rate": 0.08772834711860605,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": 0.0,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "payer",
+        "group": "Medicaid",
+        "n": 16,
+        "positives": 0,
+        "positive_rate": 0.0,
+        "auroc": null,
+        "auprc": null,
+        "brier": 0.005014774123109387,
+        "ece": 0.06617173775481362,
+        "predicted_rate": 0.06617173775481362,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": null,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "payer",
+        "group": "Medicare",
+        "n": 82,
+        "positives": 11,
+        "positive_rate": 0.13414634146341464,
+        "auroc": 0.4942381562099872,
+        "auprc": 0.13522435490806078,
+        "brier": 0.12878038049416216,
+        "ece": 0.05472065208717588,
+        "predicted_rate": 0.1491782080603554,
+        "calibration_p": 0.6928610052030925,
+        "support": "adequate",
+        "sensitivity_at_20pct": 0.09090909090909091,
+        "calibration_q_bh": 0.6928610052030925
+      },
+      {
+        "dimension": "payer",
+        "group": "NO_INSURANCE",
+        "n": 10,
+        "positives": 1,
+        "positive_rate": 0.1,
+        "auroc": 0.2222222222222222,
+        "auprc": 0.125,
+        "brier": 0.10514012890391347,
+        "ece": 0.17832114525875697,
+        "predicted_rate": 0.15263769736500038,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": 0.0,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "payer",
+        "group": "UnitedHealthcare",
+        "n": 1,
+        "positives": 0,
+        "positive_rate": 0.0,
+        "auroc": null,
+        "auprc": null,
+        "brier": 0.003192250033792277,
+        "ece": 0.05650000029904672,
+        "predicted_rate": 0.05650000029904672,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": null,
+        "calibration_q_bh": null
+      }
+    ],
+    "gates": [
+      {
+        "name": "temporal_outcome_embargo",
+        "passed": true,
+        "reason": "Each training/calibration label window finishes before the next temporal partition."
+      },
+      {
+        "name": "calibrator_support",
+        "passed": true,
+        "reason": "Platt calibration requires at least five cases from each class in the separate calibration partition."
+      },
+      {
+        "name": "brier_better_than_constant",
+        "passed": false,
+        "reason": "Held-out Brier 0.0936; training-prevalence baseline 0.0877."
+      },
+      {
+        "name": "auroc_at_least_065",
+        "passed": false,
+        "reason": "Prespecified research demonstration discrimination gate: AUROC >= 0.65."
+      },
+      {
+        "name": "ece_at_most_005",
+        "passed": false,
+        "reason": "Prespecified equal-width, ten-bin expected calibration error <= 0.05."
+      },
+      {
+        "name": "subgroup_support",
+        "passed": false,
+        "reason": "Every reported subgroup needs n >= 50 and at least five positive and negative examples. Sparse groups remain visible."
+      },
+      {
+        "name": "clinical_validation",
+        "passed": false,
+        "reason": "Synthetic retrospective evaluation is not clinical validation."
+      }
+    ],
+    "contract": {
+      "statement": "This is a portfolio demonstration on synthetic data. It is not a medical device, has not been validated for clinical use, and must not be used to make decisions about real patients.",
+      "clinical_use": false,
+      "population": "Synthea Massachusetts, seed 20260923",
+      "split": {
+        "train_start": "2010-01-01",
+        "train_label_end_exclusive": "2020-07-05",
+        "calibration_start": "2021-06-30",
+        "calibration_label_end_exclusive": "2023-07-05",
+        "test_start": "2024-06-29",
+        "calendar": "per-person shifted synthetic dates, protected by a 360-day between-partition buffer",
+        "outcome_embargo": "Label windows finish at least 360 shifted-calendar days before the next partition. Because individual shifts are bounded by +/-180 days, true chronology between partitions is preserved.",
+        "boundary_buffer_each_side_days": 180,
+        "n_train": 551,
+        "n_calibration": 164,
+        "n_test": 167,
+        "same_patients_can_recur": true
+      },
+      "features": [
+        "age",
+        "prior_admissions_365",
+        "prior_ed_365",
+        "prior_visits_365",
+        "condition_count",
+        "medication_count"
+      ],
+      "feature_availability": "Strictly prior to prediction time. No discharge disposition, LOS, future costs, or outcomes are model inputs.",
+      "deployment_choice": "Logistic regression prespecified for transparent live scoring; comparator does not replace it based on test performance.",
+      "calibration_method": "Platt sigmoid fitted to separate chronological calibration data",
+      "model_type": "binary",
+      "live_scoring": true,
+      "multiple_comparisons": "Benjamini-Hochberg across displayed subgroup calibration-residual tests; normal-approximation, descriptive only.",
+      "patient_overlap_train_test": 39
+    }
+  },
+  {
+    "id": "los",
+    "name": "Length of stay",
+    "department": "Bed management",
+    "prediction_time": "At admission, before current-admission outcomes",
+    "status": "shadow",
+    "method": "Ridge regression on log1p length of stay; separate calibration residuals form a 90% split-conformal interval. LightGBM is a comparator.",
+    "limitation": "Synthetic LOS is generator-dependent. Temporal change violates exchangeability, so 90% conformal coverage is measured on the holdout and is not guaranteed. Intervals describe individual admission uncertainty, not a confidence interval for a mean.",
+    "metrics": {
+      "n": 181,
+      "mae_days": 3.243857929626617,
+      "rmse_days": 5.2466722290220105,
+      "conformal_coverage": 0.9005524861878453,
+      "nominal_coverage": 0.9,
+      "conformal_radius_days": 6.205433875894503,
+      "mean_interval_width_days": 10.02810182136895
+    },
+    "baselines": [
+      {
+        "name": "Training median LOS",
+        "mae_days": 3.3449724716083487
+      },
+      {
+        "name": "LightGBM log-LOS comparator",
+        "mae_days": 3.2702957762380027
+      }
+    ],
+    "calibration": [],
+    "decision_curve": [],
+    "subgroups": [],
+    "gates": [
+      {
+        "name": "temporal_outcome_embargo",
+        "passed": true,
+        "reason": "Discharge precedes the next partition for training and calibration."
+      },
+      {
+        "name": "mae_better_than_median",
+        "passed": true,
+        "reason": "Held-out MAE compared against the training median."
+      },
+      {
+        "name": "holdout_coverage_at_least_085",
+        "passed": true,
+        "reason": "Prespecified coverage floor of 85% for nominal 90% intervals."
+      },
+      {
+        "name": "clinical_validation",
+        "passed": false,
+        "reason": "Synthetic simulation only."
+      }
+    ],
+    "contract": {
+      "statement": "This is a portfolio demonstration on synthetic data. It is not a medical device, has not been validated for clinical use, and must not be used to make decisions about real patients.",
+      "clinical_use": false,
+      "population": "Synthea Massachusetts, seed 20260923",
+      "split": {
+        "train_start": "2010-01-01",
+        "train_label_end_exclusive": "2020-07-05",
+        "calibration_start": "2021-06-30",
+        "calibration_label_end_exclusive": "2023-07-05",
+        "test_start": "2024-06-29",
+        "calendar": "per-person shifted synthetic dates, protected by a 360-day between-partition buffer",
+        "outcome_embargo": "Label windows finish at least 360 shifted-calendar days before the next partition. Because individual shifts are bounded by +/-180 days, true chronology between partitions is preserved.",
+        "boundary_buffer_each_side_days": 180,
+        "n_train": 574,
+        "n_calibration": 175,
+        "n_test": 181,
+        "same_patients_can_recur": true
+      },
+      "features": [
+        "age",
+        "prior_admissions_365",
+        "prior_ed_365",
+        "prior_visits_365",
+        "condition_count",
+        "medication_count"
+      ],
+      "live_scoring": true,
+      "model_type": "regression",
+      "conformal_quantile_rule": "ceil((n_calibration+1)*0.90)-th absolute calibration residual, clipped to n_calibration"
+    }
+  },
+  {
+    "id": "ed_arrivals",
+    "name": "ED arrivals forecast",
+    "department": "Emergency department",
+    "prediction_time": "Before each next calendar day; only earlier daily counts available",
+    "status": "shadow",
+    "method": "Rolling mean of four previous same-weekday counts; sequential one-day backtest against last-day and last-week baselines.",
+    "limitation": "A synthetic population is not a hospital catchment. Counts omit real staffing, epidemic, weather, and holiday effects. This is a count forecast, not a patient risk model.",
+    "metrics": {
+      "n_days": 180,
+      "mae_arrivals": 0.7291666666666666,
+      "rmse_arrivals": 0.8860414462340035,
+      "mean_arrivals": 0.7222222222222222
+    },
+    "baselines": [
+      {
+        "name": "Last observed day",
+        "mae_arrivals": 0.8222222222222222
+      },
+      {
+        "name": "Same weekday last week",
+        "mae_arrivals": 0.8333333333333334
+      }
+    ],
+    "calibration": [],
+    "decision_curve": [],
+    "subgroups": [],
+    "backtest": [
+      {
+        "date": "2026-03-26",
+        "observed": 0.0,
+        "predicted": 1.5,
+        "naive": 2.0,
+        "seasonal": 2.0
+      },
+      {
+        "date": "2026-03-27",
+        "observed": 1.0,
+        "predicted": 1.0,
+        "naive": 0.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-03-28",
+        "observed": 1.0,
+        "predicted": 0.0,
+        "naive": 1.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-03-29",
+        "observed": 0.0,
+        "predicted": 1.25,
+        "naive": 1.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-03-30",
+        "observed": 2.0,
+        "predicted": 0.25,
+        "naive": 0.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-03-31",
+        "observed": 1.0,
+        "predicted": 0.75,
+        "naive": 2.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-04-01",
+        "observed": 2.0,
+        "predicted": 0.75,
+        "naive": 1.0,
+        "seasonal": 2.0
+      },
+      {
+        "date": "2026-04-02",
+        "observed": 1.0,
+        "predicted": 1.25,
+        "naive": 2.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-04-03",
+        "observed": 0.0,
+        "predicted": 1.0,
+        "naive": 1.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-04-04",
+        "observed": 0.0,
+        "predicted": 0.25,
+        "naive": 0.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-04-05",
+        "observed": 2.0,
+        "predicted": 1.0,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-04-06",
+        "observed": 1.0,
+        "predicted": 0.75,
+        "naive": 2.0,
+        "seasonal": 2.0
+      },
+      {
+        "date": "2026-04-07",
+        "observed": 2.0,
+        "predicted": 0.75,
+        "naive": 1.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-04-08",
+        "observed": 0.0,
+        "predicted": 1.0,
+        "naive": 2.0,
+        "seasonal": 2.0
+      },
+      {
+        "date": "2026-04-09",
+        "observed": 0.0,
+        "predicted": 1.25,
+        "naive": 0.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-04-10",
+        "observed": 0.0,
+        "predicted": 0.75,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-04-11",
+        "observed": 1.0,
+        "predicted": 0.25,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-04-12",
+        "observed": 1.0,
+        "predicted": 1.0,
+        "naive": 1.0,
+        "seasonal": 2.0
+      },
+      {
+        "date": "2026-04-13",
+        "observed": 1.0,
+        "predicted": 1.0,
+        "naive": 1.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-04-14",
+        "observed": 1.0,
+        "predicted": 1.0,
+        "naive": 1.0,
+        "seasonal": 2.0
+      },
+      {
+        "date": "2026-04-15",
+        "observed": 0.0,
+        "predicted": 1.0,
+        "naive": 1.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-04-16",
+        "observed": 0.0,
+        "predicted": 0.75,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-04-17",
+        "observed": 1.0,
+        "predicted": 0.5,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-04-18",
+        "observed": 0.0,
+        "predicted": 0.5,
+        "naive": 1.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-04-19",
+        "observed": 0.0,
+        "predicted": 1.0,
+        "naive": 0.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-04-20",
+        "observed": 0.0,
+        "predicted": 1.25,
+        "naive": 0.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-04-21",
+        "observed": 2.0,
+        "predicted": 1.25,
+        "naive": 0.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-04-22",
+        "observed": 1.0,
+        "predicted": 1.0,
+        "naive": 2.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-04-23",
+        "observed": 0.0,
+        "predicted": 0.25,
+        "naive": 1.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-04-24",
+        "observed": 2.0,
+        "predicted": 0.5,
+        "naive": 0.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-04-25",
+        "observed": 1.0,
+        "predicted": 0.5,
+        "naive": 2.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-04-26",
+        "observed": 1.0,
+        "predicted": 0.75,
+        "naive": 1.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-04-27",
+        "observed": 1.0,
+        "predicted": 1.0,
+        "naive": 1.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-04-28",
+        "observed": 3.0,
+        "predicted": 1.5,
+        "naive": 1.0,
+        "seasonal": 2.0
+      },
+      {
+        "date": "2026-04-29",
+        "observed": 1.0,
+        "predicted": 0.75,
+        "naive": 3.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-04-30",
+        "observed": 0.0,
+        "predicted": 0.25,
+        "naive": 1.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-05-01",
+        "observed": 1.0,
+        "predicted": 0.75,
+        "naive": 0.0,
+        "seasonal": 2.0
+      },
+      {
+        "date": "2026-05-02",
+        "observed": 0.0,
+        "predicted": 0.5,
+        "naive": 1.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-05-03",
+        "observed": 1.0,
+        "predicted": 1.0,
+        "naive": 0.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-05-04",
+        "observed": 2.0,
+        "predicted": 0.75,
+        "naive": 1.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-05-05",
+        "observed": 1.0,
+        "predicted": 2.0,
+        "naive": 2.0,
+        "seasonal": 3.0
+      },
+      {
+        "date": "2026-05-06",
+        "observed": 2.0,
+        "predicted": 0.5,
+        "naive": 1.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-05-07",
+        "observed": 0.0,
+        "predicted": 0.0,
+        "naive": 2.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-05-08",
+        "observed": 0.0,
+        "predicted": 1.0,
+        "naive": 0.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-05-09",
+        "observed": 1.0,
+        "predicted": 0.5,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-05-10",
+        "observed": 0.0,
+        "predicted": 0.75,
+        "naive": 1.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-05-11",
+        "observed": 1.0,
+        "predicted": 1.0,
+        "naive": 0.0,
+        "seasonal": 2.0
+      },
+      {
+        "date": "2026-05-12",
+        "observed": 0.0,
+        "predicted": 1.75,
+        "naive": 1.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-05-13",
+        "observed": 0.0,
+        "predicted": 1.0,
+        "naive": 0.0,
+        "seasonal": 2.0
+      },
+      {
+        "date": "2026-05-14",
+        "observed": 0.0,
+        "predicted": 0.0,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-05-15",
+        "observed": 0.0,
+        "predicted": 1.0,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-05-16",
+        "observed": 1.0,
+        "predicted": 0.5,
+        "naive": 0.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-05-17",
+        "observed": 1.0,
+        "predicted": 0.5,
+        "naive": 1.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-05-18",
+        "observed": 1.0,
+        "predicted": 1.0,
+        "naive": 1.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-05-19",
+        "observed": 1.0,
+        "predicted": 1.5,
+        "naive": 1.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-05-20",
+        "observed": 0.0,
+        "predicted": 1.0,
+        "naive": 1.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-05-21",
+        "observed": 1.0,
+        "predicted": 0.0,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-05-22",
+        "observed": 1.0,
+        "predicted": 0.75,
+        "naive": 1.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-05-23",
+        "observed": 0.0,
+        "predicted": 0.75,
+        "naive": 1.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-05-24",
+        "observed": 1.0,
+        "predicted": 0.75,
+        "naive": 0.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-05-25",
+        "observed": 1.0,
+        "predicted": 1.25,
+        "naive": 1.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-05-26",
+        "observed": 1.0,
+        "predicted": 1.25,
+        "naive": 1.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-05-27",
+        "observed": 1.0,
+        "predicted": 0.75,
+        "naive": 1.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-05-28",
+        "observed": 1.0,
+        "predicted": 0.25,
+        "naive": 1.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-05-29",
+        "observed": 0.0,
+        "predicted": 0.5,
+        "naive": 1.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-05-30",
+        "observed": 0.0,
+        "predicted": 0.5,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-05-31",
+        "observed": 2.0,
+        "predicted": 0.75,
+        "naive": 0.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-06-01",
+        "observed": 1.0,
+        "predicted": 1.25,
+        "naive": 2.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-06-02",
+        "observed": 0.0,
+        "predicted": 0.75,
+        "naive": 1.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-06-03",
+        "observed": 1.0,
+        "predicted": 0.75,
+        "naive": 0.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-06-04",
+        "observed": 2.0,
+        "predicted": 0.5,
+        "naive": 1.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-06-05",
+        "observed": 0.0,
+        "predicted": 0.25,
+        "naive": 2.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-06-06",
+        "observed": 2.0,
+        "predicted": 0.5,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-06-07",
+        "observed": 3.0,
+        "predicted": 1.0,
+        "naive": 2.0,
+        "seasonal": 2.0
+      },
+      {
+        "date": "2026-06-08",
+        "observed": 0.0,
+        "predicted": 1.0,
+        "naive": 3.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-06-09",
+        "observed": 1.0,
+        "predicted": 0.5,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-06-10",
+        "observed": 0.0,
+        "predicted": 0.5,
+        "naive": 1.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-06-11",
+        "observed": 0.0,
+        "predicted": 1.0,
+        "naive": 0.0,
+        "seasonal": 2.0
+      },
+      {
+        "date": "2026-06-12",
+        "observed": 1.0,
+        "predicted": 0.25,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-06-13",
+        "observed": 0.0,
+        "predicted": 0.75,
+        "naive": 1.0,
+        "seasonal": 2.0
+      },
+      {
+        "date": "2026-06-14",
+        "observed": 2.0,
+        "predicted": 1.75,
+        "naive": 0.0,
+        "seasonal": 3.0
+      },
+      {
+        "date": "2026-06-15",
+        "observed": 2.0,
+        "predicted": 0.75,
+        "naive": 2.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-06-16",
+        "observed": 0.0,
+        "predicted": 0.75,
+        "naive": 2.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-06-17",
+        "observed": 1.0,
+        "predicted": 0.5,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-06-18",
+        "observed": 2.0,
+        "predicted": 1.0,
+        "naive": 1.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-06-19",
+        "observed": 0.0,
+        "predicted": 0.5,
+        "naive": 2.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-06-20",
+        "observed": 0.0,
+        "predicted": 0.5,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-06-21",
+        "observed": 0.0,
+        "predicted": 2.0,
+        "naive": 0.0,
+        "seasonal": 2.0
+      },
+      {
+        "date": "2026-06-22",
+        "observed": 1.0,
+        "predicted": 1.0,
+        "naive": 0.0,
+        "seasonal": 2.0
+      },
+      {
+        "date": "2026-06-23",
+        "observed": 0.0,
+        "predicted": 0.5,
+        "naive": 1.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-06-24",
+        "observed": 0.0,
+        "predicted": 0.75,
+        "naive": 0.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-06-25",
+        "observed": 0.0,
+        "predicted": 1.25,
+        "naive": 0.0,
+        "seasonal": 2.0
+      },
+      {
+        "date": "2026-06-26",
+        "observed": 2.0,
+        "predicted": 0.25,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-06-27",
+        "observed": 0.0,
+        "predicted": 0.5,
+        "naive": 2.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-06-28",
+        "observed": 2.0,
+        "predicted": 1.75,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-06-29",
+        "observed": 3.0,
+        "predicted": 1.0,
+        "naive": 2.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-06-30",
+        "observed": 0.0,
+        "predicted": 0.25,
+        "naive": 3.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-07-01",
+        "observed": 0.0,
+        "predicted": 0.5,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-07-02",
+        "observed": 2.0,
+        "predicted": 1.0,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-07-03",
+        "observed": 2.0,
+        "predicted": 0.75,
+        "naive": 2.0,
+        "seasonal": 2.0
+      },
+      {
+        "date": "2026-07-04",
+        "observed": 1.0,
+        "predicted": 0.5,
+        "naive": 2.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-07-05",
+        "observed": 0.0,
+        "predicted": 1.75,
+        "naive": 1.0,
+        "seasonal": 2.0
+      },
+      {
+        "date": "2026-07-06",
+        "observed": 0.0,
+        "predicted": 1.5,
+        "naive": 0.0,
+        "seasonal": 3.0
+      },
+      {
+        "date": "2026-07-07",
+        "observed": 0.0,
+        "predicted": 0.25,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-07-08",
+        "observed": 1.0,
+        "predicted": 0.25,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-07-09",
+        "observed": 1.0,
+        "predicted": 1.0,
+        "naive": 1.0,
+        "seasonal": 2.0
+      },
+      {
+        "date": "2026-07-10",
+        "observed": 0.0,
+        "predicted": 1.25,
+        "naive": 1.0,
+        "seasonal": 2.0
+      },
+      {
+        "date": "2026-07-11",
+        "observed": 1.0,
+        "predicted": 0.25,
+        "naive": 0.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-07-12",
+        "observed": 0.0,
+        "predicted": 1.0,
+        "naive": 1.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-07-13",
+        "observed": 0.0,
+        "predicted": 1.5,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-07-14",
+        "observed": 1.0,
+        "predicted": 0.0,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-07-15",
+        "observed": 2.0,
+        "predicted": 0.5,
+        "naive": 1.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-07-16",
+        "observed": 0.0,
+        "predicted": 1.25,
+        "naive": 2.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-07-17",
+        "observed": 0.0,
+        "predicted": 1.0,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-07-18",
+        "observed": 1.0,
+        "predicted": 0.5,
+        "naive": 0.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-07-19",
+        "observed": 2.0,
+        "predicted": 0.5,
+        "naive": 1.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-07-20",
+        "observed": 1.0,
+        "predicted": 1.0,
+        "naive": 2.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-07-21",
+        "observed": 0.0,
+        "predicted": 0.25,
+        "naive": 1.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-07-22",
+        "observed": 2.0,
+        "predicted": 0.75,
+        "naive": 0.0,
+        "seasonal": 2.0
+      },
+      {
+        "date": "2026-07-23",
+        "observed": 0.0,
+        "predicted": 0.75,
+        "naive": 2.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-07-24",
+        "observed": 1.0,
+        "predicted": 1.0,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-07-25",
+        "observed": 0.0,
+        "predicted": 0.75,
+        "naive": 1.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-07-26",
+        "observed": 0.0,
+        "predicted": 1.0,
+        "naive": 0.0,
+        "seasonal": 2.0
+      },
+      {
+        "date": "2026-07-27",
+        "observed": 0.0,
+        "predicted": 1.0,
+        "naive": 0.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-07-28",
+        "observed": 1.0,
+        "predicted": 0.25,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-07-29",
+        "observed": 2.0,
+        "predicted": 1.25,
+        "naive": 1.0,
+        "seasonal": 2.0
+      },
+      {
+        "date": "2026-07-30",
+        "observed": 0.0,
+        "predicted": 0.75,
+        "naive": 2.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-07-31",
+        "observed": 0.0,
+        "predicted": 0.75,
+        "naive": 0.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-08-01",
+        "observed": 0.0,
+        "predicted": 0.75,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-08-02",
+        "observed": 1.0,
+        "predicted": 0.5,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-08-03",
+        "observed": 1.0,
+        "predicted": 0.25,
+        "naive": 1.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-08-04",
+        "observed": 2.0,
+        "predicted": 0.5,
+        "naive": 1.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-08-05",
+        "observed": 1.0,
+        "predicted": 1.75,
+        "naive": 2.0,
+        "seasonal": 2.0
+      },
+      {
+        "date": "2026-08-06",
+        "observed": 1.0,
+        "predicted": 0.25,
+        "naive": 1.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-08-07",
+        "observed": 0.0,
+        "predicted": 0.25,
+        "naive": 1.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-08-08",
+        "observed": 1.0,
+        "predicted": 0.5,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-08-09",
+        "observed": 0.0,
+        "predicted": 0.75,
+        "naive": 1.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-08-10",
+        "observed": 1.0,
+        "predicted": 0.5,
+        "naive": 0.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-08-11",
+        "observed": 0.0,
+        "predicted": 1.0,
+        "naive": 1.0,
+        "seasonal": 2.0
+      },
+      {
+        "date": "2026-08-12",
+        "observed": 0.0,
+        "predicted": 1.75,
+        "naive": 0.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-08-13",
+        "observed": 0.0,
+        "predicted": 0.25,
+        "naive": 0.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-08-14",
+        "observed": 3.0,
+        "predicted": 0.25,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-08-15",
+        "observed": 0.0,
+        "predicted": 0.5,
+        "naive": 3.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-08-16",
+        "observed": 0.0,
+        "predicted": 0.75,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-08-17",
+        "observed": 1.0,
+        "predicted": 0.75,
+        "naive": 0.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-08-18",
+        "observed": 0.0,
+        "predicted": 0.75,
+        "naive": 1.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-08-19",
+        "observed": 0.0,
+        "predicted": 1.25,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-08-20",
+        "observed": 1.0,
+        "predicted": 0.25,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-08-21",
+        "observed": 1.0,
+        "predicted": 1.0,
+        "naive": 1.0,
+        "seasonal": 3.0
+      },
+      {
+        "date": "2026-08-22",
+        "observed": 1.0,
+        "predicted": 0.25,
+        "naive": 1.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-08-23",
+        "observed": 0.0,
+        "predicted": 0.25,
+        "naive": 1.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-08-24",
+        "observed": 0.0,
+        "predicted": 0.75,
+        "naive": 0.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-08-25",
+        "observed": 1.0,
+        "predicted": 0.75,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-08-26",
+        "observed": 0.0,
+        "predicted": 0.75,
+        "naive": 1.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-08-27",
+        "observed": 2.0,
+        "predicted": 0.5,
+        "naive": 0.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-08-28",
+        "observed": 1.0,
+        "predicted": 1.0,
+        "naive": 2.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-08-29",
+        "observed": 0.0,
+        "predicted": 0.5,
+        "naive": 1.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-08-30",
+        "observed": 1.0,
+        "predicted": 0.25,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-08-31",
+        "observed": 1.0,
+        "predicted": 0.75,
+        "naive": 1.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-09-01",
+        "observed": 1.0,
+        "predicted": 0.75,
+        "naive": 1.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-09-02",
+        "observed": 1.0,
+        "predicted": 0.25,
+        "naive": 1.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-09-03",
+        "observed": 0.0,
+        "predicted": 1.0,
+        "naive": 1.0,
+        "seasonal": 2.0
+      },
+      {
+        "date": "2026-09-04",
+        "observed": 0.0,
+        "predicted": 1.25,
+        "naive": 0.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-09-05",
+        "observed": 1.0,
+        "predicted": 0.5,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-09-06",
+        "observed": 0.0,
+        "predicted": 0.25,
+        "naive": 1.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-09-07",
+        "observed": 1.0,
+        "predicted": 0.75,
+        "naive": 0.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-09-08",
+        "observed": 0.0,
+        "predicted": 0.5,
+        "naive": 1.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-09-09",
+        "observed": 0.0,
+        "predicted": 0.25,
+        "naive": 0.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-09-10",
+        "observed": 0.0,
+        "predicted": 0.75,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-09-11",
+        "observed": 0.0,
+        "predicted": 1.25,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-09-12",
+        "observed": 1.0,
+        "predicted": 0.5,
+        "naive": 0.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-09-13",
+        "observed": 1.0,
+        "predicted": 0.25,
+        "naive": 1.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-09-14",
+        "observed": 0.0,
+        "predicted": 0.75,
+        "naive": 1.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-09-15",
+        "observed": 1.0,
+        "predicted": 0.5,
+        "naive": 0.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-09-16",
+        "observed": 1.0,
+        "predicted": 0.25,
+        "naive": 1.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-09-17",
+        "observed": 1.0,
+        "predicted": 0.75,
+        "naive": 1.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-09-18",
+        "observed": 1.0,
+        "predicted": 0.5,
+        "naive": 1.0,
+        "seasonal": 0.0
+      },
+      {
+        "date": "2026-09-19",
+        "observed": 0.0,
+        "predicted": 0.75,
+        "naive": 1.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-09-20",
+        "observed": 0.0,
+        "predicted": 0.5,
+        "naive": 0.0,
+        "seasonal": 1.0
+      },
+      {
+        "date": "2026-09-21",
+        "observed": 0.0,
+        "predicted": 0.5,
+        "naive": 0.0,
+        "seasonal": 0.0
+      }
+    ],
+    "gates": [
+      {
+        "name": "rolling_origin_no_lookahead",
+        "passed": true,
+        "reason": "Every prediction is computed only from counts before its own date."
+      },
+      {
+        "name": "mae_better_than_seasonal_naive",
+        "passed": true,
+        "reason": "Compared over the same final 180 daily observations."
+      },
+      {
+        "name": "operational_validation",
+        "passed": false,
+        "reason": "No real hospital operations validation."
+      }
+    ],
+    "contract": {
+      "statement": "This is a portfolio demonstration on synthetic data. It is not a medical device, has not been validated for clinical use, and must not be used to make decisions about real patients.",
+      "clinical_use": false,
+      "population": "Synthea Massachusetts, seed 20260923",
+      "model_type": "forecast",
+      "live_scoring": true,
+      "backtest_start": "2026-03-26",
+      "backtest_end": "2026-09-21",
+      "forecast_date": "2026-09-22",
+      "next_day_forecast": 0.75
+    }
+  },
+  {
+    "id": "hosp12m",
+    "name": "12-month hospitalization risk",
+    "department": "Primary care and population health",
+    "prediction_time": "At the annual January 1 registry index date",
+    "status": "shadow",
+    "method": "Standardized, L2 logistic regression with separate temporal Platt calibration; LightGBM evaluated as comparator.",
+    "limitation": "Synthetic retrospective annual-index model. A 360-day partition buffer protects temporal order despite per-person date shifts. Patients can recur across partitions. Future hospitalization is a utilization outcome, not a complete measure of clinical need. Sparse subgroups limit inference.",
+    "metrics": {
+      "n": 1397,
+      "positives": 50,
+      "positive_rate": 0.03579098067287044,
+      "auroc": 0.6971269487750558,
+      "auprc": 0.1233449664918784,
+      "brier": 0.03290022009219866,
+      "ece": 0.00232197549502728,
+      "auroc_ci95": {
+        "lower": 0.6196783342089704,
+        "upper": 0.7637466302124161,
+        "method": "200 patient-cluster bootstrap replicates",
+        "valid_replicates": 200
+      }
+    },
+    "baselines": [
+      {
+        "name": "Training-prevalence constant",
+        "n": 1397,
+        "positives": 50,
+        "positive_rate": 0.03579098067287044,
+        "auroc": 0.5,
+        "auprc": 0.03579098067287044,
+        "brier": 0.03451996153768793,
+        "ece": 0.0031583480402378114
+      },
+      {
+        "name": "Uncalibrated logistic regression",
+        "n": 1397,
+        "positives": 50,
+        "positive_rate": 0.03579098067287044,
+        "auroc": 0.6971269487750558,
+        "auprc": 0.1233449664918784,
+        "brier": 0.03316532701733088,
+        "ece": 0.004430537106658911
+      },
+      {
+        "name": "Temporally calibrated LightGBM comparator",
+        "n": 1397,
+        "positives": 50,
+        "positive_rate": 0.03579098067287044,
+        "auroc": 0.7138827023014106,
+        "auprc": 0.12219577355389802,
+        "brier": 0.03358122182356914,
+        "ece": 0.007026294036880781
+      }
+    ],
+    "calibration": [
+      {
+        "predicted": 0.03193545888125407,
+        "observed": 0.03345454545454545,
+        "n": 1375,
+        "lower": 0.0,
+        "upper": 0.1
+      },
+      {
+        "predicted": 0.13521701568760833,
+        "observed": 0.10526315789473684,
+        "n": 19,
+        "lower": 0.1,
+        "upper": 0.2
+      },
+      {
+        "predicted": 0.33079343152711355,
+        "observed": 0.0,
+        "n": 1,
+        "lower": 0.30000000000000004,
+        "upper": 0.4
+      },
+      {
+        "predicted": 0.8295847360370637,
+        "observed": 1.0,
+        "n": 1,
+        "lower": 0.8,
+        "upper": 0.9
+      },
+      {
+        "predicted": 0.9152762652771489,
+        "observed": 1.0,
+        "n": 1,
+        "lower": 0.9,
+        "upper": 1.0
+      }
+    ],
+    "decision_curve": [
+      {
+        "threshold": 0.02,
+        "model": 0.01830453011555374,
+        "all": 0.01611324558456167,
+        "none": 0.0
+      },
+      {
+        "threshold": 0.05,
+        "model": 0.0059149304901480616,
+        "all": -0.014956862449610073,
+        "none": 0.0
+      },
+      {
+        "threshold": 0.1,
+        "model": 0.0014316392269148172,
+        "all": -0.07134335480792174,
+        "none": 0.0
+      },
+      {
+        "threshold": 0.15,
+        "model": 0.0008000336856288685,
+        "all": -0.1343635521495642,
+        "none": 0.0
+      },
+      {
+        "threshold": 0.2,
+        "model": 0.0012526843235504653,
+        "all": -0.205261274158912,
+        "none": 0.0
+      },
+      {
+        "threshold": 0.3,
+        "model": 0.001124859392575928,
+        "all": -0.3774414561816136,
+        "none": 0.0
+      },
+      {
+        "threshold": 0.4,
+        "model": 0.0014316392269148174,
+        "all": -0.6070150322118827,
+        "none": 0.0
+      },
+      {
+        "threshold": 0.5,
+        "model": 0.0014316392269148174,
+        "all": -0.9284180386542591,
+        "none": 0.0
+      }
+    ],
+    "subgroups": [
+      {
+        "dimension": "sex",
+        "group": "F",
+        "n": 677,
+        "positives": 25,
+        "positive_rate": 0.03692762186115214,
+        "auroc": 0.6653374233128834,
+        "auprc": 0.10096603904792639,
+        "brier": 0.034913682349578125,
+        "ece": 0.0013807108590087503,
+        "predicted_rate": 0.0365729753193152,
+        "calibration_p": 0.9606198529350124,
+        "support": "adequate",
+        "sensitivity_at_20pct": 0.0,
+        "calibration_q_bh": 0.9823275471071459
+      },
+      {
+        "dimension": "sex",
+        "group": "M",
+        "n": 720,
+        "positives": 25,
+        "positive_rate": 0.034722222222222224,
+        "auroc": 0.7528920863309352,
+        "auprc": 0.15775543486850227,
+        "brier": 0.031007006275190478,
+        "ece": 0.005803529191808384,
+        "predicted_rate": 0.033050179724241444,
+        "calibration_p": 0.7942995775091142,
+        "support": "adequate",
+        "sensitivity_at_20pct": 0.08,
+        "calibration_q_bh": 0.9823275471071459
+      },
+      {
+        "dimension": "age",
+        "group": "20-29",
+        "n": 263,
+        "positives": 5,
+        "positive_rate": 0.019011406844106463,
+        "auroc": 0.7976744186046513,
+        "auprc": 0.0625664710507118,
+        "brier": 0.01853873371685628,
+        "ece": 0.002796869277699971,
+        "predicted_rate": 0.021808276121806434,
+        "calibration_p": 0.7559406119833685,
+        "support": "adequate",
+        "sensitivity_at_20pct": 0.0,
+        "calibration_q_bh": 0.9823275471071459
+      },
+      {
+        "dimension": "age",
+        "group": "30-39",
+        "n": 271,
+        "positives": 12,
+        "positive_rate": 0.04428044280442804,
+        "auroc": 0.7284427284427285,
+        "auprc": 0.16731398096381966,
+        "brier": 0.041966535011518945,
+        "ece": 0.016627945654423933,
+        "predicted_rate": 0.027652497150004108,
+        "calibration_p": 0.09462460361116973,
+        "support": "adequate",
+        "sensitivity_at_20pct": 0.0,
+        "calibration_q_bh": 0.9823275471071459
+      },
+      {
+        "dimension": "age",
+        "group": "40-49",
+        "n": 245,
+        "positives": 6,
+        "positive_rate": 0.024489795918367346,
+        "auroc": 0.7259414225941423,
+        "auprc": 0.04998622667183704,
+        "brier": 0.023867600907661282,
+        "ece": 0.006955660938938717,
+        "predicted_rate": 0.03144545685730606,
+        "calibration_p": 0.5321459729648663,
+        "support": "adequate",
+        "sensitivity_at_20pct": 0.0,
+        "calibration_q_bh": 0.9823275471071459
+      },
+      {
+        "dimension": "age",
+        "group": "50-59",
+        "n": 289,
+        "positives": 10,
+        "positive_rate": 0.03460207612456748,
+        "auroc": 0.6568100358422939,
+        "auprc": 0.12090133238932065,
+        "brier": 0.03282448178981521,
+        "ece": 0.005151355996237314,
+        "predicted_rate": 0.03730060806362743,
+        "calibration_p": 0.8080095957307457,
+        "support": "adequate",
+        "sensitivity_at_20pct": 0.0,
+        "calibration_q_bh": 0.9823275471071459
+      },
+      {
+        "dimension": "age",
+        "group": "60-69",
+        "n": 195,
+        "positives": 10,
+        "positive_rate": 0.05128205128205128,
+        "auroc": 0.7497297297297297,
+        "auprc": 0.23020823036776503,
+        "brier": 0.04426550349666228,
+        "ece": 0.013311278929554075,
+        "predicted_rate": 0.04749488824542073,
+        "calibration_p": 0.7945805427457813,
+        "support": "adequate",
+        "sensitivity_at_20pct": 0.1,
+        "calibration_q_bh": 0.9823275471071459
+      },
+      {
+        "dimension": "age",
+        "group": "70-79",
+        "n": 86,
+        "positives": 7,
+        "positive_rate": 0.08139534883720931,
+        "auroc": 0.6365280289330922,
+        "auprc": 0.2826672937359162,
+        "brier": 0.0650307697758164,
+        "ece": 0.02112678855279452,
+        "predicted_rate": 0.06026856028441478,
+        "calibration_p": 0.3675737017556667,
+        "support": "adequate",
+        "sensitivity_at_20pct": 0.14285714285714285,
+        "calibration_q_bh": 0.9823275471071459
+      },
+      {
+        "dimension": "age",
+        "group": "80-89",
+        "n": 35,
+        "positives": 0,
+        "positive_rate": 0.0,
+        "auroc": null,
+        "auprc": null,
+        "brier": 0.003296713152331259,
+        "ece": 0.049277600823044526,
+        "predicted_rate": 0.049277600823044526,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": null,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "age",
+        "group": "90+",
+        "n": 13,
+        "positives": 0,
+        "positive_rate": 0.0,
+        "auroc": null,
+        "auprc": null,
+        "brier": 0.0030267469701644057,
+        "ece": 0.05179248179941837,
+        "predicted_rate": 0.05179248179941838,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": null,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "race",
+        "group": "asian",
+        "n": 87,
+        "positives": 4,
+        "positive_rate": 0.04597701149425287,
+        "auroc": 0.6054216867469879,
+        "auprc": 0.07228391099700471,
+        "brier": 0.04442372078185769,
+        "ece": 0.017739339344716054,
+        "predicted_rate": 0.03227087355004232,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": 0.0,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "race",
+        "group": "black",
+        "n": 107,
+        "positives": 3,
+        "positive_rate": 0.028037383177570093,
+        "auroc": 0.6666666666666666,
+        "auprc": 0.3719047619047619,
+        "brier": 0.018983337701446824,
+        "ece": 0.01327709090963134,
+        "predicted_rate": 0.03812914205051104,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": 0.3333333333333333,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "race",
+        "group": "hawaiian",
+        "n": 18,
+        "positives": 1,
+        "positive_rate": 0.05555555555555555,
+        "auroc": 1.0,
+        "auprc": 1.0,
+        "brier": 0.04773455047469846,
+        "ece": 0.025458652891465407,
+        "predicted_rate": 0.030096902664090146,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": 0.0,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "race",
+        "group": "native",
+        "n": 9,
+        "positives": 0,
+        "positive_rate": 0.0,
+        "auroc": null,
+        "auprc": null,
+        "brier": 0.001347073806875946,
+        "ece": 0.03505677151820706,
+        "predicted_rate": 0.03505677151820706,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": null,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "race",
+        "group": "other",
+        "n": 12,
+        "positives": 0,
+        "positive_rate": 0.0,
+        "auroc": null,
+        "auprc": null,
+        "brier": 0.0012937717372424962,
+        "ece": 0.03408677690453287,
+        "predicted_rate": 0.03408677690453287,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": null,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "race",
+        "group": "white",
+        "n": 1164,
+        "positives": 42,
+        "positive_rate": 0.03608247422680412,
+        "auroc": 0.7032085561497327,
+        "auprc": 0.1068850087139755,
+        "brier": 0.033658638997484315,
+        "ece": 0.00261734704247369,
+        "predicted_rate": 0.03470992524046391,
+        "calibration_p": 0.7949387962165977,
+        "support": "adequate",
+        "sensitivity_at_20pct": 0.023809523809523808,
+        "calibration_q_bh": 0.9823275471071459
+      },
+      {
+        "dimension": "ethnicity",
+        "group": "hispanic",
+        "n": 160,
+        "positives": 7,
+        "positive_rate": 0.04375,
+        "auroc": 0.7478991596638656,
+        "auprc": 0.15087520857399564,
+        "brier": 0.04110046780418999,
+        "ece": 0.01126500856002426,
+        "predicted_rate": 0.03385216967325162,
+        "calibration_p": 0.4872669474930923,
+        "support": "adequate",
+        "sensitivity_at_20pct": 0.0,
+        "calibration_q_bh": 0.9823275471071459
+      },
+      {
+        "dimension": "ethnicity",
+        "group": "nonhispanic",
+        "n": 1237,
+        "positives": 43,
+        "positive_rate": 0.034761519805982216,
+        "auroc": 0.685997818550115,
+        "auprc": 0.12647193656672198,
+        "brier": 0.03183955749404295,
+        "ece": 0.0011652371842758536,
+        "predicted_rate": 0.03487444344778494,
+        "calibration_p": 0.9823275471071459,
+        "support": "adequate",
+        "sensitivity_at_20pct": 0.046511627906976744,
+        "calibration_q_bh": 0.9823275471071459
+      },
+      {
+        "dimension": "payer",
+        "group": "Unknown",
+        "n": 1397,
+        "positives": 50,
+        "positive_rate": 0.03579098067287044,
+        "auroc": 0.6971269487750558,
+        "auprc": 0.1233449664918784,
+        "brier": 0.03290022009219866,
+        "ece": 0.00232197549502728,
+        "predicted_rate": 0.034757361268883485,
+        "calibration_p": 0.8295030323419754,
+        "support": "adequate",
+        "sensitivity_at_20pct": 0.04,
+        "calibration_q_bh": 0.9823275471071459
+      }
+    ],
+    "gates": [
+      {
+        "name": "temporal_outcome_embargo",
+        "passed": true,
+        "reason": "Each training/calibration label window finishes before the next temporal partition."
+      },
+      {
+        "name": "calibrator_support",
+        "passed": true,
+        "reason": "Platt calibration requires at least five cases from each class in the separate calibration partition."
+      },
+      {
+        "name": "brier_better_than_constant",
+        "passed": true,
+        "reason": "Held-out Brier 0.0329; training-prevalence baseline 0.0345."
+      },
+      {
+        "name": "auroc_at_least_065",
+        "passed": true,
+        "reason": "Prespecified research demonstration discrimination gate: AUROC >= 0.65."
+      },
+      {
+        "name": "ece_at_most_005",
+        "passed": true,
+        "reason": "Prespecified equal-width, ten-bin expected calibration error <= 0.05."
+      },
+      {
+        "name": "subgroup_support",
+        "passed": false,
+        "reason": "Every reported subgroup needs n >= 50 and at least five positive and negative examples. Sparse groups remain visible."
+      },
+      {
+        "name": "clinical_validation",
+        "passed": false,
+        "reason": "Synthetic retrospective evaluation is not clinical validation."
+      }
+    ],
+    "contract": {
+      "statement": "This is a portfolio demonstration on synthetic data. It is not a medical device, has not been validated for clinical use, and must not be used to make decisions about real patients.",
+      "clinical_use": false,
+      "population": "Synthea Massachusetts, seed 20260923",
+      "split": {
+        "train_start": "2010-01-01",
+        "train_label_end_exclusive": "2020-07-05",
+        "calibration_start": "2021-06-30",
+        "calibration_label_end_exclusive": "2023-07-05",
+        "test_start": "2024-06-29",
+        "calendar": "per-person shifted synthetic dates, protected by a 360-day between-partition buffer",
+        "outcome_embargo": "Label windows finish at least 360 shifted-calendar days before the next partition. Because individual shifts are bounded by +/-180 days, true chronology between partitions is preserved.",
+        "boundary_buffer_each_side_days": 180,
+        "n_train": 4995,
+        "n_calibration": 1345,
+        "n_test": 1397,
+        "same_patients_can_recur": true
+      },
+      "features": [
+        "age",
+        "prior_admissions_365",
+        "prior_ed_365",
+        "prior_visits_365",
+        "condition_count",
+        "medication_count"
+      ],
+      "feature_availability": "Strictly prior to prediction time. No discharge disposition, LOS, future costs, or outcomes are model inputs.",
+      "deployment_choice": "Logistic regression prespecified for transparent live scoring; comparator does not replace it based on test performance.",
+      "calibration_method": "Platt sigmoid fitted to separate chronological calibration data",
+      "model_type": "binary",
+      "live_scoring": true,
+      "multiple_comparisons": "Benjamini-Hochberg across displayed subgroup calibration-residual tests; normal-approximation, descriptive only.",
+      "patient_overlap_train_test": 1230
+    }
+  },
+  {
+    "id": "highcost",
+    "name": "Future billed-claim proxy",
+    "department": "Revenue cycle and finance",
+    "prediction_time": "At the annual January 1 registry index date",
+    "status": "shadow",
+    "method": "Standardized, L2 logistic regression with separate temporal Platt calibration; LightGBM evaluated as comparator.",
+    "limitation": "The target is future synthetic billed encounter claims above a training-period threshold, not paid costs, treatment benefit, or clinical need. Comparing it with hospitalization risk is a proxy-choice demonstration; hospitalization is also utilization, not ground-truth need. No real-world causal or fairness conclusion follows.",
+    "metrics": {
+      "n": 1397,
+      "positives": 155,
+      "positive_rate": 0.11095204008589836,
+      "auroc": 0.7463352553114123,
+      "auprc": 0.381500109060407,
+      "brier": 0.08816683065810464,
+      "ece": 0.032657652436385506,
+      "auroc_ci95": {
+        "lower": 0.697757150189239,
+        "upper": 0.7889585479036392,
+        "method": "200 patient-cluster bootstrap replicates",
+        "valid_replicates": 200
+      },
+      "training_90th_percentile_cost_threshold": 30639.708000000006
+    },
+    "baselines": [
+      {
+        "name": "Training-prevalence constant",
+        "n": 1397,
+        "positives": 155,
+        "positive_rate": 0.11095204008589836,
+        "auroc": 0.5,
+        "auprc": 0.11095204008589836,
+        "brier": 0.09875944948813094,
+        "ece": 0.010851939985798253
+      },
+      {
+        "name": "Uncalibrated logistic regression",
+        "n": 1397,
+        "positives": 155,
+        "positive_rate": 0.11095204008589836,
+        "auroc": 0.7463352553114123,
+        "auprc": 0.381500109060407,
+        "brier": 0.08662443300948876,
+        "ece": 0.02488675035297477
+      },
+      {
+        "name": "Temporally calibrated LightGBM comparator",
+        "n": 1397,
+        "positives": 155,
+        "positive_rate": 0.11095204008589836,
+        "auroc": 0.7654147836476026,
+        "auprc": 0.4232529042781652,
+        "brier": 0.0837648874667668,
+        "ece": 0.03998254331327486
+      }
+    ],
+    "calibration": [
+      {
+        "predicted": 0.05443323790643126,
+        "observed": 0.05798394290811775,
+        "n": 1121,
+        "lower": 0.0,
+        "upper": 0.1
+      },
+      {
+        "predicted": 0.13177333650858605,
+        "observed": 0.26540284360189575,
+        "n": 211,
+        "lower": 0.1,
+        "upper": 0.2
+      },
+      {
+        "predicted": 0.23937921648885446,
+        "observed": 0.3783783783783784,
+        "n": 37,
+        "lower": 0.2,
+        "upper": 0.30000000000000004
+      },
+      {
+        "predicted": 0.33965651198209396,
+        "observed": 0.7777777777777778,
+        "n": 9,
+        "lower": 0.30000000000000004,
+        "upper": 0.4
+      },
+      {
+        "predicted": 0.4436566920051009,
+        "observed": 0.3333333333333333,
+        "n": 3,
+        "lower": 0.4,
+        "upper": 0.5
+      },
+      {
+        "predicted": 0.5389110780278873,
+        "observed": 0.6666666666666666,
+        "n": 3,
+        "lower": 0.5,
+        "upper": 0.6000000000000001
+      },
+      {
+        "predicted": 0.6396839764834967,
+        "observed": 1.0,
+        "n": 2,
+        "lower": 0.6000000000000001,
+        "upper": 0.7000000000000001
+      },
+      {
+        "predicted": 0.9932404435466778,
+        "observed": 0.7272727272727273,
+        "n": 11,
+        "lower": 0.9,
+        "upper": 1.0
+      }
+    ],
+    "decision_curve": [
+      {
+        "threshold": 0.02,
+        "model": 0.09200473317458695,
+        "all": 0.09280820416928404,
+        "none": 0.0
+      },
+      {
+        "threshold": 0.05,
+        "model": 0.0650265606751309,
+        "all": 0.06416004219568247,
+        "none": 0.0
+      },
+      {
+        "threshold": 0.1,
+        "model": 0.049630159866380336,
+        "all": 0.012168933428775952,
+        "none": 0.0
+      },
+      {
+        "threshold": 0.15,
+        "model": 0.026737967914438505,
+        "all": -0.04593877636953132,
+        "none": 0.0
+      },
+      {
+        "threshold": 0.2,
+        "model": 0.01879026485325698,
+        "all": -0.11130994989262706,
+        "none": 0.0
+      },
+      {
+        "threshold": 0.3,
+        "model": 0.011862153594437059,
+        "all": -0.2700685141630023,
+        "none": 0.0
+      },
+      {
+        "threshold": 0.4,
+        "model": 0.006442376521116677,
+        "all": -0.48174659985683616,
+        "none": 0.0
+      },
+      {
+        "threshold": 0.5,
+        "model": 0.0057265569076592705,
+        "all": -0.7780959198282034,
+        "none": 0.0
+      }
+    ],
+    "subgroups": [
+      {
+        "dimension": "sex",
+        "group": "F",
+        "n": 677,
+        "positives": 119,
+        "positive_rate": 0.1757754800590842,
+        "auroc": 0.7259495195927834,
+        "auprc": 0.39263694747759603,
+        "brier": 0.1384267411450313,
+        "ece": 0.083188927035552,
+        "predicted_rate": 0.0925865530235322,
+        "calibration_p": 3.3244130794096344e-15,
+        "support": "adequate",
+        "sensitivity_at_20pct": 0.16806722689075632,
+        "calibration_q_bh": 4.654178311173488e-14
+      },
+      {
+        "dimension": "sex",
+        "group": "M",
+        "n": 720,
+        "positives": 36,
+        "positive_rate": 0.05,
+        "auroc": 0.6637426900584794,
+        "auprc": 0.40104339229939934,
+        "brier": 0.04090855371414721,
+        "ece": 0.03867161506245686,
+        "predicted_rate": 0.07390193480485509,
+        "calibration_p": 0.0070660599310266746,
+        "support": "adequate",
+        "sensitivity_at_20pct": 0.3888888888888889,
+        "calibration_q_bh": 0.012343886101860036
+      },
+      {
+        "dimension": "age",
+        "group": "20-29",
+        "n": 263,
+        "positives": 35,
+        "positive_rate": 0.13307984790874525,
+        "auroc": 0.6921052631578948,
+        "auprc": 0.2699508860922925,
+        "brier": 0.11153549570313229,
+        "ece": 0.046064765516925975,
+        "predicted_rate": 0.10781913838079123,
+        "calibration_p": 0.18046400447227007,
+        "support": "adequate",
+        "sensitivity_at_20pct": 0.14285714285714285,
+        "calibration_q_bh": 0.2526496062611781
+      },
+      {
+        "dimension": "age",
+        "group": "30-39",
+        "n": 271,
+        "positives": 43,
+        "positive_rate": 0.15867158671586715,
+        "auroc": 0.7797327621379029,
+        "auprc": 0.46140713299178454,
+        "brier": 0.1221291851317966,
+        "ece": 0.060188898288969915,
+        "predicted_rate": 0.09848268842689724,
+        "calibration_p": 0.0005772746267711204,
+        "support": "adequate",
+        "sensitivity_at_20pct": 0.18604651162790697,
+        "calibration_q_bh": 0.0016163689549591371
+      },
+      {
+        "dimension": "age",
+        "group": "40-49",
+        "n": 245,
+        "positives": 21,
+        "positive_rate": 0.08571428571428572,
+        "auroc": 0.6823979591836735,
+        "auprc": 0.2968726830857175,
+        "brier": 0.07080333951123155,
+        "ece": 0.014393079100776496,
+        "predicted_rate": 0.07211768275240216,
+        "calibration_p": 0.39721262056589257,
+        "support": "adequate",
+        "sensitivity_at_20pct": 0.19047619047619047,
+        "calibration_q_bh": 0.46341472399354133
+      },
+      {
+        "dimension": "age",
+        "group": "50-59",
+        "n": 289,
+        "positives": 20,
+        "positive_rate": 0.06920415224913495,
+        "auroc": 0.7116171003717472,
+        "auprc": 0.31329581782002036,
+        "brier": 0.05966941268466232,
+        "ece": 0.0299608391718153,
+        "predicted_rate": 0.06757429536375317,
+        "calibration_p": 0.9056246900332338,
+        "support": "adequate",
+        "sensitivity_at_20pct": 0.15,
+        "calibration_q_bh": 0.9056246900332338
+      },
+      {
+        "dimension": "age",
+        "group": "60-69",
+        "n": 195,
+        "positives": 18,
+        "positive_rate": 0.09230769230769231,
+        "auroc": 0.7548650345260515,
+        "auprc": 0.5700061052720926,
+        "brier": 0.056760774178994985,
+        "ece": 0.0229888200340592,
+        "predicted_rate": 0.07401775456759896,
+        "calibration_p": 0.21813888252033675,
+        "support": "adequate",
+        "sensitivity_at_20pct": 0.3888888888888889,
+        "calibration_q_bh": 0.2776313050258831
+      },
+      {
+        "dimension": "age",
+        "group": "70-79",
+        "n": 86,
+        "positives": 13,
+        "positive_rate": 0.1511627906976744,
+        "auroc": 0.6385669125395153,
+        "auprc": 0.3828985285888785,
+        "brier": 0.12960414469213155,
+        "ece": 0.11747965085459805,
+        "predicted_rate": 0.06412499976003995,
+        "calibration_p": 9.562546496284861e-05,
+        "support": "adequate",
+        "sensitivity_at_20pct": 0.3076923076923077,
+        "calibration_q_bh": 0.00044625216982662684
+      },
+      {
+        "dimension": "age",
+        "group": "80-89",
+        "n": 35,
+        "positives": 3,
+        "positive_rate": 0.08571428571428572,
+        "auroc": 0.8958333333333333,
+        "auprc": 0.4797979797979798,
+        "brier": 0.08567894948441018,
+        "ece": 0.07806617451527302,
+        "predicted_rate": 0.07052612963904911,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": 0.6666666666666666,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "age",
+        "group": "90+",
+        "n": 13,
+        "positives": 2,
+        "positive_rate": 0.15384615384615385,
+        "auroc": 0.9545454545454545,
+        "auprc": 0.8333333333333333,
+        "brier": 0.0718360617100533,
+        "ece": 0.059167907175801636,
+        "predicted_rate": 0.09467824667035224,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": 0.5,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "race",
+        "group": "asian",
+        "n": 87,
+        "positives": 13,
+        "positive_rate": 0.14942528735632185,
+        "auroc": 0.761954261954262,
+        "auprc": 0.5407732724750713,
+        "brier": 0.11998813112600412,
+        "ece": 0.07406797805678891,
+        "predicted_rate": 0.07535730929953292,
+        "calibration_p": 0.007935355351195737,
+        "support": "adequate",
+        "sensitivity_at_20pct": 0.15384615384615385,
+        "calibration_q_bh": 0.012343886101860036
+      },
+      {
+        "dimension": "race",
+        "group": "black",
+        "n": 107,
+        "positives": 10,
+        "positive_rate": 0.09345794392523364,
+        "auroc": 0.7319587628865979,
+        "auprc": 0.4785496962470276,
+        "brier": 0.07208943193920878,
+        "ece": 0.050936578490236084,
+        "predicted_rate": 0.08015927700271007,
+        "calibration_p": 0.6016106368244568,
+        "support": "adequate",
+        "sensitivity_at_20pct": 0.3,
+        "calibration_q_bh": 0.6478883781186457
+      },
+      {
+        "dimension": "race",
+        "group": "hawaiian",
+        "n": 18,
+        "positives": 1,
+        "positive_rate": 0.05555555555555555,
+        "auroc": 0.8235294117647058,
+        "auprc": 0.25,
+        "brier": 0.05059643076982329,
+        "ece": 0.0730906840280565,
+        "predicted_rate": 0.07070730114786852,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": 0.0,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "race",
+        "group": "native",
+        "n": 9,
+        "positives": 0,
+        "positive_rate": 0.0,
+        "auroc": null,
+        "auprc": null,
+        "brier": 0.005008147368530744,
+        "ece": 0.061951287440917505,
+        "predicted_rate": 0.061951287440917505,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": null,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "race",
+        "group": "other",
+        "n": 12,
+        "positives": 1,
+        "positive_rate": 0.08333333333333333,
+        "auroc": 0.8181818181818181,
+        "auprc": 0.3333333333333333,
+        "brier": 0.07737861533450414,
+        "ece": 0.07031142518456919,
+        "predicted_rate": 0.07391739435494896,
+        "calibration_p": null,
+        "support": "limited",
+        "sensitivity_at_20pct": 0.0,
+        "calibration_q_bh": null
+      },
+      {
+        "dimension": "race",
+        "group": "white",
+        "n": 1164,
+        "positives": 130,
+        "positive_rate": 0.11168384879725086,
+        "auroc": 0.74547686356197,
+        "auprc": 0.3792400064515465,
+        "brier": 0.08860152348773784,
+        "ece": 0.03322019535730062,
+        "predicted_rate": 0.08422685495548828,
+        "calibration_p": 0.0002497009551297408,
+        "support": "adequate",
+        "sensitivity_at_20pct": 0.2230769230769231,
+        "calibration_q_bh": 0.0008739533429540929
+      },
+      {
+        "dimension": "ethnicity",
+        "group": "hispanic",
+        "n": 160,
+        "positives": 24,
+        "positive_rate": 0.15,
+        "auroc": 0.7699142156862745,
+        "auprc": 0.45683879713772535,
+        "brier": 0.11257848605684581,
+        "ece": 0.05855268103224774,
+        "predicted_rate": 0.09144731896775227,
+        "calibration_p": 0.0059682978763066115,
+        "support": "adequate",
+        "sensitivity_at_20pct": 0.2916666666666667,
+        "calibration_q_bh": 0.011936595752613225
+      },
+      {
+        "dimension": "ethnicity",
+        "group": "nonhispanic",
+        "n": 1237,
+        "positives": 131,
+        "positive_rate": 0.1059013742926435,
+        "auroc": 0.7397781704236435,
+        "auprc": 0.37166511538047925,
+        "brier": 0.08500930045293198,
+        "ece": 0.02930860990682235,
+        "predicted_rate": 0.08185846274986791,
+        "calibration_p": 0.0009043799849615934,
+        "support": "adequate",
+        "sensitivity_at_20pct": 0.20610687022900764,
+        "calibration_q_bh": 0.0021102199649103846
+      },
+      {
+        "dimension": "payer",
+        "group": "Unknown",
+        "n": 1397,
+        "positives": 155,
+        "positive_rate": 0.11095204008589836,
+        "auroc": 0.7463352553114123,
+        "auprc": 0.381500109060407,
+        "brier": 0.08816683065810464,
+        "ece": 0.032657652436385506,
+        "predicted_rate": 0.08295668536608945,
+        "calibration_p": 4.5191849029165964e-05,
+        "support": "adequate",
+        "sensitivity_at_20pct": 0.21935483870967742,
+        "calibration_q_bh": 0.00031634294320416175
+      }
+    ],
+    "gates": [
+      {
+        "name": "temporal_outcome_embargo",
+        "passed": true,
+        "reason": "Each training/calibration label window finishes before the next temporal partition."
+      },
+      {
+        "name": "calibrator_support",
+        "passed": true,
+        "reason": "Platt calibration requires at least five cases from each class in the separate calibration partition."
+      },
+      {
+        "name": "brier_better_than_constant",
+        "passed": true,
+        "reason": "Held-out Brier 0.0882; training-prevalence baseline 0.0988."
+      },
+      {
+        "name": "auroc_at_least_065",
+        "passed": true,
+        "reason": "Prespecified research demonstration discrimination gate: AUROC >= 0.65."
+      },
+      {
+        "name": "ece_at_most_005",
+        "passed": true,
+        "reason": "Prespecified equal-width, ten-bin expected calibration error <= 0.05."
+      },
+      {
+        "name": "subgroup_support",
+        "passed": false,
+        "reason": "Every reported subgroup needs n >= 50 and at least five positive and negative examples. Sparse groups remain visible."
+      },
+      {
+        "name": "clinical_validation",
+        "passed": false,
+        "reason": "Synthetic retrospective evaluation is not clinical validation."
+      }
+    ],
+    "contract": {
+      "statement": "This is a portfolio demonstration on synthetic data. It is not a medical device, has not been validated for clinical use, and must not be used to make decisions about real patients.",
+      "clinical_use": false,
+      "population": "Synthea Massachusetts, seed 20260923",
+      "split": {
+        "train_start": "2010-01-01",
+        "train_label_end_exclusive": "2020-07-05",
+        "calibration_start": "2021-06-30",
+        "calibration_label_end_exclusive": "2023-07-05",
+        "test_start": "2024-06-29",
+        "calendar": "per-person shifted synthetic dates, protected by a 360-day between-partition buffer",
+        "outcome_embargo": "Label windows finish at least 360 shifted-calendar days before the next partition. Because individual shifts are bounded by +/-180 days, true chronology between partitions is preserved.",
+        "boundary_buffer_each_side_days": 180,
+        "n_train": 4995,
+        "n_calibration": 1345,
+        "n_test": 1397,
+        "same_patients_can_recur": true
+      },
+      "features": [
+        "age",
+        "prior_admissions_365",
+        "prior_ed_365",
+        "prior_visits_365",
+        "condition_count",
+        "medication_count"
+      ],
+      "feature_availability": "Strictly prior to prediction time. No discharge disposition, LOS, future costs, or outcomes are model inputs.",
+      "deployment_choice": "Logistic regression prespecified for transparent live scoring; comparator does not replace it based on test performance.",
+      "calibration_method": "Platt sigmoid fitted to separate chronological calibration data",
+      "model_type": "binary",
+      "live_scoring": true,
+      "multiple_comparisons": "Benjamini-Hochberg across displayed subgroup calibration-residual tests; normal-approximation, descriptive only.",
+      "patient_overlap_train_test": 1230,
+      "cost_target": {
+        "threshold": 30639.708000000006,
+        "definition": "Sum of future 365-day encounter TOTAL_CLAIM_COST, synthetic billed claims, not paid costs.",
+        "threshold_fit": "Training partition only; fixed in calibration and test",
+        "clinical_need": false
+      }
+    },
+    "proxy_comparison": {
+      "n": 1397,
+      "capacity_fraction": 0.1,
+      "selected_per_model": 140,
+      "selection_overlap": 42,
+      "method": "Same top-decile capacity, deterministic ID tie-breaking, fixed held-out population. Descriptive target-choice comparison, not causal disparity attribution.",
+      "groups": [
+        {
+          "dimension": "race",
+          "group": "asian",
+          "n": 87,
+          "cost_selection_rate": 0.09195402298850575,
+          "hospitalization_selection_rate": 0.09195402298850575,
+          "future_hospitalization_rate": 0.04597701149425287,
+          "selection_rate_difference": 0.0
+        },
+        {
+          "dimension": "race",
+          "group": "black",
+          "n": 107,
+          "cost_selection_rate": 0.11214953271028037,
+          "hospitalization_selection_rate": 0.09345794392523364,
+          "future_hospitalization_rate": 0.028037383177570093,
+          "selection_rate_difference": 0.01869158878504673
+        },
+        {
+          "dimension": "race",
+          "group": "hawaiian",
+          "n": 18,
+          "cost_selection_rate": 0.05555555555555555,
+          "hospitalization_selection_rate": 0.1111111111111111,
+          "future_hospitalization_rate": 0.05555555555555555,
+          "selection_rate_difference": -0.05555555555555555
+        },
+        {
+          "dimension": "race",
+          "group": "native",
+          "n": 9,
+          "cost_selection_rate": 0.1111111111111111,
+          "hospitalization_selection_rate": 0.1111111111111111,
+          "future_hospitalization_rate": 0.0,
+          "selection_rate_difference": 0.0
+        },
+        {
+          "dimension": "race",
+          "group": "other",
+          "n": 12,
+          "cost_selection_rate": 0.08333333333333333,
+          "hospitalization_selection_rate": 0.16666666666666666,
+          "future_hospitalization_rate": 0.0,
+          "selection_rate_difference": -0.08333333333333333
+        },
+        {
+          "dimension": "race",
+          "group": "white",
+          "n": 1164,
+          "cost_selection_rate": 0.10051546391752578,
+          "hospitalization_selection_rate": 0.10051546391752578,
+          "future_hospitalization_rate": 0.03608247422680412,
+          "selection_rate_difference": 0.0
+        },
+        {
+          "dimension": "ethnicity",
+          "group": "hispanic",
+          "n": 160,
+          "cost_selection_rate": 0.14375,
+          "hospitalization_selection_rate": 0.1375,
+          "future_hospitalization_rate": 0.04375,
+          "selection_rate_difference": 0.006249999999999978
+        },
+        {
+          "dimension": "ethnicity",
+          "group": "nonhispanic",
+          "n": 1237,
+          "cost_selection_rate": 0.09458367016976556,
+          "hospitalization_selection_rate": 0.09539207760711399,
+          "future_hospitalization_rate": 0.034761519805982216,
+          "selection_rate_difference": -0.0008084074373484323
+        },
+        {
+          "dimension": "sex",
+          "group": "F",
+          "n": 677,
+          "cost_selection_rate": 0.14918759231905465,
+          "hospitalization_selection_rate": 0.1358936484490399,
+          "future_hospitalization_rate": 0.03692762186115214,
+          "selection_rate_difference": 0.013293943870014757
+        },
+        {
+          "dimension": "sex",
+          "group": "M",
+          "n": 720,
+          "cost_selection_rate": 0.05416666666666667,
+          "hospitalization_selection_rate": 0.06666666666666667,
+          "future_hospitalization_rate": 0.034722222222222224,
+          "selection_rate_difference": -0.012499999999999997
+        },
+        {
+          "dimension": "payer",
+          "group": "Unknown",
+          "n": 1397,
+          "cost_selection_rate": 0.10021474588403723,
+          "hospitalization_selection_rate": 0.10021474588403723,
+          "future_hospitalization_rate": 0.03579098067287044,
+          "selection_rate_difference": 0.0
+        }
+      ]
+    }
+  },
+  {
+    "id": "deterioration",
+    "name": "NEWS2 deterioration assessment",
+    "department": "ICU and rapid response",
+    "prediction_time": "At the complete observation set",
+    "status": "unavailable",
+    "method": "Not evaluated",
+    "limitation": "Synthea does not provide a reliable concurrent full NEWS2 observation set, including supplemental oxygen and new confusion, paired with a defensible deterioration outcome. A partial score is not imputed as normal.",
+    "metrics": {},
+    "baselines": [],
+    "calibration": [],
+    "decision_curve": [],
+    "subgroups": [],
+    "gates": [
+      {
+        "name": "outcome_and_features_available",
+        "passed": false,
+        "reason": "Synthea does not provide a reliable concurrent full NEWS2 observation set, including supplemental oxygen and new confusion, paired with a defensible deterioration outcome. A partial score is not imputed as normal."
+      }
+    ],
+    "contract": {
+      "statement": "This is a portfolio demonstration on synthetic data. It is not a medical device, has not been validated for clinical use, and must not be used to make decisions about real patients.",
+      "clinical_use": false,
+      "population": "Synthea Massachusetts, seed 20260923",
+      "live_scoring": false
+    }
+  }
+]
