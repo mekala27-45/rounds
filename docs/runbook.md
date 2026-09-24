@@ -30,3 +30,11 @@ Set `ROUNDS_RAW_CSV` to the raw CSV directory and `ROUNDS_DATA_ROOT` to a local 
 The browser SQL engine downloads its WebAssembly runtime from jsDelivr. If that host is blocked, the app offers aggregate downloads; the rest of the dashboard is independent of it. Fonts and evidence are hosted with the app.
 
 Deployment remains owner-private. D1 migrations are applied by Sites. The source snapshot and build archive must match before saving a version. Roll back by redeploying a previous saved version; schema migrations must remain backward-compatible with that version.
+
+## Production navigation regression check
+
+Run `npm run build` followed by `npm run start -- --port 5188`. Test the compiled Worker rather than relying on the development server: the original Vinext client-link transitions passed development checks but threw in the deployed build.
+
+Click each department sidebar link and confirm both the URL and department heading change. Also check the evidence links, a scorecard link, browser Back/Forward, the mobile sidebar, and a model-card fragment link such as `/models#highcost`. Confirm that the patient worklist still shows its purpose gate on a fresh visit. Check the browser console for navigation errors. Repeat representative clicks on the deployed site after publication.
+
+Application links use the ref-forwarding `SiteLink` native anchor. Keep document navigation until the production router issue is independently resolved and these checks pass. Model fragments scroll after the asynchronous evidence bundle renders their targets.

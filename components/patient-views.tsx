@@ -1,6 +1,6 @@
 "use client";
 import {useState} from 'react';
-import Link from 'next/link';
+import { SiteLink as Link } from './site-link';
 import {ArrowRight,ArrowUpRight,CheckCircle2,Clock3,Info,LockKeyhole,ShieldCheck,Stethoscope} from 'lucide-react';
 import {Sheet,SheetContent,SheetHeader,SheetTitle,SheetDescription} from '@/components/ui/sheet';
 import {Checkbox} from '@/components/ui/checkbox';

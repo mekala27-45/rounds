@@ -1,6 +1,6 @@
 "use client";
 import {useState} from 'react';
-import Link from 'next/link';
+import { SiteLink as Link } from './site-link';
 import {ArrowRight,ArrowUpRight,CheckCircle2,CircleAlert,ClipboardList,Code2,Download,FileText,Info,Play,Search,ShieldCheck} from 'lucide-react';
 import {Tabs,TabsList,TabsTrigger,TabsContent} from '@/components/ui/tabs';
 import {Select,SelectContent,SelectItem,SelectTrigger,SelectValue} from '@/components/ui/select';

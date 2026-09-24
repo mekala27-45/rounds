@@ -1,6 +1,6 @@
 "use client";
 import {useEffect,useState} from "react";
-import Link from "next/link";
+import { SiteLink as Link } from "./site-link";
 import {Activity,ArrowRight,ArrowUpRight,BedDouble,Building2,CalendarDays,ChartNoAxesCombined,ChevronRight,ClipboardList,Database,Download,FileText,FlaskConical,HeartPulse,Info,Layers3,Microscope,Moon,Plus,ScanLine,ShieldCheck,Stethoscope,Sun,Syringe,Table2,Users,Wallet,Workflow} from "lucide-react";
 import {SidebarProvider,Sidebar,SidebarHeader,SidebarContent,SidebarFooter,SidebarMenu,SidebarMenuItem,SidebarMenuButton,SidebarGroup,SidebarInset,SidebarTrigger} from "@/components/ui/sidebar";
 import {Select,SelectTrigger,SelectValue,SelectContent,SelectItem} from "@/components/ui/select";
@@ -18,6 +18,8 @@ export function RoundsApp({route}:{route:string}){
  const [bundle,setBundle]=useState<Bundle|null>(null),[error,setError]=useState(""),[dark,setDark]=useState(false),[months,setMonths]=useState("12");
  const department=DEPARTMENTS.find(d=>d.id===route),title=department?.name??evidence.find(e=>e.id===route)?.name??({monitoring:"Model monitoring",audit:"Access audit",patients:"Patient worklist"}[route]??"Evidence");
  useEffect(()=>{const controller=new AbortController();fetch('/results/bundle.json',{signal:controller.signal}).then(r=>{if(!r.ok)throw new Error("The evidence bundle could not be loaded.");return r.json()}).then(value=>setBundle(value as Bundle)).catch(e=>{if(e.name!=="AbortError")setError(e.message)});return()=>controller.abort()},[]);
+ // Fragment targets in model cards appear only after the evidence has loaded.
+ useEffect(()=>{if(!bundle||!window.location.hash)return;let id:string;try{id=decodeURIComponent(window.location.hash.slice(1))}catch{return}const frame=requestAnimationFrame(()=>document.getElementById(id)?.scrollIntoView({block:'center'}));return()=>cancelAnimationFrame(frame)},[bundle]);
  useEffect(()=>{const v=localStorage.getItem('rounds-theme')==='dark';setDark(v);document.documentElement.classList.toggle('dark',v)},[]);
  function toggleTheme(){const v=!dark;setDark(v);document.documentElement.classList.toggle('dark',v);localStorage.setItem('rounds-theme',v?'dark':'light')}
  useEffect(()=>{
