@@ -1,5 +1,7 @@
 # rounds
 
+[Live demo](https://rounds-health-system.mekalaa1.chatgpt.site) · [Source code](https://github.com/mekala27-45/rounds)
+
 I recommend keeping the readmission model in shadow evaluation. Its held-out AUROC is 0.594 and Brier score is 0.0936; the published quality gates do not support promotion. This is evidence about a synthetic generator, not a basis for clinical deployment.
 
 This is a portfolio demonstration on synthetic data. It is not a medical device, has not been validated for clinical use, and must not be used to make decisions about real patients.

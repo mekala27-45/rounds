@@ -29,7 +29,7 @@ Set `ROUNDS_RAW_CSV` to the raw CSV directory and `ROUNDS_DATA_ROOT` to a local 
 
 The browser SQL engine downloads its WebAssembly runtime from jsDelivr. If that host is blocked, the app offers aggregate downloads; the rest of the dashboard is independent of it. Fonts and evidence are hosted with the app.
 
-Deployment remains owner-private. D1 migrations are applied by Sites. The source snapshot and build archive must match before saving a version. Roll back by redeploying a previous saved version; schema migrations must remain backward-compatible with that version.
+The dashboard and GitHub repository are public for portfolio review. Patient workflow pages still require sign-in, a purpose of access, and a persisted audit receipt. Preserve the public Site audience when publishing updates. D1 migrations are applied by Sites. The source snapshot and build archive must match before saving a version. Roll back by redeploying a previous saved version; schema migrations must remain backward-compatible with that version.
 
 ## Production navigation regression check
 
